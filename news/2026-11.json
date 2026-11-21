@@ -2,6 +2,19 @@
  "month": "2026-11",
  "items": [
   {
+   "title": "\"폭락 시작도 안 해\" 삼전 7만 제시 전문가, 내년 AI 기업 타격 경고 - 머니투데이",
+   "link": "https://www.mt.co.kr/society/2026/11/21/2026112110581031975",
+   "source": "머니투데이",
+   "published": "2026-11-21T02:14:59Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "23da452160b5",
+   "summary": "삼성전자와 SK하이닉스의 적정 주가를 각각 7만원과 20만원으로 제시했던 애널리스트가 내년 AI 연관 기업에 타격이 있을 것으로 전망하며 주가가 다시 한번 추락할 수 있다고 경고했다.",
+   "brief": "삼성전자와 SK하이닉스의 적정 주가를 각각 7만원과 20만원으로 제시했던 애널리스트가 내년 AI 연관 기업에 타격이 있을 것으로 전망하며 주가가 다시 한번 추락할 수 있다고 경고했다는 기사",
+   "summaryBy": "lead"
+  },
+  {
    "title": "나스닥 주간 10% 폭락·SOXL 32% 추락…삼성전자·SK하이닉스 '월요일 공포'",
    "link": "https://www.greened.kr/news/articleView.html?idxno=355237",
    "source": "녹색경제신문",
@@ -23,6 +36,19 @@
     "삼성전자"
    ],
    "id": "609c61984747",
+   "summary": "▲ AI 프리즘* 맞춤형 경제 브리핑  * 편집자 주: ‘AI PRISM’(Personalized Report & Insight Summarizing Media)은 한국언론진흥재단의 지원을 받아 개발한 ‘인공지능(AI) 기반 맞춤형 뉴스 추천 및 요약 서비스’입니다. 독자 유형별 맞춤 뉴스 6개를 선별해 제공합니다.",
+   "brief": "",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "美 반도체 수출규제 전면 확대…삼성, 中 AI칩 출하 중단",
+   "link": "https://www.sedaily.com/article/20117201",
+   "source": "서울경제",
+   "published": "2026-11-21T01:35:40Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "d3393211b8d3",
    "summary": "▲ AI 프리즘* 맞춤형 경제 브리핑  * 편집자 주: ‘AI PRISM’(Personalized Report & Insight Summarizing Media)은 한국언론진흥재단의 지원을 받아 개발한 ‘인공지능(AI) 기반 맞춤형 뉴스 추천 및 요약 서비스’입니다. 독자 유형별 맞춤 뉴스 6개를 선별해 제공합니다.",
    "brief": "",
    "summaryBy": "lead"
@@ -326,6 +352,19 @@
    ],
    "summary": "삼성전자가 가을 결혼 시즌을 맞아 예비부부를 위해 삼성스토어 청담점을 신혼 특화 공간으로 새단장했습니다. 인테리어 패키지 존을 통해 라이프스타일별 최적의 AI 가전 구성을 제안하며, 1대1 맞춤형 상담부터 구매와 사후 관리까지 원스톱으로 지원해 효율적인 결혼 준비를 돕습니다.",
    "brief": "삼성전자가 가을 결혼 시즌을 맞아 예비부부를 위해 삼성스토어 청담점을 신혼 특화 공간으로 새단장했습니다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "삼전닉스 목표가 줄하향…증권사가 보는 조정 국면은 언제?",
+   "link": "https://theguru.co.kr/news/article.html?no=109901",
+   "source": "더구루",
+   "published": "2026-11-20T15:00:30Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "b981403c6f7b",
+   "summary": "키움증권, 삼성전자 29만원·SK하이닉스 180만원으로 목표가 하향  중국발 공급 확대 우려에도 HBM 수요·AI 투자 확대에 내년 봄 반등 기대  [더구루=변수지 기자] 삼성전자와 SK하이닉스의 목표주가가 잇따라 하향 조정된 가운데 내년 봄 반등 가능성이 제기됐다.",
+   "brief": "",
    "summaryBy": "lead"
   },
   {
@@ -639,7 +678,7 @@
    "keywords": [
     "삼성전자"
    ],
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "id": "f0a474cd59d9",
@@ -678,7 +717,7 @@
     "삼성전자 노조",
     "삼성전자 노동조합"
    ],
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "id": "5be737e14318",
@@ -702,7 +741,7 @@
    "keywords": [
     "삼성전자"
    ],
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "대법원, 한덕수 ‘내란중요임무종사’ 일부 무죄…“12.3 계엄 자체는 위헌”",
@@ -785,12 +824,15 @@
   {
    "id": "91216e69a2b5",
    "title": "삼성전자, 시스템LSI 수장에 '미국통' 조상연…엑시노스 반등 이끈다",
-   "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE11NTJBeWpLR3dNRVdBWm05bjV1T3pBNnhZMElIQjJNMEZXVjZYajVfVU5sZG1nT2FRaU1kcHBQanR3ZmFKSUJWNnFDTQ?oc=5",
+   "link": "http://www.inews24.com/view/2028669",
    "source": "아이뉴스24",
    "published": "2026-11-20T05:49:21Z",
    "keywords": [
     "삼성전자"
-   ]
+   ],
+   "summary": "삼성전자가 실적 부진이 이어진 시스템설계(LSI)사업부의 수장을 교체하고 사업 체질 개선에 나섰다. 삼성전자는 20일 '2027년 정기 사장단 인사'에서 조상연(1971년생) 디바이스솔루션(DS)부문 DSA총괄 부사장을 사장으로 승진시키고 시스템LSI사업부장에 선임했다.",
+   "brief": "삼성전자가 실적 부진이 이어진 시스템설계(LSI)사업부의 수장을 교체하고 사업 체질 개선에 나섰다는 기사",
+   "summaryBy": "lead"
   },
   {
    "id": "d87619aa82cb",
@@ -800,148 +842,191 @@
    "published": "2026-11-20T05:48:18Z",
    "keywords": [
     "삼성전자"
-   ]
+   ],
+   "summaryTries": 1
   },
   {
    "title": "삼성전자, 전영현·노태문 ‘투톱’ 유지…승진 3명 전원 DS부문",
-   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE00b0twOUlFcWlJenZldEw5TTMxX3pLRTc5Nk9XcTdNeXY0aFpnOVdmWmxvNmVvVHFuelVFRS11SVgxZ0JwVVVraGVmZnB4S3pmZjhRNUJZc1ExNWpFN0h6c1lheG9kSF90RjMwR1lZQmctOTJteWfSAWZBVV95cUxOSURvd0hLTmdqdEdlTHNCZXBCWXRwX2dQODFBX3ZQQnhhbGNkeWtROFFoWjVSaXlLMjlOb3pZV0JqQVdjY0NqbWpRM3JDcVhDd0JnVXZEVHlwaTRNYTNPa3dlRFM0WFE?oc=5",
+   "link": "https://www.donga.com/news/Economy/article/all/20261120/135059714/1",
    "source": "동아일보",
    "published": "2026-11-20T05:41:41Z",
    "keywords": [
     "삼성전자 노동조합"
    ],
-   "id": "dc6105b80be4"
+   "id": "dc6105b80be4",
+   "summary": "삼성전자가 반도체 사상 최대 실적을 이끈 1970년대생 인재들을 사장으로 끌어올리며 세대교체에 나섰다.",
+   "brief": "삼성전자가 반도체 사상 최대 실적을 이끈 1970년대생 인재들을 사장으로 끌어올리며 세대교체에 나섰다는 기사",
+   "summaryBy": "lead"
   },
   {
    "id": "987217925201",
    "title": "[프로필] 황상준 삼성전자 메모리사업부장, '돌아온 삼성' 만든 개발 전문가",
-   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1zUmRRcm5IazVCOERkeXhoYzlrTGtiU2F4bFVVSi1oYlFlOXJuNW1CVmdlZENzMzh1c3JVOFJjWWRsS0xDNng5Y0lCUExnaXlVSjdpNWdMT29VZC0xaE5vVFFEREhHUzgxZXBTbXJ3Vm1sRXFaRlBQTlFRX1g?oc=5",
+   "link": "https://www.fntimes.com/html/view.php?ud=2026112014143232437de3572ddd_18",
    "source": "한국금융신문",
    "published": "2026-11-20T05:24:03Z",
    "keywords": [
     "삼성전자"
-   ]
+   ],
+   "summary": "삼성전자 메모리 반도체 개발을 이끌어온 황상준 부사장이 메모리사업부장(사장)으로 승진했다.",
+   "brief": "삼성전자 메모리 반도체 개발을 이끌어온 황상준 부사장이 메모리사업부장(사장)으로 승진했다는 기사",
+   "summaryBy": "lead"
   },
   {
    "id": "b14e88006067",
    "title": "이준희 삼성SDS 대표 체제 '굳건'…실적 안정 속 노사관계 시험대",
-   "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5sOF9qZkRtUjNZNFR4TUw2cTNHQ2FQYU1paE5NaFpwVTY1VHYwXzd1VGU4UmYxWWdxR2VnYU1TcjNCdVBXRFFkU0NicEFOWWloOTBLUzln?oc=5",
+   "link": "https://zdnet.co.kr/view/?no=20261120130354",
    "source": "지디넷코리아",
    "published": "2026-11-20T05:11:08Z",
    "keywords": [
     "삼성전자 노조",
     "삼성전자 노동조합"
-   ]
+   ],
+   "summary": "이준희 삼성SDS 대표가 삼성그룹의 정기 사장단 인사에서 유임되며 기존 경영 체제를 이어가게 됐다. 최근 2년간 안정적인 실적을 바탕으로 인공지능(AI)·클라우드 사업 확대 성과를 거둔 점이 긍정적으로 작용한 것으로 풀이된다.20일 업계에 따르면 삼성그룹은 이날 2027년도 정기 사장단 인...",
+   "brief": "이준희 삼성SDS 대표가 삼성그룹의 정기 사장단 인사에서 유임되며 기존 경영 체제를 이어가게 됐다는 기사",
+   "summaryBy": "lead"
   },
   {
    "id": "5fe560446f6f",
    "title": "삼성전자 사장 승진 모두 반도체서 나왔다…황상준·최원준 전면배치(종합)",
-   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxONV8wbnpOMk1tWWxITkQtVUVVd3JZbXktNklXcVdYck5jNjY0NDE3cElhS3Zsa2R4VUV6SUhSR2NUZVI5VGVubGo0eEtzRXdNNzhRVVk2cjJzS3ZlSGh3eU05MnVaRnpTdENWWkUwcENYQ2ZRM1REeU1PdXVuYktDNzNFZm1zQQ?oc=5",
+   "link": "https://www.g-enews.com/article/Industry/2026/11/20261120134820136627fa31d75c_1",
    "source": "글로벌이코노믹",
    "published": "2026-11-20T04:53:34Z",
    "keywords": [
     "삼성전자"
-   ]
+   ],
+   "summary": "(우)04004 서울특별시 마포구 월드컵로62 서교동 한림빌딩 2층 | 법인명 : (주)그린미디어 | 제호 : 글로벌이코노믹 | 대표전화 : 02-323-7474 등록번호 : 서울 아 02232 | 등록·발행일자 : 2012년 8월 9일 | 발행인 : 김성원 | 편집인 : 김성원 | 청소년보호책임자 : 이연실 글로벌이코노믹을 통해 제공되는 모든 콘텐츠(기사",
+   "brief": "",
+   "summaryBy": "lead"
   },
   {
    "id": "483bffc4456a",
    "title": "코스피 이어 코스닥도 매도 사이드카…삼성전자·하이닉스 6%대 급락",
-   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBHYVpOX1RaZ3ZHZjlXWWtDWFdaTjJ4OU5hdG82dGFDM1VpODl4amJJSDhTQnBWWWc2Vk5iYWZhZ3htMFp3emJOZDBRZkJLSDNqNjJwS2p0bE5Ndw?oc=5",
+   "link": "https://www.hankyung.com/article/2026112099276",
    "source": "한국경제",
    "published": "2026-11-20T04:52:01Z",
    "keywords": [
     "삼성전자"
-   ]
+   ],
+   "summary": "",
+   "brief": "",
+   "summaryBy": "lead"
   },
   {
    "id": "c3605da4dc60",
    "title": "삼성전자, ‘성과 보상·미래 사업’ 투트랙 정조준",
-   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFB3dTM4cE0tLV9Zd1lVOGZsMlZYSTJYVl9LN1AxbGNNMXlOT0hUT09oejZFU21uMUJ2ak94UEVhR0hjakFTZjRxeWIwMEd1bGdhdkx0eTRvRmItTUFPdzZCU3BJRQ?oc=5",
+   "link": "https://www.topdaily.kr/articles/113025?ref_sec=a_stk",
    "source": "톱데일리",
    "published": "2026-11-20T04:40:00Z",
    "keywords": [
     "삼성전자"
-   ]
+   ],
+   "summary": "사장 승진 3명 전원 DS부문서 배출… 황상준(메모리)·조상연(LSI)·이종명(CTO) 전진 배치  전영현·노태문 대표이사 겸직 내려놓고 ‘파운드리·로봇’ 등 미래 신수종 사업 총력전  MX사업부장에 ‘갤럭시 개발통’ 최원준 사장 보임… 총 6명 규모 사장단 인사 단행  -->  -->  삼성전자가 역대 최대 실적을 기록한 반도체 부문에 사장 승진자 전원을",
+   "brief": "",
+   "summaryBy": "lead"
   },
   {
    "id": "36a2ec8f6f9f",
    "title": "성과 낸 ‘개발통’ 전진배치…삼성전자, 미래성장 집중한 사장단 인사 발표",
-   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1RbmIwTFZjSFhVNlVNTkZ0LVl5VXR0Z2lDMGZrRFk3NEFER0RQdWx6SVdhWXdOQ3JxQkJ1TXRUU01meWFqOHJ6aDFNNGVWNlZpbmxEcDk4NDlpbWp3cjJmendxSkhMbmM5ZUZKYUs4aTFXRkVQSlHSAWZBVV95cUxQcmV2YTg1VTg3NGJ6dUpNZVZfeXhmU2JwdFRnWHNoU2RfMnl6OFh4LW4xQ0RfYnN2eC0tUTlIbEdySTZfYkw5TEhpQlFFSTAzSmVPQXNjVDc2WXk4Q0Q5Zmo0ZS1sWnc?oc=5",
+   "link": "https://www.donga.com/news/Economy/article/all/20261120/135060094/1",
    "source": "동아일보",
    "published": "2026-11-20T04:34:33Z",
    "keywords": [
     "삼성전자"
-   ]
+   ],
+   "summary": "삼성전자가 20일 사장 승진 3명, 위촉업무 변경 3명 등 총 6명 규모의 2027년 정기 사장단 인사를 발표했다.",
+   "brief": "삼성전자가 20일 사장 승진 3명, 위촉업무 변경 3명 등 총 6명 규모의 2027년 정기 사장단 인사를 발표했다는 기사",
+   "summaryBy": "lead"
   },
   {
    "id": "1002d0c03ffa",
    "title": "삼성전자, AI 거품론 우려 일축... \"네오클라우드 시장 비중 8% 불과\"",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5hdk1xNUpQM3dxSTBiX2cyZXZMLU03TnpyZWM1V1NMRmozV0dUcW5jX1RTbWVGYzY2TkNudTVCU2hYN081SUtwdUR1Rzd3Rkg3dVlsVEVnUG1QdkRoelhuUzQtb09qdXJ1MjNFctIBcEFVX3lxTFA0RTRVaUJFY04zT0U1Wjh2eTdybXdsRWQ4UXBRdV9LZ3FjdnBYODlLaG1OQ2o0d2hDR2RHdTJlOGNBZ1YwS3VWdVVmQTVLdlRHYVIzclhJYm5SdlBVc2VXTGFjOWRrZHRqUl9jMzhGLVM?oc=5",
+   "link": "https://www.banronbodo.com/news/articleView.html?idxno=33406",
    "source": "반론보도닷컴",
    "published": "2026-11-20T04:23:01Z",
    "keywords": [
     "삼성전자"
-   ]
+   ],
+   "summary": "",
+   "brief": "",
+   "summaryBy": "lead"
   },
   {
    "id": "46a577fd2d46",
    "title": "삼성전자, 전영현·노태문 유임됐지만 주요 사업부장 '물갈이'",
-   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBSRk8tTlFNeFhtRXRZWEJ2Nzk4V0ZHTk5adEJ0MFdJeEtqUWxBdDVyS3FlNXFJX0hfRWhxR2x1c25LdnY5dkNUenVoUEZBOXBkUDgxa3RlUmN5TDdsS3lod01PaWw4NGZWUmc?oc=5",
+   "link": "https://www.seoulfn.com/news/articleView.html?idxno=643468",
    "source": "서울파이낸스",
    "published": "2026-11-20T04:13:41Z",
    "keywords": [
     "삼성전자"
-   ]
+   ],
+   "summary": "삼성전자가 내년에도 전영현 부회장과 노태문 사장 투톱 체제를 유지하기로 했다.",
+   "brief": "삼성전자가 내년에도 전영현 부회장과 노태문 사장 투톱 체제를 유지하기로 했다는 기사",
+   "summaryBy": "lead"
   },
   {
    "id": "dc96aa77fdd4",
    "title": "반도체 호황에 기술 인재 전면으로…삼성전자, 사장 3명 승진",
-   "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5TQ0FxRFF6dTdpNllvTVFTMjJNdTBuYkNPcW5sMFZFdHYtU3hpQnRBRXItMWJ2R19lZmF4R2gyaW94MFduamh5QXl1LXhTaGFBQ212TkJkN2N5LVdiQkVV?oc=5",
+   "link": "https://m.joseilbo.com/news/view.htm?newsid=580095",
    "source": "조세일보",
    "published": "2026-11-20T04:13:32Z",
    "keywords": [
     "삼성전자"
-   ]
+   ],
+   "summary": "◆&hellip;삼성전자 전영현 부회장(왼쪽)과 노태문 사장.",
+   "brief": "",
+   "summaryBy": "lead"
   },
   {
    "id": "95774a5c12e6",
    "title": "'안정 속 변화' 택한 이재용, 삼성전자 반도체 기술통 전면 배치",
-   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9Va2szYXJNT0FZNDMyRmYxcDE3eTloT1Q4aG8zODAwNFFxNnpoVmNsUkNmeVNHWGt1YTJvbEttVlVsTHk2SzM5UUI1VFFIOTZFZGFCR3k1cm5HNW5FVDUtMU5LMjI0NE9lcmFZNzNNcXM5Q05rdlpJ?oc=5",
+   "link": "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003286766",
    "source": "OhmyNews",
    "published": "2026-11-20T03:56:00Z",
    "keywords": [
     "삼성전자"
-   ]
+   ],
+   "summary": "경제  26.11.20 12:56ㅣ최종 업데이트 26.11.20 12:56  '안정 속 변화' 택한 이재용, 삼성전자 반도체 기술통 전면 배치 정기 사장단 인사서 전영현·노태문 투톱 유지, 사장 승진 3명 모두 반도체 출신... 성과주의 속 미래사업 강화 초점  김종철(jcstar21)  글씨 크게보기  글자 크기조절  가  가  가  가  인쇄  본문듣기",
+   "brief": "",
+   "summaryBy": "lead"
   },
   {
    "id": "9865a5cff0f6",
    "title": "유럽 스마트폰 13년 만에 '최저'…삼성전자 점유율은 35%로 상승",
-   "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE4yQVpYRjlUc1ZubW9mNTBNVnNhMTZOY2VOUHktLXc1Rnlad1FFOTEzLVFNR0JLcDZCazZqemtKcTdmU1djRW5tX1N1MjdZQWNMeHAwcUFTTllfQ2Jr?oc=5",
+   "link": "https://www.newspim.com/news/view/20261120000600",
    "source": "뉴스핌",
    "published": "2026-11-20T03:26:00Z",
    "keywords": [
     "삼성전자"
-   ]
+   ],
+   "summary": "유럽 스마트폰 13년 만에 '최저'…삼성전자 점유율은 35%로 상승  기사입력 :  2026년11월20일 12:26  최종수정 :  2026년11월20일 12:26  카카오톡  페이스북  트위터  밴드  뉴스핌을 선호 출처로 추가  가  가  프린트  ※ 본문 글자 크기 조정  가더 작게  가작게  가보통  가크게  가더 크게  닫기  ※ 번역할 언어 선택",
+   "brief": "",
+   "summaryBy": "lead"
   },
   {
    "id": "a501f8dd39a5",
    "title": "삼성전자·SK하이닉스 6.7% 곤두박질…코스피, 매도 사이드카 발동",
-   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5xZ1YyNGlvUW9kbjlpUjRMem9vRnk1dE5fa00ydHprUE9mXzRaZTMwOEg5RHRfeFJmM3N5clJub1htZzlWTm84bEtadzdZTDdQSExfQjZwbGVOb1U?oc=5",
+   "link": "https://www.kwnews.co.kr/article/20261120500180",
    "source": "강원일보",
    "published": "2026-11-20T03:15:11Z",
    "keywords": [
     "삼성전자"
-   ]
+   ],
+   "summary": "엔비디아발 쇼크에 글로벌 인공지능(AI) 생태계가 거세게 흔들린 가운데 삼성전자와 SK하이닉스가 6.6% 안팎으로 곤두박질 치는 등 코스피가 20일 장중 4%대 급락세를 보이자 프로그램 매도호가 일시효력정지(매도 사이드카)가 발동됐다.",
+   "brief": "",
+   "summaryBy": "lead"
   },
   {
    "id": "4bc30d4d3b62",
    "title": "삼성전자 인사와 김범수 무죄·코스피 약세까지 이시각 주요뉴스",
-   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE8tdldITFk3ZWFVM3BfenRhU0JKMnhNc2ZRZC1HZXNVWDJWNzNZYkZRQThsbnNrUXhCejEtV2o3emw2N1FEWU5OM3lwZFNLNXMwVUVWYVNGN0V5NHNtbjktWjllMVE2UHRWa29kTWhsVG_SAXRBVV95cUxQWVBxQWprUUZPbWdtSFBzeXRjemFqRFlqYlhyNS1fd04zd1ZOamxoYi1zajRMTnVxaWwzd2xWLVh1Z0hVTmN1RzhMTlB3TEpHWURQbEFieVN5eS0xckJUeDQtcXlLUzM1N2I5LTh4eWtIVnJBYg?oc=5",
+   "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4445741",
    "source": "연합인포맥스",
    "published": "2026-11-20T02:41:13Z",
    "keywords": [
     "삼성전자"
-   ]
+   ],
+   "summary": "삼성전자 사업부장 교체부터 김범수 카카오 센터장의 항소심 무죄까지, 11월 20일 주요 뉴스를 전합니다. 코스피 급락과 비트코인 하락 배경, KB금융 차기 회장 선임안의 결과도 확인해 보세요.",
+   "brief": "삼성전자 사업부장 교체부터 김범수 카카오 센터장의 항소심 무죄까지, 11월 20일 주요 뉴스를 전합니다는 기사",
+   "summaryBy": "lead"
   },
   {
    "id": "5cb54211e717",
@@ -1020,7 +1105,8 @@
    "source": "프레시안",
    "published": "2026-11-20T01:58:36Z",
    "keywords": [
-    "삼성전자 노조"
+    "삼성전자 노조",
+    "삼성전자 노동조합"
    ]
   },
   {
@@ -1184,6 +1270,16 @@
    ]
   },
   {
+   "title": "삼성전자 전영현·노태문 짐 덜었다···메모리·MX사업부장 교체",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5SWHBlQlI0cXB1b0xHVGEtZFF3eGlYd20tM2lzWi1SZTVXTVJ6UlZ0UU1mdlJOS09BNjZqU2E2RVRPV3BTRmhkZ0ZiZGt6cTg4Q0p6ajJfb0U0TFAyUmNZN2FYUk01anJUWk9HSzl0eWtSZ9IBdkFVX3lxTFBleVlJaHp5UXdBSkhqdFlRMVc1M0FqVEN2VmJIc3dmaTRtOEZyaUFObGIxNGdwRlY0MnRnZWJRX0Q2QzFhRHBkemlwdTlPbnRtWTBpQjgySXRuRDFNV0didE1YdGM3UnYtX1loMmZLMVZCNlhFMkE?oc=5",
+   "source": "시사저널e",
+   "published": "2026-11-20T01:11:06Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "02ce238b4a65"
+  },
+  {
    "id": "69215504e2cf",
    "title": "“삼성전자·SK하이닉스 과도하게 빠졌다”…KB증권 “내년 D램 가격 40% 상승”",
    "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9rdWxibVh2aDBCTXk5ZFhmaW5IT1hUOUJGMFFsTFFQRnEzTTMzckNzLTNadENXRVlza2ZOYTkzcHJ6U3VKcnVMbzRLWTRRUXpHTFZIdlp6ZVhnX3JXMzlORVNJVWI?oc=5",
@@ -1285,6 +1381,26 @@
    ]
   },
   {
+   "title": "[인사] 삼성전자",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE16dzRyRm1OMEUyQlR2SG53Tml1SlBlZU5jYngtdnNGQTZXUzZ0WXlKWEtSN0EzNUI3Z0dDaFdVcVhaTnRqUVl1azdSNDZjd1hxTmNkOElUYlhEV2lmWEhUNFVueGpBQktKNkxLLTQtd3V5dw?oc=5",
+   "source": "인더스트리뉴스",
+   "published": "2026-11-20T00:48:01Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "8dbe735b6780"
+  },
+  {
+   "title": "전영현·노태문 두 리더에 미래사업 맡긴 삼성전자…전문경영 체제 시동",
+   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE0zRy1iaHlBTHlkb01yeENudFdxNlBRdWY0OEZsdjkwYjd6bl9tVzFERG5Gd1R2dTVMVXR1MU0tQ2lqRUlYdEVkN3RqblA3dHVfbWRFc1ZmZmhrREpnMy13Yno3dmJRWE94a0hkSFNRcnY?oc=5",
+   "source": "오피니언뉴스",
+   "published": "2026-11-20T00:47:42Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "f5bb39e288e7"
+  },
+  {
    "id": "e54257e1c840",
    "title": "삼성전자 '전영현·노태문 투톱' 유지…안정 속 세대교체",
    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1xS2N4Y2xuYVRuenZiZF9IRlp6V2RXMHhBWUpqa19BV1RkeTAxMnRHWThGWlF6SmIxNnRrYlc2LVRBclNGczVVdVRtbmxJdzlZOFpNSGVVLW1jUnhkTGZ5d2tOUVJZS2pyQVZQZVFzc0Q?oc=5",
@@ -1293,6 +1409,16 @@
    "keywords": [
     "삼성전자"
    ]
+  },
+  {
+   "title": "삼성전자, 전영현·노태문 '투톱' 유지...메모리 황상준·모바일 최원준",
+   "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9lYmZzRnJ6djdQTlFqUTdxOTNSUGVQOFFFU2lXOXgwSHNFTmFCZ1dYbFpXRk1zWVVqSzctWG10cGZ0Rk9TLVNqRnBYZ1hMSFFtb09OMWd3?oc=5",
+   "source": "지디넷코리아",
+   "published": "2026-11-20T00:38:17Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "c990467eab7d"
   },
   {
    "id": "10772f5afbc5",
@@ -1394,6 +1520,16 @@
    "keywords": [
     "삼성전자"
    ]
+  },
+  {
+   "title": "삼성전자 사업부장, 반도체 메모리 황상준·모바일경험 최원준",
+   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBoMFU5TUFPQ0tNTjJkZmVuZ1gzdnVRV3lkbG13UkY0VXpOa2lTVGJ4WlF4Z1ZvUFhhVTQzN2JGbjBicFBnQXpmMS0tbTkzVlFQUmdPS3VualFuejJ0azVMR0VJamtpcm5LLV9IMkpsLVJIQk430gF0QVVfeXFMUGgwVTlNQU9DS01OMmRmZW5nWDN2dVFXeWRsbXdSRjRVek5raVNUYnhaUXhnVm9QWGFVNDM3YkZuMGJwUGdBemYxLS1tOTNWUVBSZ09LdW5qUW56MnRrNUxHRUlqa2lybkstX0gySmwtUkhCTjc?oc=5",
+   "source": "연합인포맥스",
+   "published": "2026-11-20T00:12:48Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "abbc535e94e2"
   },
   {
    "title": "삼성전자, 2027년 사장단 인사…반도체·MX 수장 교체로 세대교체",
