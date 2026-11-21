@@ -1,13 +1,15 @@
 {
- "fetchedAt": "2026-11-21T01:07:07.050926Z",
+ "fetchedAt": "2026-11-21T02:14:13.796500Z",
  "keywords": [
   "삼성전자",
-  "삼성전자 노조"
+  "삼성전자 노동조합"
  ],
+ "source": "google",
+ "summarizer": "lead",
  "months": [
   {
    "month": "2026-11",
-   "count": 121
+   "count": 142
   }
  ]
 }
