@@ -11,15 +11,19 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - name: 조합원 수 수집
         run: python3 scrape.py
         continue-on-error: true
-      - name: 뉴스 수집
+      - name: 뉴스 수집, 요약
         run: python3 news.py
         continue-on-error: true
+        env:
+          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       - name: 저장
         run: |
           git config user.name "github-actions"

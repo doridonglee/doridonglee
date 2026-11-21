@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>조합원 현황</title>
+<title>삼성전자 분위기</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js" defer></script>
 <style>
@@ -290,6 +290,9 @@
     display: inline-block; margin-left: .45rem; padding: .05rem .5rem; border-radius: 99px;
     background: var(--ink); color: #fff; font-size: .72rem; font-weight: 650; vertical-align: 2px; white-space: nowrap;
   }
+  .sum { grid-column: 2 / -1; margin-top: .45rem; font-size: .85rem; line-height: 1.65; color: var(--ink-2); max-width: 52rem; }
+  .sum .by { display: inline-block; margin-right: .4rem; padding: 0 .35rem; border-radius: 4px; font-size: .68rem; font-weight: 650; color: var(--muted); border: 1px solid var(--rule); vertical-align: 1px; }
+  .rp-issue .sm { grid-column: 2; font-size: .78rem; color: var(--ink-2); line-height: 1.55; }
   .rel-list { grid-column: 2 / -1; margin-top: .55rem; display: grid; gap: .15rem; list-style: none; }
   .rel-list li { display: grid; grid-template-columns: 6rem 1fr auto; gap: .6rem; align-items: baseline; font-size: .8rem; line-height: 1.5; }
   .rel-list li b { color: var(--muted); font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
@@ -439,7 +442,7 @@
 <div class="wrap" id="main" hidden>
   <header class="top">
     <div>
-      <h1>삼성전자 노사 동향</h1>
+      <h1>삼성전자 분위기</h1>
       <div class="sub">조합원 수와 관련 기사를 자동으로 모아 보여 줍니다. <span id="refreshed"></span></div>
     </div>
     <div class="userbox">
@@ -511,7 +514,7 @@
       <div class="panel-head">
         <h2 id="newsTitle">관련 기사</h2>
         <div class="actions">
-          <span class="note" id="newsNote">Google 뉴스에서 키워드별로 1시간마다 모아 계속 쌓습니다</span>
+          <span class="note" id="newsNote">키워드별로 1시간마다 모아 계속 쌓습니다</span>
           <button class="btn primary" type="button" onclick="openReport()">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
             보고 양식 복사
@@ -1310,7 +1313,7 @@ async function loadNews() {
   await ensureMonths();
   const today = todayKST();
   document.getElementById('newsBadge').textContent = NEWS_ITEMS.filter(a => kstDate(a.published) === today).length || '';
-  if (NEWS_INDEX.fetchedAt) document.getElementById('newsNote').textContent = `Google 뉴스 키워드 검색, 마지막 수집 ${fmtStamp(NEWS_INDEX.fetchedAt)}`;
+  if (NEWS_INDEX.fetchedAt) document.getElementById('newsNote').textContent = `${NEWS_INDEX.source === 'naver' ? '네이버 뉴스' : 'Google 뉴스'} 키워드 검색, 마지막 수집 ${fmtStamp(NEWS_INDEX.fetchedAt)}`;
   renderChips();
   renderNews();
   renderStatus();
@@ -1365,7 +1368,7 @@ function renderChips() {
 
 /* 관련 기사 묶기: 제목 글자쌍(2글자) 유사도로 사흘 안의 비슷한 기사를 한 묶음으로 */
 const STOPWORDS = ['삼성전자', '삼성', '노조', '노동조합', '단독', '종합', '속보', '포토', '영상', '사진'];
-const GROUP_THRESHOLD = 0.35;
+const GROUP_THRESHOLD = 0.3;
 const sigCache = new Map();
 function titleSig(a) {
   if (sigCache.has(a.id)) return sigCache.get(a.id);
@@ -1410,6 +1413,19 @@ function pickLead(items) {
   const byTime = [...items].sort((a, b) => a.published.localeCompare(b.published));
   for (const w of WIRES) { const hit = byTime.find(a => a.source === w); if (hit) return hit; }
   return byTime[0];
+}
+// 묶음의 요약: 대표 기사 요약이 없으면 같은 묶음의 다른 기사 요약을 씀
+function issueSource(g) {
+  return [g.lead, ...g.rest].find(a => a.summary) || null;
+}
+function issueSummary(g) {
+  const a = issueSource(g);
+  return a ? { text: a.summary, by: a.summaryBy } : null;
+}
+function defaultLine(g) {
+  const a = [g.lead, ...g.rest].find(x => x.brief);
+  if (a) return a.brief.replace(/\s*(보도)?\s*$/, '') + ' 보도';
+  return `${g.lead.title.replace(/\s*[…·]+\s*/g, ', ').replace(/\s+/g, ' ')} 관련 보도`;
 }
 let currentIssues = [];   // 지금 화면에 보이는 이슈(묶음) 목록
 let currentCount = 0;     // 지금 화면의 기사 수
@@ -1457,6 +1473,7 @@ function renderNews() {
         <div><a class="t" href="${esc(a.link)}" target="_blank" rel="noopener">${esc(a.title)}</a>${g.rest.length ? `<span class="cnt">외 ${g.rest.length}건</span>` : ''}</div>
         <time datetime="${esc(a.published)}">${ldate === d ? '' : `${+ldate.slice(5, 7)}.${+ldate.slice(8)} `}${kstTime(a.published)}</time>
         <div class="meta"><b>${esc(a.source || '언론사 미상')}</b>${kws.map(k => `<span class="kw">${esc(k)}</span>`).join('')}</div>
+        ${issueSummary(g) ? `<p class="sum"><span class="by">${issueSummary(g).by === 'ai' ? 'AI 요약' : '기사 첫머리'}</span>${esc(issueSummary(g).text)}</p>` : ''}
         ${g.rest.length ? `<ul class="rel-list">${g.rest.map((r, i) => `<li class="${i >= SHOW ? 'hide' : ''}">
             <b>${esc(r.source || '언론사 미상')}</b>
             <a href="${esc(r.link)}" target="_blank" rel="noopener" title="${esc(r.title)}">${esc(r.title)}</a>
@@ -1511,11 +1528,11 @@ function openReport() {
   rpState = all.map((g, i) => ({
     issue: g,
     on: pickedIds.size ? pickedIds.has(g.id) : i < 3,
-    summary: `${g.lead.title.replace(/\s*[…·]+\s*/g, ', ').replace(/\s+/g, ' ')} 관련 보도`,
+    summary: defaultLine(g),
   }));
   // 선택한 것을 위로
   rpState.sort((a, b) => b.on - a.on);
-  document.getElementById('rpScope').textContent = `${scopeLabel()} 기준 기사 ${currentCount}건. 넣을 이슈를 고르고, 요약 문장을 고쳐 쓰세요.`;
+  document.getElementById('rpScope').textContent = `${scopeLabel()} 기준 기사 ${currentCount}건. 넣을 이슈를 고르고, 보고 문장을 다듬으세요.`;
   renderReportIssues();
   updatePreview();
   document.getElementById('selbar').classList.remove('show');
@@ -1527,7 +1544,8 @@ function renderReportIssues() {
     <div class="rp-issue${s.on ? ' on' : ''}" data-i="${i}">
       <input type="checkbox" ${s.on ? 'checked' : ''} aria-label="보고에 넣기">
       <div class="h">${esc(s.issue.lead.title)}<small>${esc(s.issue.lead.source)}${s.issue.rest.length ? ` 외 ${s.issue.rest.length}건` : ''}</small></div>
-      <span class="lab">요약 문장</span>
+      ${issueSummary(s.issue) ? `<div class="sm">${esc(issueSummary(s.issue).text)}</div>` : ''}
+      <span class="lab">보고 문장</span>
       <textarea rows="3">${esc(s.summary)}</textarea>
     </div>`).join('') || '<div class="msg">보고할 기사가 없습니다.</div>';
   document.querySelectorAll('#rpIssues .rp-issue').forEach(el => {
