@@ -1,0 +1,8 @@
+{
+  "keywords": ["삼성전자", "삼성전자 노조"],
+  "majority": { "secu": 26000, "nseu": null, "selu": 64000, "dx": 49103, "ds": 76691, "total": 125794 },
+  "users": {
+    "admin": "7ac2d7c8cc215f5428e0504e75f2ecebb60712dbfc53682c227aef7e20d4c631",
+    "guest": "89989ec11188ea36714688becfe6674b010f48f38a461b8bb6b6d4d71b80cd03"
+  }
+}

@@ -1,0 +1,1448 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>조합원 현황</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js" defer></script>
+<style>
+  :root {
+    --page: #E8ECF1;
+    --surface: #FFFFFF;
+    --ink: #172033;
+    --ink-2: #4A5568;
+    --muted: #7A8599;
+    --rule: #D5DCE5;
+    --rule-soft: #EEF1F5;
+    --s-secu: #2a78d6;
+    --s-nseu: #eb6834;
+    --s-selu: #1baf7a;
+    --up: #0F7A55;
+    --down: #C2372F;
+    --focus: #2a78d6;
+    --font: 'Pretendard Variable', Pretendard, 'Noto Sans KR', 'Apple SD Gothic Neo', system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    background: var(--page);
+    color: var(--ink);
+    font-family: var(--font);
+    font-size: 15px;
+    line-height: 1.5;
+    font-feature-settings: 'tnum';
+    min-height: 100vh;
+  }
+  button, input { font: inherit; color: inherit; }
+  button { cursor: pointer; }
+  :focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; border-radius: 6px; }
+
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; }
+
+  /* ── top bar ── */
+  .top {
+    display: flex; justify-content: space-between; align-items: flex-end;
+    gap: 1.5rem; flex-wrap: wrap; margin-bottom: 2rem;
+  }
+  .top h1 { font-size: 1.75rem; font-weight: 700; letter-spacing: -0.03em; line-height: 1.2; }
+  .top .sub { margin-top: .35rem; color: var(--ink-2); font-size: .875rem; }
+  .actions { display: flex; gap: .5rem; flex-wrap: wrap; }
+  .btn {
+    display: inline-flex; align-items: center; gap: .4rem;
+    height: 38px; padding: 0 .9rem; border-radius: 10px;
+    border: 1px solid var(--rule); background: var(--surface);
+    font-size: .85rem; font-weight: 500; color: var(--ink);
+    transition: border-color .15s, background .15s;
+  }
+  .btn:hover { border-color: var(--ink-2); }
+  .btn.primary { background: var(--ink); border-color: var(--ink); color: #fff; }
+  .btn.primary:hover { background: #2A3550; }
+  .btn svg { width: 16px; height: 16px; flex: none; }
+
+  .panel { background: var(--surface); border-radius: 18px; padding: 1.75rem 2rem; margin-bottom: 1.25rem; }
+  .panel-head { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.25rem; }
+  .panel-head h2 { font-size: 1.05rem; font-weight: 650; letter-spacing: -0.01em; }
+  .panel-head .note { font-size: .8rem; color: var(--muted); }
+
+  /* ── hero: 과반까지의 거리 ── */
+  .race { display: grid; gap: 0; }
+  .race-row {
+    display: grid;
+    grid-template-columns: 9.5rem 10.5rem 1fr 11.5rem;
+    align-items: center; gap: 1.5rem;
+    padding: 1.15rem 0;
+    border-top: 1px solid var(--rule-soft);
+  }
+  .race-row:first-child { border-top: 0; padding-top: .25rem; }
+  .who { display: flex; align-items: center; gap: .6rem; }
+  .who .sw { width: 10px; height: 10px; border-radius: 3px; flex: none; }
+  .who b { font-weight: 650; font-size: .95rem; }
+  .who small { display: block; color: var(--muted); font-size: .75rem; }
+  .who a { color: inherit; text-decoration: none; }
+  .who a:hover b { text-decoration: underline; text-underline-offset: 3px; }
+  .count { font-size: 2.1rem; font-weight: 700; letter-spacing: -0.035em; line-height: 1; }
+  .count .unit { font-size: .95rem; font-weight: 500; color: var(--ink-2); margin-left: .15rem; letter-spacing: 0; }
+  .delta { display: block; margin-top: .35rem; font-size: .8rem; font-weight: 550; color: var(--muted); letter-spacing: 0; }
+  .delta.up { color: var(--up); } .delta.down { color: var(--down); }
+
+  .track { position: relative; height: 28px; }
+  .track .rail { position: absolute; left: 0; right: 0; top: 11px; height: 6px; border-radius: 3px; background: var(--rule-soft); }
+  .track .fill { position: absolute; left: 0; top: 11px; height: 6px; border-radius: 3px; transition: width .8s cubic-bezier(.2,.7,.2,1); }
+  .track .goal { position: absolute; top: 0; bottom: 0; width: 2px; background: var(--ink); border-radius: 1px; }
+  .track .goal::after {
+    content: '과반'; position: absolute; top: -1.15rem; left: 50%; transform: translateX(-50%);
+    font-size: .68rem; font-weight: 600; color: var(--ink-2); white-space: nowrap;
+  }
+  .race-row:not(:first-child) .track .goal::after { content: none; }
+  .gap { text-align: right; }
+  .gap b { display: block; font-size: .95rem; font-weight: 650; white-space: nowrap; }
+  .gap small { color: var(--muted); font-size: .75rem; }
+  .gap .ok { color: var(--up); }
+  .unset { color: var(--muted); font-size: .85rem; }
+  .unset button { border: 0; background: none; color: var(--focus); font-weight: 550; text-decoration: underline; text-underline-offset: 3px; }
+
+  .total-line {
+    display: flex; gap: 2rem; flex-wrap: wrap; align-items: baseline;
+    margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--rule);
+    font-size: .875rem; color: var(--ink-2);
+  }
+  .total-line strong { color: var(--ink); font-size: 1.05rem; font-weight: 700; margin-left: .35rem; }
+
+  /* ── chart ── */
+  .seg { display: inline-flex; background: var(--rule-soft); border-radius: 10px; padding: 3px; }
+  .seg button {
+    border: 0; background: transparent; padding: .35rem .8rem; border-radius: 8px;
+    font-size: .8rem; font-weight: 550; color: var(--ink-2);
+  }
+  .seg button[aria-pressed="true"] { background: var(--surface); color: var(--ink); box-shadow: 0 1px 2px rgba(23,32,51,.12); }
+  .legend { display: flex; gap: 1.25rem; flex-wrap: wrap; font-size: .8rem; color: var(--ink-2); margin-bottom: .75rem; }
+  .legend span { display: inline-flex; align-items: center; gap: .4rem; }
+  .legend i { width: 14px; height: 2px; border-radius: 1px; display: inline-block; }
+  .legend i.dash { background: repeating-linear-gradient(90deg, var(--ink-2) 0 4px, transparent 4px 7px); }
+  .chart { position: relative; height: 340px; }
+  .chart svg { display: block; width: 100%; height: 100%; overflow: visible; }
+  .chart .tick { font-size: 11px; fill: var(--muted); }
+  .chart .grid { stroke: var(--rule-soft); }
+  .chart .base { stroke: var(--rule); }
+  .tip {
+    position: absolute; pointer-events: none; background: var(--ink); color: #fff;
+    border-radius: 10px; padding: .55rem .75rem; font-size: .78rem; line-height: 1.6;
+    white-space: nowrap; opacity: 0; transition: opacity .1s; z-index: 5;
+  }
+  .tip .d { color: #AEB8C8; font-size: .72rem; }
+  .tip .r { display: flex; align-items: center; gap: .45rem; }
+  .tip .r i { width: 8px; height: 8px; border-radius: 2px; }
+  .tip .r b { margin-left: auto; padding-left: 1rem; font-weight: 600; }
+
+  /* ── table ── */
+  .table-scroll { overflow: auto; max-height: 560px; margin: 0 -2rem; padding: 0 2rem; }
+  table { width: 100%; border-collapse: collapse; font-size: .85rem; white-space: nowrap; }
+  thead th {
+    position: sticky; top: 0; background: var(--surface); z-index: 1;
+    font-size: .75rem; font-weight: 600; color: var(--ink-2);
+    text-align: right; padding: .55rem .75rem; border-bottom: 1px solid var(--rule);
+  }
+  thead tr:first-child th { top: 0; border-bottom: 0; padding-bottom: 0; color: var(--ink); font-size: .8rem; }
+  thead tr:nth-child(2) th { top: 1.9rem; font-weight: 500; color: var(--muted); }
+  th.left, td.left { text-align: left; }
+  th.grp { text-align: left; padding-left: 1.25rem; }
+  th.grp i { display: inline-block; width: 8px; height: 8px; border-radius: 2px; margin-right: .4rem; vertical-align: 1px; }
+  tbody td { padding: .5rem .75rem; text-align: right; border-bottom: 1px solid var(--rule-soft); }
+  tbody td.first { padding-left: 1.25rem; }
+  tbody td.date { color: var(--ink-2); padding-left: 0; }
+  tbody tr.today td { background: #F2F6FC; }
+  tbody tr.today td.date { color: var(--ink); font-weight: 650; }
+  tbody tr:hover td { background: #F7F9FB; }
+  .c-up { color: var(--up); } .c-down { color: var(--down); } .c-zero, .c-pend { color: #A3ACBB; }
+  .c-pend { font-size: .75rem; }
+  .maj-dot { display: inline-block; font-size: .65rem; font-weight: 650; color: var(--up); margin-left: .35rem; vertical-align: 1px; }
+  .stamp { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-top: 1rem; font-size: .75rem; color: var(--muted); }
+
+  .msg { padding: 3rem 0; text-align: center; color: var(--ink-2); font-size: .9rem; }
+  .msg.error { color: var(--down); }
+
+  /* ── page tabs ── */
+  .tabs {
+    position: sticky; top: 0; z-index: 20; background: var(--page);
+    display: flex; gap: 2rem; margin: 0 0 1.75rem; border-bottom: 1px solid var(--rule);
+  }
+  .tabs a {
+    position: relative; display: inline-flex; align-items: center; gap: .45rem;
+    padding: .9rem 0 .8rem; font-size: 1rem; font-weight: 600; color: var(--muted);
+    text-decoration: none; letter-spacing: -0.01em;
+  }
+  .tabs a:hover { color: var(--ink-2); }
+  .tabs a[aria-selected="true"] { color: var(--ink); }
+  .tabs a[aria-selected="true"]::after {
+    content: ''; position: absolute; left: 0; right: 0; bottom: -1px; height: 3px;
+    border-radius: 3px 3px 0 0; background: var(--ink);
+  }
+  .tabs .badge {
+    min-width: 1.35rem; height: 1.35rem; padding: 0 .4rem; border-radius: 99px;
+    display: inline-grid; place-items: center; font-size: .7rem; font-weight: 650;
+    background: var(--ink); color: #fff;
+  }
+  .tabs .badge:empty { display: none; }
+  .view[hidden] { display: none; }
+  .toolbar { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.25rem; }
+  .toolbar .sub { color: var(--ink-2); font-size: .85rem; }
+
+  /* ── news ── */
+  .news-controls { display: flex; flex-wrap: wrap; gap: .75rem 1rem; align-items: center; margin-bottom: 1.25rem; }
+  .chips { display: flex; flex-wrap: wrap; gap: .4rem; flex: 1 1 auto; }
+  .chip {
+    height: 32px; padding: 0 .8rem; border-radius: 99px; border: 1px solid var(--rule);
+    background: var(--surface); font-size: .8rem; font-weight: 550; color: var(--ink-2);
+  }
+  .chip span { color: var(--muted); font-weight: 500; margin-left: .25rem; }
+  .chip[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: #fff; }
+  .chip[aria-pressed="true"] span { color: #AEB8C8; }
+  .search {
+    height: 36px; width: 220px; border: 1px solid var(--rule); border-radius: 10px;
+    padding: 0 .8rem 0 2.1rem; font-size: .85rem; background: #FAFBFC
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%237A8599' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='m20 20-3.5-3.5'/%3E%3C/svg%3E") no-repeat .7rem center;
+  }
+  .search:focus { outline: none; border-color: var(--focus); background-color: #fff; }
+  .news-day { margin-top: 1.5rem; }
+  .news-day:first-child { margin-top: 0; }
+  .news-day h3 {
+    display: flex; align-items: baseline; gap: .6rem; font-size: .9rem; font-weight: 650;
+    padding-bottom: .5rem; border-bottom: 1px solid var(--rule);
+  }
+  .news-day h3 small { font-size: .75rem; font-weight: 500; color: var(--muted); }
+  .article {
+    display: grid; grid-template-columns: 1.25rem 1fr auto; gap: .25rem .85rem; align-items: start;
+    padding: .85rem 0; border-bottom: 1px solid var(--rule-soft);
+  }
+  .article input { width: 16px; height: 16px; margin-top: .2rem; accent-color: var(--ink); cursor: pointer; }
+  .article a.t { color: var(--ink); text-decoration: none; font-size: .95rem; font-weight: 550; line-height: 1.45; }
+  .article a.t:hover { text-decoration: underline; text-underline-offset: 3px; }
+  .article a.t:visited { color: #5A4A8A; }
+  .article .meta { grid-column: 2; font-size: .78rem; color: var(--muted); display: flex; gap: .6rem; flex-wrap: wrap; }
+  .article .meta b { color: var(--ink-2); font-weight: 600; }
+  .article .kw { font-size: .7rem; padding: .05rem .45rem; border-radius: 5px; background: var(--rule-soft); color: var(--ink-2); }
+  .article time { font-size: .78rem; color: var(--muted); white-space: nowrap; }
+  .article.picked { background: linear-gradient(90deg, #F2F6FC, transparent); }
+  .selbar {
+    position: fixed; left: 50%; bottom: 1.5rem; transform: translate(-50%, 150%);
+    display: flex; align-items: center; gap: .75rem; padding: .5rem .5rem .5rem 1.1rem;
+    background: var(--ink); color: #fff; border-radius: 14px; z-index: 40;
+    box-shadow: 0 12px 32px rgba(23,32,51,.3); transition: transform .2s, visibility .2s; white-space: nowrap;
+    visibility: hidden;
+  }
+  .selbar.show { transform: translate(-50%, 0); visibility: visible; }
+  .selbar b { font-size: .88rem; font-weight: 600; margin-right: .25rem; }
+  .selbar .btn { height: 34px; background: transparent; border-color: #3A4764; color: #fff; }
+  .selbar .btn.light { background: #fff; color: var(--ink); border-color: #fff; }
+
+  /* ── etc ── */
+  .links { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: .75rem; }
+  .link-card {
+    display: grid; gap: .2rem; padding: 1rem 1.1rem; border: 1px solid var(--rule); border-radius: 12px;
+    text-decoration: none; color: var(--ink); transition: border-color .15s;
+  }
+  .link-card:hover { border-color: var(--ink-2); }
+  .link-card b { display: flex; align-items: center; gap: .5rem; font-size: .95rem; font-weight: 650; }
+  .link-card b i { width: 10px; height: 10px; border-radius: 3px; }
+  .link-card span { font-size: .78rem; color: var(--muted); }
+  .status { width: 100%; border-collapse: collapse; font-size: .85rem; }
+  .status td { text-align: left; padding: .7rem 0; border-bottom: 1px solid var(--rule-soft); vertical-align: top; }
+  .status td:first-child { width: 11rem; color: var(--ink-2); font-weight: 550; }
+  .status tr:last-child td { border-bottom: 0; }
+  .ok-dot, .warn-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: .45rem; vertical-align: 1px; }
+  .ok-dot { background: var(--up); } .warn-dot { background: #D08A00; }
+
+  /* ── login / user ── */
+  .lock-box .seg { display: flex; }
+  .lock-box .seg button { flex: 1; padding: .55rem; }
+  .lock-box input#lockInput { letter-spacing: .1em; font-size: 1rem; }
+  .userbox { display: flex; align-items: center; gap: .75rem; font-size: .82rem; color: var(--ink-2); }
+  .userbox .role { display: inline-flex; align-items: center; gap: .4rem; font-weight: 600; color: var(--ink); }
+  .userbox .role i { width: 8px; height: 8px; border-radius: 50%; background: var(--muted); }
+  body.is-admin .userbox .role i { background: var(--up); }
+  .linkbtn { border: 0; background: none; color: var(--ink-2); text-decoration: underline; text-underline-offset: 3px; font-size: .82rem; }
+  body:not(.is-admin) .admin-only { display: none !important; }
+
+  /* ── grouped articles ── */
+  .switch { display: inline-flex; align-items: center; gap: .5rem; font-size: .8rem; font-weight: 550; color: var(--ink-2); cursor: pointer; user-select: none; }
+  .switch input { appearance: none; width: 34px; height: 20px; border-radius: 99px; background: var(--rule); position: relative; cursor: pointer; transition: background .15s; margin: 0; }
+  .switch input::after { content: ''; position: absolute; top: 2px; left: 2px; width: 16px; height: 16px; border-radius: 50%; background: #fff; transition: transform .15s; box-shadow: 0 1px 2px rgba(0,0,0,.2); }
+  .switch input:checked { background: var(--ink); }
+  .switch input:checked::after { transform: translateX(14px); }
+  .more {
+    border: 0; background: var(--rule-soft); color: var(--ink); border-radius: 6px;
+    font-size: .72rem; font-weight: 650; padding: .1rem .5rem;
+  }
+  .more[aria-expanded="true"] { background: var(--ink); color: #fff; }
+  .related { grid-column: 2 / -1; margin-top: .5rem; border-left: 2px solid var(--rule); padding-left: .85rem; display: grid; gap: .1rem; }
+  .related[hidden] { display: none; }
+  .rel { display: grid; grid-template-columns: 1.1rem 6.5rem 1fr auto; gap: .6rem; align-items: baseline; padding: .3rem 0; font-size: .83rem; }
+  .rel input { width: 14px; height: 14px; accent-color: var(--ink); cursor: pointer; }
+  .rel b { color: var(--ink-2); font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .rel a { color: var(--ink-2); text-decoration: none; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .rel a:hover { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+  .rel time { font-size: .75rem; color: var(--muted); }
+
+  /* ── admin ── */
+  .admin-head { margin: 2.25rem 0 1rem; font-size: 1.05rem; font-weight: 700; letter-spacing: -0.01em; }
+  .kw-list { display: flex; flex-wrap: wrap; gap: .45rem; margin-bottom: 1rem; }
+  .kw-item { display: inline-flex; align-items: center; gap: .35rem; height: 34px; padding: 0 .35rem 0 .85rem; border-radius: 99px; background: var(--rule-soft); font-size: .85rem; font-weight: 550; }
+  .kw-item button { width: 24px; height: 24px; border-radius: 50%; border: 0; background: transparent; color: var(--muted); font-size: 1rem; line-height: 1; }
+  .kw-item button:hover { background: var(--rule); color: var(--down); }
+  .inline-form { display: flex; gap: .5rem; flex-wrap: wrap; align-items: center; }
+  .field {
+    height: 38px; border: 1px solid var(--rule); border-radius: 10px; padding: 0 .8rem;
+    font-size: .88rem; background: #FAFBFC; min-width: 0; flex: 1 1 220px; max-width: 360px;
+  }
+  .field:focus { outline: none; border-color: var(--focus); background: #fff; }
+  .form-grid { display: grid; grid-template-columns: 8rem minmax(0, 360px); gap: .6rem 1rem; align-items: center; margin-bottom: 1rem; }
+  .form-grid label { font-size: .85rem; color: var(--ink-2); font-weight: 550; }
+  .form-grid .field { max-width: none; }
+  .help { font-size: .8rem; color: var(--ink-2); line-height: 1.65; margin-bottom: 1rem; max-width: 46rem; }
+  .help ol { padding-left: 1.2rem; margin-top: .35rem; }
+  .gh-state { font-size: .8rem; margin-top: .75rem; color: var(--muted); }
+  .btn-row { display: flex; gap: .5rem; flex-wrap: wrap; margin-top: .25rem; }
+
+  /* ── dialog (설정) ── */
+  dialog {
+    border: 0; border-radius: 18px; padding: 1.75rem; width: min(440px, calc(100% - 2rem));
+    color: var(--ink); background: var(--surface); margin: auto;
+    box-shadow: 0 24px 60px rgba(23,32,51,.25);
+  }
+  dialog::backdrop { background: rgba(23,32,51,.45); }
+  dialog h3 { font-size: 1.1rem; font-weight: 700; letter-spacing: -0.02em; }
+  dialog p { font-size: .82rem; color: var(--ink-2); margin: .35rem 0 1.25rem; }
+  dialog fieldset { border: 0; display: grid; gap: .75rem; margin-bottom: 1.25rem; }
+  dialog legend { font-size: .8rem; font-weight: 650; margin-bottom: .6rem; }
+  .row3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: .6rem; }
+  dialog label { display: grid; gap: .3rem; font-size: .75rem; color: var(--ink-2); }
+  dialog input {
+    height: 40px; border: 1px solid var(--rule); border-radius: 10px; padding: 0 .75rem;
+    font-size: .95rem; font-feature-settings: 'tnum'; background: #FAFBFC; width: 100%;
+  }
+  dialog input:focus { outline: none; border-color: var(--focus); background: #fff; }
+  .dlg-btns { display: flex; justify-content: flex-end; gap: .5rem; margin-top: .5rem; }
+  .local-note { font-size: .72rem; color: var(--muted); margin-top: 1rem; }
+
+  /* ── lock ── */
+  #lock { position: fixed; inset: 0; background: var(--page); display: none; align-items: center; justify-content: center; z-index: 50; }
+  #lock.show { display: flex; }
+  .lock-box { background: var(--surface); border-radius: 18px; padding: 2rem; width: min(320px, calc(100% - 2rem)); display: grid; gap: 1rem; }
+  .lock-box h2 { font-size: 1.1rem; font-weight: 700; }
+  .lock-box input {
+    height: 48px; border: 1px solid var(--rule); border-radius: 12px; text-align: center;
+    font-size: 1.3rem; letter-spacing: .35em; background: #FAFBFC;
+  }
+  .lock-box input:focus { outline: none; border-color: var(--focus); }
+  .lock-box input.err { border-color: var(--down); animation: shake .3s; }
+  .lock-box .btn { justify-content: center; height: 44px; }
+  #lockErr { min-height: 1.1rem; font-size: .78rem; color: var(--down); }
+  @keyframes shake { 25% { transform: translateX(-6px); } 75% { transform: translateX(6px); } }
+
+  #toast {
+    position: fixed; left: 50%; bottom: 2rem; transform: translate(-50%, 1rem);
+    background: var(--ink); color: #fff; padding: .7rem 1.1rem; border-radius: 12px;
+    font-size: .85rem; font-weight: 550; opacity: 0; pointer-events: none;
+    transition: opacity .2s, transform .2s; z-index: 60;
+  }
+  #toast.show { opacity: 1; transform: translate(-50%, 0); }
+
+  @media (max-width: 760px) {
+    .wrap { padding: 1.5rem 1rem 3rem; }
+    .panel { padding: 1.25rem; border-radius: 14px; }
+    .table-scroll { margin: 0 -1.25rem; padding: 0 1.25rem; }
+    .race-row { grid-template-columns: 1fr auto; gap: .5rem 1rem; }
+    .race-row .track { grid-column: 1 / -1; }
+    .race-row .gap { grid-column: 1 / -1; text-align: left; display: flex; gap: .75rem; align-items: baseline; }
+    .race-row .gap b { display: inline; }
+    .count { font-size: 1.7rem; text-align: right; }
+    .tabs { gap: 1.5rem; }
+    .search { width: 100%; }
+    .article { grid-template-columns: 1.25rem 1fr; }
+    .article > time { grid-column: 2; grid-row: 3; }
+    .rel { grid-template-columns: 1.1rem 1fr auto; }
+    .rel b { display: none; }
+    .form-grid { grid-template-columns: 1fr; }
+    .track .goal::after { content: none; }
+    .race-row .track { margin-top: .25rem; }
+    .chart { height: 260px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; animation: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<div id="lock" role="dialog" aria-modal="true" aria-labelledby="lockTitle">
+  <form class="lock-box" onsubmit="event.preventDefault(); login();">
+    <h2 id="lockTitle">로그인</h2>
+    <div class="seg" role="group" aria-label="계정 선택" id="userSeg">
+      <button type="button" data-user="admin" aria-pressed="false">관리자</button>
+      <button type="button" data-user="guest" aria-pressed="true">게스트</button>
+    </div>
+    <input id="lockInput" type="password" autocomplete="current-password" placeholder="비밀번호" aria-label="비밀번호">
+    <div id="lockErr" role="alert"></div>
+    <button class="btn primary" type="submit" id="loginBtn">로그인</button>
+  </form>
+</div>
+
+<div class="wrap" id="main" hidden>
+  <header class="top">
+    <div>
+      <h1>삼성전자 노사 동향</h1>
+      <div class="sub">조합원 수와 관련 기사를 자동으로 모아 보여 줍니다. <span id="refreshed"></span></div>
+    </div>
+    <div class="userbox">
+      <span class="role"><i></i><span id="whoami"></span></span>
+      <button class="linkbtn" type="button" onclick="logout()">로그아웃</button>
+    </div>
+  </header>
+
+  <nav class="tabs" role="tablist" aria-label="화면 선택">
+    <a role="tab" id="tab-members" href="#members" data-view="members" aria-controls="view-members">조합원 수</a>
+    <a role="tab" id="tab-news" href="#news" data-view="news" aria-controls="view-news">뉴스 <span class="badge" id="newsBadge" title="오늘 수집된 기사 수"></span></a>
+    <a role="tab" id="tab-etc" href="#etc" data-view="etc" aria-controls="view-etc">기타</a>
+  </nav>
+
+  <div class="view" id="view-members" role="tabpanel" aria-labelledby="tab-members">
+  <div class="toolbar">
+    <span class="sub">3조합 SECU, 4조합 NSEU, 5조합 SELU 홈페이지 공개 수치를 1시간마다 수집합니다.</span>
+    <div class="actions">
+      <button class="btn admin-only" type="button" onclick="openSettings()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
+        과반 기준 설정
+      </button>
+      <button class="btn" type="button" onclick="downloadExcel()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        엑셀 받기
+      </button>
+      <button class="btn primary" type="button" onclick="copyReport()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+        보고 양식 복사
+      </button>
+    </div>
+  </div>
+
+  <section class="panel" aria-labelledby="raceTitle">
+    <div class="panel-head">
+      <h2 id="raceTitle">과반까지 남은 인원</h2>
+      <span class="note" id="raceNote">막대는 각 조합의 과반 기준 대비 비율입니다</span>
+    </div>
+    <div class="race" id="race"><div class="msg">데이터를 불러오는 중입니다</div></div>
+    <div class="total-line" id="totalLine"></div>
+  </section>
+
+  <section class="panel" aria-labelledby="chartTitle">
+    <div class="panel-head">
+      <h2 id="chartTitle">조합원 추이</h2>
+      <div class="seg" role="group" aria-label="조합 선택">
+        <button type="button" data-tab="all" aria-pressed="true">전체</button>
+        <button type="button" data-tab="secu" aria-pressed="false">3조합</button>
+        <button type="button" data-tab="nseu" aria-pressed="false">4조합</button>
+        <button type="button" data-tab="selu" aria-pressed="false">5조합</button>
+      </div>
+    </div>
+    <div class="legend" id="legend"></div>
+    <div class="chart" id="chart"><div class="tip" id="tip"></div></div>
+  </section>
+
+  <section class="panel" aria-labelledby="tableTitle">
+    <div class="panel-head">
+      <h2 id="tableTitle">일별 기록</h2>
+      <span class="note">최신 날짜가 위에 있습니다</span>
+    </div>
+    <div class="table-scroll" id="tableArea"></div>
+    <div class="stamp" id="stamp"></div>
+  </section>
+  </div><!-- /view-members -->
+
+  <div class="view" id="view-news" role="tabpanel" aria-labelledby="tab-news" hidden>
+    <section class="panel" aria-labelledby="newsTitle">
+      <div class="panel-head">
+        <h2 id="newsTitle">관련 기사</h2>
+        <span class="note" id="newsNote">Google 뉴스에서 키워드별로 1시간마다 모아 계속 쌓습니다</span>
+      </div>
+      <div class="news-controls">
+        <div class="chips" id="chips" role="group" aria-label="키워드"></div>
+        <div class="seg" role="group" aria-label="기간" id="periodSeg">
+          <button type="button" data-days="1" aria-pressed="false">오늘</button>
+          <button type="button" data-days="3" aria-pressed="true">3일</button>
+          <button type="button" data-days="7" aria-pressed="false">7일</button>
+          <button type="button" data-days="30" aria-pressed="false">30일</button>
+          <button type="button" data-days="0" aria-pressed="false">전체</button>
+        </div>
+        <input class="search" id="newsSearch" type="search" placeholder="제목, 언론사 검색" aria-label="기사 검색">
+        <label class="switch"><input type="checkbox" id="groupToggle" checked>관련 기사 묶기</label>
+      </div>
+      <div id="newsList"><div class="msg">기사를 불러오는 중입니다</div></div>
+    </section>
+  </div>
+
+  <div class="view" id="view-etc" role="tabpanel" aria-labelledby="tab-etc" hidden>
+    <section class="panel" aria-labelledby="linksTitle">
+      <div class="panel-head"><h2 id="linksTitle">바로가기</h2></div>
+      <div class="links" id="links"></div>
+    </section>
+    <section class="panel" aria-labelledby="statusTitle">
+      <div class="panel-head">
+        <h2 id="statusTitle">수집 상태</h2>
+        <span class="note">자동 수집이 멈췄는지 여기서 확인하세요</span>
+      </div>
+      <table class="status"><tbody id="statusBody"></tbody></table>
+    </section>
+
+    <div class="admin-only">
+      <h2 class="admin-head">관리자 설정</h2>
+
+      <section class="panel" aria-labelledby="kwTitle">
+        <div class="panel-head">
+          <h2 id="kwTitle">뉴스 키워드</h2>
+          <span class="note">저장하면 다음 수집부터 새 키워드로 모읍니다</span>
+        </div>
+        <div class="kw-list" id="kwList"></div>
+        <form class="inline-form" onsubmit="event.preventDefault(); addKeyword();">
+          <input class="field" id="kwInput" placeholder="추가할 키워드 (예: 전삼노)" aria-label="추가할 키워드">
+          <button class="btn" type="submit">추가</button>
+        </form>
+        <div class="btn-row" style="margin-top:1.25rem">
+          <button class="btn primary" type="button" onclick="saveKeywords()">키워드 저장</button>
+          <button class="btn" type="button" onclick="runCollect()">지금 수집 실행</button>
+        </div>
+      </section>
+
+      <section class="panel" aria-labelledby="pwTitle">
+        <div class="panel-head">
+          <h2 id="pwTitle">비밀번호 변경</h2>
+          <span class="note">바꿀 계정만 입력하세요. 8자 이상</span>
+        </div>
+        <div class="form-grid">
+          <label for="pw-admin">관리자</label><input class="field" id="pw-admin" type="password" autocomplete="new-password" placeholder="새 비밀번호">
+          <label for="pw-guest">게스트</label><input class="field" id="pw-guest" type="password" autocomplete="new-password" placeholder="새 비밀번호">
+        </div>
+        <button class="btn primary" type="button" onclick="savePasswords()">비밀번호 저장</button>
+      </section>
+
+      <section class="panel" aria-labelledby="ghTitle">
+        <div class="panel-head">
+          <h2 id="ghTitle">GitHub 연결</h2>
+          <span class="note">설정을 저장하려면 필요합니다</span>
+        </div>
+        <div class="help">
+          키워드, 과반 기준, 비밀번호는 저장소의 config.json에 저장됩니다. 저장하려면 이 저장소에 쓰기 권한이 있는 GitHub 토큰이 필요합니다. 토큰은 코드에 들어가지 않고 이 브라우저에만 보관됩니다.
+          <ol>
+            <li>GitHub 오른쪽 위 프로필 → Settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token</li>
+            <li>Repository access에서 이 저장소만 선택</li>
+            <li>Permissions에서 Contents와 Actions를 Read and write로 설정</li>
+            <li>만든 토큰을 아래에 붙여 넣고 연결 확인</li>
+          </ol>
+        </div>
+        <div class="form-grid">
+          <label for="ghRepo">저장소</label><input class="field" id="ghRepo" placeholder="아이디/저장소이름">
+          <label for="ghToken">토큰</label><input class="field" id="ghToken" type="password" autocomplete="off" placeholder="github_pat_로 시작">
+        </div>
+        <div class="btn-row">
+          <button class="btn primary" type="button" onclick="connectGitHub()">연결 확인</button>
+          <button class="btn" type="button" onclick="forgetToken()">이 브라우저에서 토큰 지우기</button>
+        </div>
+        <div class="gh-state" id="ghState"></div>
+      </section>
+    </div>
+  </div>
+</div>
+
+<div class="selbar" id="selbar" role="region" aria-label="선택한 기사">
+  <b id="selCount">0건 선택</b>
+  <button class="btn" type="button" onclick="clearPicks()">선택 해제</button>
+  <button class="btn light" type="button" onclick="copyNews()">보고 형식으로 복사</button>
+</div>
+
+<dialog id="settings" aria-labelledby="setTitle">
+  <form method="dialog" onsubmit="saveSettings(event)">
+    <h3 id="setTitle">과반 기준 설정</h3>
+    <p>조합별 과반 기준 인원을 입력하세요. 비워 두면 기준 없이 표시합니다.</p>
+    <fieldset>
+      <legend>과반 기준 인원</legend>
+      <div class="row3">
+        <label>3조합<input id="in-secu" inputmode="numeric" placeholder="미설정"></label>
+        <label>4조합<input id="in-nseu" inputmode="numeric" placeholder="미설정"></label>
+        <label>5조합<input id="in-selu" inputmode="numeric" placeholder="미설정"></label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>보고 양식 비율 계산용 인원</legend>
+      <div class="row3">
+        <label>DX<input id="in-dx" inputmode="numeric"></label>
+        <label>DS<input id="in-ds" inputmode="numeric"></label>
+        <label>전체<input id="in-total" inputmode="numeric"></label>
+      </div>
+    </fieldset>
+    <div class="dlg-btns">
+      <button class="btn" type="button" onclick="document.getElementById('settings').close()">취소</button>
+      <button class="btn primary" type="submit">저장</button>
+    </div>
+    <div class="local-note">저장하면 모든 사용자 화면에 반영됩니다. GitHub 연결이 필요합니다.</div>
+  </form>
+</dialog>
+
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script>
+/* ════════ 기본값 (config.json이 없을 때만 사용) ════════ */
+const DATA_URL = 'data.json';
+const CONFIG_URL = 'config.json';
+const DEFAULT_CONFIG = {
+  keywords: ['삼성전자', '삼성전자 노조'],
+  majority: { secu: 26000, nseu: null, selu: 64000, dx: 49103, ds: 76691, total: 125794 },
+  users: {   // 초기 비밀번호: 관리자 admin2026!, 게스트 guest2026! (로그인 후 바로 바꾸세요)
+    admin: '7ac2d7c8cc215f5428e0504e75f2ecebb60712dbfc53682c227aef7e20d4c631',
+    guest: '89989ec11188ea36714688becfe6674b010f48f38a461b8bb6b6d4d71b80cd03',
+  },
+};
+/* ════════════════════════════════════════════ */
+
+const UNIONS = [
+  { key: 'secu', label: '3조합', en: 'SECU', url: 'https://secunion.co.kr',      color: '#2a78d6' },
+  { key: 'nseu', label: '4조합', en: 'NSEU', url: 'https://samsunglabor.co.kr',  color: '#eb6834' },
+  { key: 'selu', label: '5조합', en: 'SELU', url: 'https://selunion.co.kr',      color: '#1baf7a' },
+];
+const KEYS = UNIONS.map(u => u.key);
+const DAYS = ['일', '월', '화', '수', '목', '금', '토'];
+
+let CONFIG = JSON.parse(JSON.stringify(DEFAULT_CONFIG));
+let MAJORITY = CONFIG.majority;
+
+async function loadConfig() {
+  try {
+    const res = await fetch(CONFIG_URL + '?_=' + Date.now());
+    if (res.ok) {
+      const c = await res.json();
+      CONFIG = {
+        keywords: Array.isArray(c.keywords) && c.keywords.length ? c.keywords : DEFAULT_CONFIG.keywords,
+        majority: { ...DEFAULT_CONFIG.majority, ...(c.majority || {}) },
+        users: { ...DEFAULT_CONFIG.users, ...(c.users || {}) },
+      };
+    }
+  } catch (e) {}
+  MAJORITY = CONFIG.majority;
+}
+
+/* ── 로그인 ── */
+let role = sessionStorage.getItem('role');
+let loginUser = 'guest';
+async function sha256(text) {
+  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(text));
+  return [...new Uint8Array(buf)].map(b => b.toString(16).padStart(2, '0')).join('');
+}
+function hashPw(user, pw) { return sha256(`union-tracker:${user}:${pw}`); }
+
+document.querySelectorAll('#userSeg button').forEach(b => b.addEventListener('click', () => {
+  loginUser = b.dataset.user;
+  document.querySelectorAll('#userSeg button').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+  document.getElementById('lockInput').focus();
+}));
+function showLock() {
+  document.getElementById('lock').classList.add('show');
+  setTimeout(() => document.getElementById('lockInput').focus(), 50);
+}
+async function login() {
+  const input = document.getElementById('lockInput');
+  const h = await hashPw(loginUser, input.value);
+  if (h === CONFIG.users[loginUser]) {
+    role = loginUser;
+    sessionStorage.setItem('role', role);
+    document.getElementById('lockErr').textContent = '';
+    input.value = '';
+    enter();
+  } else {
+    input.classList.add('err');
+    document.getElementById('lockErr').textContent = '비밀번호가 맞지 않습니다. 계정을 확인하고 다시 입력하세요.';
+    input.value = '';
+    setTimeout(() => input.classList.remove('err'), 350);
+  }
+}
+function enter() {
+  document.body.classList.toggle('is-admin', role === 'admin');
+  document.getElementById('whoami').textContent = role === 'admin' ? '관리자' : '게스트';
+  showMain();
+  if (role === 'admin') renderAdmin();
+}
+function logout() { sessionStorage.removeItem('role'); location.hash = ''; location.reload(); }
+function showMain() {
+  document.getElementById('lock').classList.remove('show');
+  document.getElementById('main').hidden = false;
+  route();
+}
+
+/* ── 과반 기준 (config.json에 저장) ── */
+function openSettings() {
+  ['secu', 'nseu', 'selu', 'dx', 'ds', 'total'].forEach(k => {
+    document.getElementById('in-' + k).value = MAJORITY[k] ? comma(MAJORITY[k]) : '';
+  });
+  document.getElementById('settings').showModal();
+}
+async function saveSettings(e) {
+  const num = id => { const v = parseInt(document.getElementById(id).value.replace(/[^\d]/g, ''), 10); return v > 0 ? v : null; };
+  KEYS.forEach(k => { MAJORITY[k] = num('in-' + k); });
+  ['dx', 'ds', 'total'].forEach(k => { MAJORITY[k] = num('in-' + k) ?? MAJORITY[k]; });
+  renderAll();
+  await commitConfig('과반 기준 변경', '과반 기준을 저장했습니다');
+}
+
+/* ── GitHub 저장 ── */
+function ghRepo() {
+  const saved = localStorage.getItem('gh-repo');
+  if (saved) return saved;
+  const m = location.hostname.match(/^([^.]+)\.github\.io$/);
+  const repo = location.pathname.split('/').filter(Boolean)[0];
+  return m && repo ? `${m[1]}/${repo}` : '';
+}
+function ghTokenValue() { try { return localStorage.getItem('gh-token') || ''; } catch (e) { return ''; } }
+async function gh(path, opts = {}) {
+  return fetch(`https://api.github.com/repos/${ghRepo()}${path}`, {
+    ...opts,
+    headers: { Authorization: 'Bearer ' + ghTokenValue(), Accept: 'application/vnd.github+json', ...(opts.headers || {}) },
+  });
+}
+function ghError(res, what) {
+  if (res.status === 401) return '토큰이 올바르지 않거나 만료됐습니다. 기타 탭의 GitHub 연결에서 토큰을 다시 넣으세요.';
+  if (res.status === 403 || res.status === 404) return `토큰에 ${what} 권한이 없거나 저장소 이름이 다릅니다. GitHub 연결 설정을 확인하세요.`;
+  return `GitHub 응답 오류(${res.status})로 저장하지 못했습니다.`;
+}
+function b64(str) {
+  const bytes = new TextEncoder().encode(str);
+  let bin = ''; bytes.forEach(b => { bin += String.fromCharCode(b); });
+  return btoa(bin);
+}
+async function commitConfig(message, okMsg) {
+  if (!ghTokenValue() || !ghRepo()) {
+    toast('화면에만 적용했습니다. 모두에게 반영하려면 기타 탭에서 GitHub를 연결하세요.');
+    return false;
+  }
+  try {
+    const cur = await gh('/contents/config.json');
+    if (!cur.ok && cur.status !== 404) { toast(ghError(cur, 'Contents 읽기')); return false; }
+    const sha = cur.ok ? (await cur.json()).sha : undefined;
+    const body = { message, content: b64(JSON.stringify(CONFIG, null, 2) + '\n') };
+    if (sha) body.sha = sha;
+    const put = await gh('/contents/config.json', { method: 'PUT', body: JSON.stringify(body) });
+    if (!put.ok) { toast(ghError(put, 'Contents 쓰기')); return false; }
+    toast(okMsg + '. 1~2분 뒤 모든 화면에 반영됩니다');
+    return true;
+  } catch (e) {
+    toast('GitHub에 연결하지 못했습니다. 인터넷 연결을 확인하세요.');
+    return false;
+  }
+}
+async function connectGitHub() {
+  const repo = document.getElementById('ghRepo').value.trim();
+  const token = document.getElementById('ghToken').value.trim();
+  try {
+    if (repo) localStorage.setItem('gh-repo', repo);
+    if (token) localStorage.setItem('gh-token', token);
+  } catch (e) {}
+  document.getElementById('ghToken').value = '';
+  const st = document.getElementById('ghState');
+  st.textContent = '확인 중입니다';
+  const res = await gh('').catch(() => null);
+  if (!res) { st.textContent = 'GitHub에 연결하지 못했습니다.'; return; }
+  if (!res.ok) { st.textContent = ghError(res, '저장소 읽기'); return; }
+  const info = await res.json();
+  st.innerHTML = info.permissions?.push
+    ? `<span class="ok-dot"></span>${esc(info.full_name)}에 연결됐습니다. 이제 설정을 저장할 수 있습니다.`
+    : `<span class="warn-dot"></span>${esc(info.full_name)}을 읽을 수는 있지만 쓰기 권한이 없습니다. 토큰 권한을 확인하세요.`;
+}
+function forgetToken() {
+  try { localStorage.removeItem('gh-token'); } catch (e) {}
+  document.getElementById('ghState').textContent = '이 브라우저에서 토큰을 지웠습니다.';
+}
+
+/* ── 관리자: 키워드, 비밀번호 ── */
+let draftKeywords = [];
+function renderAdmin() {
+  draftKeywords = [...CONFIG.keywords];
+  renderKwList();
+  document.getElementById('ghRepo').value = ghRepo();
+  document.getElementById('ghState').innerHTML = ghTokenValue()
+    ? '<span class="ok-dot"></span>이 브라우저에 토큰이 저장돼 있습니다.'
+    : '<span class="warn-dot"></span>아직 연결하지 않았습니다.';
+}
+function renderKwList() {
+  document.getElementById('kwList').innerHTML = draftKeywords.length
+    ? draftKeywords.map((k, i) => `<span class="kw-item">${esc(k)}<button type="button" aria-label="${esc(k)} 삭제" onclick="removeKeyword(${i})">×</button></span>`).join('')
+    : '<span class="note">키워드가 없습니다. 하나 이상 추가하세요.</span>';
+}
+function addKeyword() {
+  const el = document.getElementById('kwInput');
+  const v = el.value.trim().replace(/\s+/g, ' ');
+  if (v && !draftKeywords.includes(v)) draftKeywords.push(v);
+  el.value = ''; renderKwList();
+}
+function removeKeyword(i) { draftKeywords.splice(i, 1); renderKwList(); }
+async function saveKeywords() {
+  if (!draftKeywords.length) { toast('키워드를 하나 이상 넣으세요'); return; }
+  CONFIG.keywords = [...draftKeywords];
+  await commitConfig('뉴스 키워드 변경: ' + CONFIG.keywords.join(', '), '키워드를 저장했습니다');
+}
+async function savePasswords() {
+  let changed = 0;
+  for (const u of ['admin', 'guest']) {
+    const el = document.getElementById('pw-' + u);
+    if (!el.value) continue;
+    if (el.value.length < 8) { toast('비밀번호는 8자 이상으로 정하세요'); return; }
+    CONFIG.users[u] = await hashPw(u, el.value);
+    changed++;
+  }
+  if (!changed) { toast('바꿀 비밀번호를 입력하세요'); return; }
+  const ok = await commitConfig('비밀번호 변경', '비밀번호를 저장했습니다');
+  if (ok) ['admin', 'guest'].forEach(u => { document.getElementById('pw-' + u).value = ''; });
+}
+async function runCollect() {
+  if (!ghTokenValue()) { toast('기타 탭에서 GitHub를 먼저 연결하세요'); return; }
+  const res = await gh('/actions/workflows/scrape.yml/dispatches', {
+    method: 'POST', body: JSON.stringify({ ref: 'main' }),
+  }).catch(() => null);
+  if (res && res.status === 204) toast('수집을 시작했습니다. 1~2분 뒤 새로고침하세요');
+  else toast(res ? ghError(res, 'Actions 실행') : 'GitHub에 연결하지 못했습니다.');
+}
+
+/* ── 공통 ── */
+function comma(n) { return Number(n).toLocaleString('ko-KR'); }
+function todayKST() {
+  const kst = new Date(new Date().toLocaleString('en-US', { timeZone: 'Asia/Seoul' }));
+  return [kst.getFullYear(), String(kst.getMonth() + 1).padStart(2, '0'), String(kst.getDate()).padStart(2, '0')].join('-');
+}
+function dow(dateStr) { const [y, m, d] = dateStr.split('-').map(Number); return DAYS[new Date(y, m - 1, d).getDay()]; }
+function fmtDateLabel(dateStr) {
+  const [y, m, d] = dateStr.split('-');
+  return `${y.slice(2)}.${m}.${d} (${dow(dateStr)})`;
+}
+function signed(d) { return d > 0 ? '+' + comma(d) : d < 0 ? '−' + comma(-d) : '0'; }
+function toast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg; t.classList.add('show');
+  clearTimeout(t._h); t._h = setTimeout(() => t.classList.remove('show'), 2200);
+}
+
+/* ── 초기 데이터 (자동 수집 이전) ── */
+const SEED = [
+  ['2026-05-01',2359,17789,75170],['2026-05-02',2359,17789,74750],['2026-05-03',2359,17789,74750],
+  ['2026-05-04',2359,17721,74373],['2026-05-05',2359,17721,74373],['2026-05-06',2360,17655,74215],
+  ['2026-05-07',2360,16498,73430],['2026-05-08',2360,15920,73306],['2026-05-09',2360,15920,73030],
+  ['2026-05-10',2360,15920,72930],['2026-05-11',2360,15462,72875],['2026-05-12',2360,15462,72750],
+  ['2026-05-13',2360,15462,72725],['2026-05-14',2438,15462,72405],['2026-05-15',2602,15266,71750],
+  ['2026-05-16',2602,15266,71765],['2026-05-17',2602,15266,71625],['2026-05-18',2602,15182,71375],
+  ['2026-05-19',3019,15123,70965],['2026-05-20',3409,15123,70985],['2026-05-21',11172,16286,70850],
+  ['2026-05-22',12893,19957,71075],['2026-05-23',13133,19957,71235],['2026-05-24',13133,19957,71235],
+  ['2026-05-25',13133,19957,71235],['2026-05-26',14204,20306,71155],['2026-05-27',14453,20306,71040],
+  ['2026-05-28',16290,20600,69935],['2026-05-29',18101,20604,67860],['2026-05-30',18101,20604,67860],
+  ['2026-05-31',18101,20604,67860],['2026-06-01',19601,20758,66150],['2026-06-02',20368,20909,65870],
+  ['2026-06-03',20368,20909,65290],['2026-06-04',21015,20968,58270],['2026-06-05',22222,20996,58470],
+  ['2026-06-06',22222,20996,57870],['2026-06-07',22222,20996,57870],['2026-06-08',22680,20996,57870],
+  ['2026-06-09',23406,21531,57480],['2026-06-10',23902,21059,57280],['2026-06-11',24301,21023,57185],
+  ['2026-06-12',24495,21028,57030],['2026-06-13',24495,21028,56810],['2026-06-14',24694,21028,56810],
+].map(([date, secu, nseu, selu]) => ({ date, secu, nseu, selu }));
+
+/* ── 데이터 로드 (원본과 같은 병합 규칙) ── */
+let currentRows = [];
+let lastMeta = null;
+
+function metaMatchesDate(metaStr, recordDate) {
+  if (!metaStr) return false;
+  if (metaStr.includes('-')) return metaStr.startsWith(recordDate);
+  const m = metaStr.match(/(\d{4})년\s*(\d{1,2})월\s*(\d{1,2})일/);
+  if (!m) return false;
+  return `${m[1]}-${String(m[2]).padStart(2, '0')}-${String(m[3]).padStart(2, '0')}` === recordDate;
+}
+
+async function load() {
+  let raw;
+  try {
+    const res = await fetch(DATA_URL + '?_=' + Date.now());
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    raw = await res.json();
+  } catch (e) {
+    document.getElementById('race').innerHTML =
+      `<div class="msg error">data.json을 읽지 못했습니다 (${e.message}). 저장소에 data.json이 있는지 확인하세요.</div>`;
+    return;
+  }
+
+  const map = {};
+  SEED.forEach(r => { map[r.date] = { ...r, _meta: null }; });
+  raw.forEach(r => {
+    const d = r.date;
+    const pick = k => (r[k] && metaMatchesDate(r[k].date, d)) ? parseInt(r[k].count, 10) : null;
+    map[d] = { date: d, secu: pick('secu'), nseu: pick('nseu'), selu: pick('selu'),
+               _meta: { secu: r.secu?.date, nseu: r.nseu?.date, selu: r.selu?.date } };
+  });
+  const today = todayKST();
+  if (!map[today]) map[today] = { date: today, secu: null, nseu: null, selu: null, _meta: null };
+
+  const rows = Object.values(map).sort((a, b) => a.date.localeCompare(b.date));
+
+  // 이후 값이 있는 빈 칸은 직전 값으로 채움
+  KEYS.forEach(k => {
+    for (let i = 0; i < rows.length; i++) {
+      if (rows[i][k] !== null) continue;
+      let prev = null;
+      for (let j = i - 1; j >= 0; j--) if (rows[j][k] !== null) { prev = rows[j][k]; break; }
+      if (prev !== null && rows.slice(i + 1).some(r => r[k] !== null)) rows[i][k] = prev;
+    }
+  });
+
+  rows.forEach((r, i) => {
+    if (i === 0) { r._diff = { secu: 0, nseu: 0, selu: 0 }; return; }
+    const p = rows[i - 1];
+    r._diff = {};
+    KEYS.forEach(k => { r._diff[k] = r[k] !== null && p[k] !== null ? r[k] - p[k] : null; });
+  });
+
+  currentRows = rows;
+  lastMeta = [...rows].reverse().find(r => r._meta)?._meta || null;
+
+  const now = new Date().toLocaleString('ko-KR', { timeZone: 'Asia/Seoul', hour12: false, month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' });
+  document.getElementById('refreshed').textContent = `마지막 조회 ${now}`;
+  renderAll();
+  renderStatus();
+}
+
+function latestOf(k) {
+  const rev = [...currentRows].reverse();
+  const lr = rev.find(r => r[k] !== null);
+  if (!lr) return { val: null, prev: null };
+  const idx = currentRows.indexOf(lr);
+  const pr = currentRows.slice(0, idx).reverse().find(r => r[k] !== null);
+  return { val: lr[k], prev: pr ? pr[k] : null };
+}
+
+function renderAll() {
+  if (!currentRows.length) return;
+  renderRace();
+  renderTable();
+  renderChart();
+}
+
+/* ── 과반까지 남은 인원 ── */
+function renderRace() {
+  const GOAL_AT = 0.8; // 과반 기준선이 놓이는 위치(막대 폭의 80%)
+  let html = '';
+  let sum = 0, sumPrev = 0, complete = true;
+  UNIONS.forEach(u => {
+    const { val, prev } = latestOf(u.key);
+    if (val === null) { complete = false; return; }
+    sum += val; sumPrev += (prev ?? val);
+    const d = prev !== null ? val - prev : 0;
+    const dCls = d > 0 ? 'up' : d < 0 ? 'down' : '';
+    const dTxt = d === 0 ? '전일과 같음' : `전일 대비 ${signed(d)}`;
+    const thr = MAJORITY[u.key];
+
+    let trackHtml, gapHtml;
+    if (thr) {
+      const ratio = val / thr;
+      const w = Math.min(ratio * GOAL_AT, 1) * 100;
+      const remain = thr - val;
+      trackHtml = `<div class="track" role="img" aria-label="과반 기준의 ${Math.round(ratio * 100)}%">
+          <div class="rail"></div>
+          <div class="fill" style="width:${w}%;background:${u.color}"></div>
+          <div class="goal" style="left:calc(${GOAL_AT * 100}% - 1px)"></div>
+        </div>`;
+      gapHtml = remain <= 0
+        ? `<b class="ok">과반 달성, ${comma(-remain)}명 초과</b><small>기준 ${comma(thr)}명의 ${Math.round(ratio * 100)}%</small>`
+        : `<b>${comma(remain)}명 남음</b><small>기준 ${comma(thr)}명의 ${Math.round(ratio * 100)}%</small>`;
+    } else {
+      trackHtml = `<div class="unset">과반 기준이 아직 없습니다. <button class="admin-only" type="button" onclick="openSettings()">기준 입력</button></div>`;
+      gapHtml = '';
+    }
+
+    html += `<div class="race-row">
+      <div class="who"><span class="sw" style="background:${u.color}"></span>
+        <a href="${u.url}" target="_blank" rel="noopener"><b>${u.label}</b><small>${u.en} 홈페이지</small></a></div>
+      <div class="count">${comma(val)}<span class="unit">명</span><span class="delta ${dCls}">${dTxt}</span></div>
+      ${trackHtml}
+      <div class="gap">${gapHtml}</div>
+    </div>`;
+  });
+  document.getElementById('race').innerHTML = html;
+
+  if (complete) {
+    const td = sum - sumPrev;
+    document.getElementById('totalLine').innerHTML =
+      `<span>세 조합 합계<strong>${comma(sum)}명</strong></span>
+       <span>전일 대비<strong class="${td > 0 ? 'c-up' : td < 0 ? 'c-down' : ''}">${td === 0 ? '변동 없음' : signed(td) + '명'}</strong></span>`;
+  }
+}
+
+/* ── 표 ── */
+function deltaCell(d) {
+  if (d === null || d === undefined) return `<span class="c-zero">–</span>`;
+  if (d === 0) return `<span class="c-zero">0</span>`;
+  return `<span class="${d > 0 ? 'c-up' : 'c-down'}">${signed(d)}</span>`;
+}
+function renderTable() {
+  const today = todayKST();
+  let h = `<table><thead><tr><th></th>`;
+  UNIONS.forEach(u => { h += `<th class="grp" colspan="2"><i style="background:${u.color}"></i>${u.label}</th>`; });
+  h += `<th class="grp" colspan="2">합계</th></tr><tr><th class="left" style="padding-left:0">일자</th>`;
+  for (let i = 0; i < 4; i++) h += `<th style="padding-left:1.25rem">인원</th><th>증감</th>`;
+  h += `</tr></thead><tbody>`;
+
+  [...currentRows].reverse().forEach(r => {
+    const all = KEYS.every(k => r[k] !== null);
+    const total = all ? KEYS.reduce((s, k) => s + r[k], 0) : null;
+    const tDiff = r._diff && KEYS.every(k => r._diff[k] !== null) ? KEYS.reduce((s, k) => s + r._diff[k], 0) : null;
+    h += `<tr class="${r.date === today ? 'today' : ''}"><td class="left date">${fmtDateLabel(r.date)}${r.date === today ? ' 오늘' : ''}</td>`;
+    KEYS.forEach(k => {
+      const v = r[k];
+      const maj = MAJORITY[k] && v !== null && v >= MAJORITY[k] ? '<span class="maj-dot">과반</span>' : '';
+      h += `<td class="first">${v !== null ? comma(v) + maj : '<span class="c-pend">수집 전</span>'}</td><td>${deltaCell(r._diff?.[k])}</td>`;
+    });
+    h += `<td class="first"><b>${total !== null ? comma(total) : '<span class="c-pend">수집 전</span>'}</b></td><td>${total !== null ? deltaCell(tDiff) : deltaCell(null)}</td></tr>`;
+  });
+  h += `</tbody></table>`;
+  document.getElementById('tableArea').innerHTML = h;
+
+  document.getElementById('stamp').innerHTML = lastMeta
+    ? UNIONS.map(u => `<span>${u.label} 홈페이지 기준 ${lastMeta[u.key] || '–'}</span>`).join('')
+    : '';
+}
+
+/* ── 추이 차트 (SVG) ── */
+let currentTab = 'all';
+document.querySelectorAll('.seg button').forEach(b => b.addEventListener('click', () => {
+  currentTab = b.dataset.tab;
+  document.querySelectorAll('.seg button').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+  renderChart();
+}));
+
+function niceTicks(min, max, count = 5) {
+  const span = max - min || 1;
+  const raw = span / count;
+  const mag = Math.pow(10, Math.floor(Math.log10(raw)));
+  const step = [1, 2, 2.5, 5, 10].map(s => s * mag).find(s => span / s <= count) || 10 * mag;
+  const lo = Math.floor(min / step) * step, hi = Math.ceil(max / step) * step;
+  const t = []; for (let v = lo; v <= hi + 1e-9; v += step) t.push(v);
+  return t;
+}
+function fmtTick(v) { return v >= 10000 ? (v / 10000).toLocaleString('ko-KR', { maximumFractionDigits: 1 }) + '만' : comma(v); }
+
+function renderChart() {
+  const box = document.getElementById('chart');
+  if (!currentRows.length || !box.clientWidth) return;
+  const rows = currentRows.filter(r => KEYS.some(k => r[k] !== null));
+  const shown = currentTab === 'all' ? UNIONS : UNIONS.filter(u => u.key === currentTab);
+
+  // 범례
+  let lg = shown.map(u => `<span><i style="background:${u.color}"></i>${u.label}</span>`).join('');
+  if (shown.some(u => MAJORITY[u.key])) lg += `<span><i class="dash"></i>과반 기준</span>`;
+  document.getElementById('legend').innerHTML = lg;
+
+  const W = box.clientWidth, H = box.clientHeight;
+  const m = { t: 10, r: 56, b: 28, l: 44 };
+  const iw = W - m.l - m.r, ih = H - m.t - m.b;
+
+  const vals = [];
+  shown.forEach(u => { rows.forEach(r => r[u.key] !== null && vals.push(r[u.key])); if (MAJORITY[u.key]) vals.push(MAJORITY[u.key]); });
+  const lo0 = currentTab === 'all' ? 0 : Math.min(...vals) * 0.95;
+  const ticks = niceTicks(lo0, Math.max(...vals) * 1.03);
+  const y0 = ticks[0], y1 = ticks[ticks.length - 1];
+  const x = i => m.l + (rows.length < 2 ? iw / 2 : (i / (rows.length - 1)) * iw);
+  const y = v => m.t + ih - ((v - y0) / (y1 - y0)) * ih;
+
+  let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="날짜별 조합원 수 추이">`;
+  ticks.forEach((t, i) => {
+    s += `<line class="${i === 0 ? 'base' : 'grid'}" x1="${m.l}" x2="${m.l + iw}" y1="${y(t)}" y2="${y(t)}"/>`;
+    s += `<text class="tick" x="${m.l - 8}" y="${y(t) + 4}" text-anchor="end">${fmtTick(t)}</text>`;
+  });
+  // x 눈금: 매월 1일
+  rows.forEach((r, i) => {
+    if (r.date.endsWith('-01') || i === 0) {
+      const [, mm] = r.date.split('-').map(Number);
+      s += `<text class="tick" x="${x(i)}" y="${H - 8}" text-anchor="${i === 0 ? 'start' : 'middle'}">${mm}월</text>`;
+    }
+  });
+  // 과반 기준선
+  shown.forEach(u => {
+    const thr = MAJORITY[u.key];
+    if (!thr) return;
+    s += `<line x1="${m.l}" x2="${m.l + iw}" y1="${y(thr)}" y2="${y(thr)}" stroke="${u.color}" stroke-width="1.25" stroke-dasharray="5 4" opacity=".7"/>`;
+  });
+  // 선
+  const ends = [];
+  shown.forEach(u => {
+    let d = '', pen = false, last = null;
+    rows.forEach((r, i) => {
+      const v = r[u.key];
+      if (v === null) return;
+      d += (pen ? 'L' : 'M') + x(i).toFixed(1) + ',' + y(v).toFixed(1);
+      pen = true; last = { i, v };
+    });
+    if (currentTab !== 'all' && last) {
+      const first = rows.findIndex(r => r[u.key] !== null);
+      s += `<path d="${d}L${x(last.i)},${y(y0)}L${x(first)},${y(y0)}Z" fill="${u.color}" opacity=".08"/>`;
+    }
+    s += `<path d="${d}" fill="none" stroke="${u.color}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>`;
+    if (last) ends.push({ u, ...last });
+  });
+  // 끝점 라벨 (겹치지 않게 밀어내기)
+  ends.sort((a, b) => y(a.v) - y(b.v));
+  let prevY = -Infinity;
+  ends.forEach(e => {
+    const cy = y(e.v);
+    const ly = Math.max(cy + 4, prevY + 15); prevY = ly;
+    s += `<circle cx="${x(e.i)}" cy="${cy}" r="4" fill="${e.u.color}" stroke="#fff" stroke-width="2"/>`;
+    s += `<text x="${x(e.i) + 9}" y="${ly}" font-size="11.5" font-weight="600" fill="#172033">${e.u.label}</text>`;
+  });
+  s += `<g id="hover" style="display:none"><line id="hx" y1="${m.t}" y2="${m.t + ih}" stroke="#4A5568" stroke-width="1"/>`;
+  shown.forEach(u => { s += `<circle data-k="${u.key}" r="4.5" fill="${u.color}" stroke="#fff" stroke-width="2"/>`; });
+  s += `</g><rect id="hit" x="${m.l}" y="${m.t}" width="${iw}" height="${ih}" fill="transparent"/></svg>`;
+
+  const tip = document.getElementById('tip');
+  box.innerHTML = s; box.appendChild(tip);
+
+  const svg = box.querySelector('svg'), hover = svg.querySelector('#hover'), hx = svg.querySelector('#hx');
+  const move = ev => {
+    const rect = svg.getBoundingClientRect();
+    const px = (ev.touches ? ev.touches[0].clientX : ev.clientX) - rect.left;
+    const i = Math.max(0, Math.min(rows.length - 1, Math.round((px - m.l) / iw * (rows.length - 1))));
+    const r = rows[i];
+    hover.style.display = '';
+    hx.setAttribute('x1', x(i)); hx.setAttribute('x2', x(i));
+    hover.querySelectorAll('circle').forEach(c => {
+      const v = r[c.dataset.k];
+      c.style.display = v === null ? 'none' : '';
+      if (v !== null) { c.setAttribute('cx', x(i)); c.setAttribute('cy', y(v)); }
+    });
+    tip.innerHTML = `<div class="d">${fmtDateLabel(r.date)}</div>` + shown.map(u =>
+      `<div class="r"><i style="background:${u.color}"></i>${u.label}<b>${r[u.key] !== null ? comma(r[u.key]) + '명' : '–'}</b></div>`).join('');
+    tip.style.opacity = 1;
+    const tw = tip.offsetWidth;
+    tip.style.left = (x(i) + 14 + tw > W ? x(i) - 14 - tw : x(i) + 14) + 'px';
+    tip.style.top = m.t + 'px';
+  };
+  const leave = () => { hover.style.display = 'none'; tip.style.opacity = 0; };
+  const hit = svg.querySelector('#hit');
+  hit.addEventListener('mousemove', move);
+  hit.addEventListener('touchmove', move, { passive: true });
+  hit.addEventListener('mouseleave', leave);
+  hit.addEventListener('touchend', leave);
+}
+let rz; window.addEventListener('resize', () => { clearTimeout(rz); rz = setTimeout(renderChart, 150); });
+
+/* ── 보고 양식 복사 (원본 형식 유지) ── */
+function getReportDates(rows, today) {
+  const ANCHOR = '2026-05-20';
+  const t = new Date(today + 'T00:00:00+09:00');
+  const dw = t.getDay();
+  const thisMonday = new Date(t); thisMonday.setDate(t.getDate() - (dw === 0 ? 6 : dw - 1));
+  const lastMonday = new Date(thisMonday); lastMonday.setDate(thisMonday.getDate() - 7);
+  const lastFriday = new Date(lastMonday); lastFriday.setDate(lastMonday.getDate() + 4);
+  const fmt = d => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+  const lws = fmt(lastMonday), lwe = fmt(lastFriday), tws = fmt(thisMonday);
+  const inc = new Set();
+  rows.forEach(r => {
+    if (r.date < ANCHOR) return;
+    if (r.date === ANCHOR) { inc.add(r.date); return; }
+    if (new Date(r.date + 'T00:00:00+09:00').getDay() === 5) { inc.add(r.date); return; }
+    if (r.date >= lws && r.date <= lwe) { inc.add(r.date); return; }
+    if (r.date >= tws && r.date <= today) inc.add(r.date);
+  });
+  return [...inc].sort();
+}
+function getRatioCfg() {
+  return {
+    secu: [{ base: MAJORITY.dx, label: 'DX比' }, { base: MAJORITY.total, label: '전체比' }],
+    nseu: [{ base: MAJORITY.dx, label: 'DX比' }, { base: MAJORITY.total, label: '전체比' }],
+    selu: [{ base: MAJORITY.ds, label: 'DS比' }, { base: MAJORITY.total, label: '전체比' }],
+  };
+}
+function copyReport() {
+  if (!currentRows.length) return;
+  const today = todayKST();
+  const dateSet = new Set(getReportDates(currentRows, today));
+  const kst = new Date(new Date().toLocaleString('en-US', { timeZone: 'Asia/Seoul' }));
+  let text = `[ '${String(kst.getFullYear()).slice(2)}.${kst.getMonth() + 1}.${kst.getDate()}일, 조합원 수 추이 ]\n`;
+  UNIONS.forEach(u => {
+    const latest = latestOf(u.key).val;
+    let ratio = '';
+    if (latest != null) {
+      ratio = ' (' + getRatioCfg()[u.key].filter(c => c.base).map(c => `${c.label} ${(latest / c.base * 100).toFixed(1)}%`).join(', ') + ')';
+    }
+    text += `\no ${u.label}${ratio}\n\n`;
+    const list = currentRows.filter(r => dateSet.has(r.date) && r[u.key] !== null);
+    list.forEach((r, i) => {
+      const [, mm, dd] = r.date.split('-').map(Number);
+      const ds = ` ${mm}.${dd}(${dow(r.date)})`;
+      const val = comma(r[u.key]);
+      if (i === 0) { text += `${ds.padEnd(10)}${val}명\n`; return; }
+      const diff = r[u.key] - list[i - 1][u.key];
+      const dstr = diff === 0 ? '(+0)' : diff > 0 ? `(+${comma(diff)})` : `(${comma(diff)})`;
+      text += `${ds.padEnd(10)}${val}명${dstr}\n`;
+    });
+  });
+  navigator.clipboard.writeText(text)
+    .then(() => toast('보고 양식을 복사했습니다'))
+    .catch(() => toast('복사하지 못했습니다. 브라우저의 클립보드 권한을 확인하세요.'));
+}
+
+/* ── 엑셀 ── */
+function downloadExcel() {
+  if (!currentRows.length) return;
+  if (typeof XLSX === 'undefined') { toast('엑셀 모듈을 불러오는 중입니다. 잠시 후 다시 누르세요.'); return; }
+  const HDR = ['일자', '3조합', '증감', '4조합', '증감', '5조합', '증감', '합계', '증감'];
+  const data = currentRows.map(r => {
+    const total = KEYS.every(k => r[k] !== null) ? KEYS.reduce((s, k) => s + r[k], 0) : null;
+    const tDiff = r._diff && KEYS.every(k => r._diff[k] !== null) ? KEYS.reduce((s, k) => s + r._diff[k], 0) : null;
+    return [fmtDateLabel(r.date), r.secu, r._diff?.secu ?? null, r.nseu, r._diff?.nseu ?? null, r.selu, r._diff?.selu ?? null, total, tDiff];
+  });
+  const ws = XLSX.utils.aoa_to_sheet([HDR, ...data]);
+  ws['!cols'] = [{ wch: 16 }, { wch: 10 }, { wch: 8 }, { wch: 10 }, { wch: 8 }, { wch: 10 }, { wch: 8 }, { wch: 10 }, { wch: 8 }];
+  const wb = XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wb, ws, '조합원현황');
+  XLSX.writeFile(wb, `조합원현황_${todayKST().replace(/-/g, '')}.xlsx`);
+}
+
+/* ════════ 탭 이동 ════════ */
+const VIEWS = ['members', 'news', 'etc'];
+function route() {
+  const v = VIEWS.includes(location.hash.slice(1)) ? location.hash.slice(1) : 'members';
+  VIEWS.forEach(name => {
+    document.getElementById('view-' + name).hidden = name !== v;
+    document.getElementById('tab-' + name).setAttribute('aria-selected', String(name === v));
+  });
+  document.getElementById('selbar').classList.toggle('show', v === 'news' && picks.size > 0);
+  if (v === 'members') renderChart();
+}
+window.addEventListener('hashchange', route);
+
+/* ════════ 뉴스 ════════ */
+const NEWS_DIR = 'news/';
+let NEWS_INDEX = { months: [], keywords: [], fetchedAt: null };
+const monthCache = {};
+let NEWS_ITEMS = [];
+let newsKw = 'all', newsDays = 3, newsQuery = '', grouping = true;
+const picks = new Map();
+
+async function loadNews() {
+  try {
+    const res = await fetch(NEWS_DIR + 'index.json?_=' + Date.now());
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    NEWS_INDEX = await res.json();
+  } catch (e) {
+    document.getElementById('newsList').innerHTML =
+      `<div class="msg">아직 수집된 기사가 없습니다. Actions에서 수집을 한 번 실행하면 기사가 쌓이기 시작합니다.</div>`;
+    renderStatus();
+    return;
+  }
+  Object.keys(monthCache).forEach(k => delete monthCache[k]);
+  await ensureMonths();
+  const today = todayKST();
+  document.getElementById('newsBadge').textContent = NEWS_ITEMS.filter(a => kstDate(a.published) === today).length || '';
+  if (NEWS_INDEX.fetchedAt) document.getElementById('newsNote').textContent = `Google 뉴스 키워드 검색, 마지막 수집 ${fmtStamp(NEWS_INDEX.fetchedAt)}`;
+  renderChips();
+  renderNews();
+  renderStatus();
+}
+function neededMonths() {
+  const all = (NEWS_INDEX.months || []).map(m => m.month);
+  if (!newsDays) return all;
+  const start = new Date(todayKST() + 'T00:00:00+09:00');
+  start.setDate(start.getDate() - (newsDays - 1));
+  const from = start.toLocaleDateString('sv-SE', { timeZone: 'Asia/Seoul' }).slice(0, 7);
+  return all.filter(m => m >= from);
+}
+async function ensureMonths() {
+  const need = neededMonths().filter(m => !monthCache[m]);
+  await Promise.all(need.map(async m => {
+    try {
+      const r = await fetch(`${NEWS_DIR}${m}.json?_=${Date.now()}`);
+      monthCache[m] = r.ok ? (await r.json()).items || [] : [];
+    } catch (e) { monthCache[m] = []; }
+  }));
+  const seen = new Map();
+  Object.values(monthCache).flat().forEach(a => seen.set(a.id, a));
+  NEWS_ITEMS = [...seen.values()];
+}
+function kstDate(iso) { return new Date(iso).toLocaleDateString('sv-SE', { timeZone: 'Asia/Seoul' }); }
+function kstTime(iso) { return new Date(iso).toLocaleTimeString('ko-KR', { timeZone: 'Asia/Seoul', hour: '2-digit', minute: '2-digit', hour12: false }); }
+function fmtStamp(iso) { return new Date(iso).toLocaleString('ko-KR', { timeZone: 'Asia/Seoul', month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit', hour12: false }); }
+function esc(t) { return String(t ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c])); }
+
+function inPeriod(a) {
+  if (!newsDays) return true;
+  const cutoff = new Date(todayKST() + 'T00:00:00+09:00');
+  cutoff.setDate(cutoff.getDate() - (newsDays - 1));
+  return new Date(a.published) >= cutoff;
+}
+function newsKeywords() {
+  const k = NEWS_INDEX.keywords?.length ? NEWS_INDEX.keywords : CONFIG.keywords;
+  return [...new Set([...k, ...NEWS_ITEMS.flatMap(a => a.keywords || [])])];
+}
+function renderChips() {
+  const base = NEWS_ITEMS.filter(inPeriod);
+  let h = `<button class="chip" type="button" data-kw="all" aria-pressed="${newsKw === 'all'}">전체<span>${base.length}</span></button>`;
+  newsKeywords().forEach(k => {
+    const n = base.filter(a => (a.keywords || []).includes(k)).length;
+    if (!n && !(NEWS_INDEX.keywords || []).includes(k)) return;
+    h += `<button class="chip" type="button" data-kw="${esc(k)}" aria-pressed="${newsKw === k}">${esc(k)}<span>${n}</span></button>`;
+  });
+  const box = document.getElementById('chips');
+  box.innerHTML = h;
+  box.querySelectorAll('.chip').forEach(b => b.addEventListener('click', () => { newsKw = b.dataset.kw; renderChips(); renderNews(); }));
+}
+
+/* 관련 기사 묶기: 제목 글자쌍(2글자) 유사도로 사흘 안의 비슷한 기사를 한 묶음으로 */
+const STOPWORDS = ['삼성전자', '삼성', '노조', '노동조합', '단독', '종합', '속보', '포토', '영상', '사진'];
+const GROUP_THRESHOLD = 0.35;
+const sigCache = new Map();
+function titleSig(a) {
+  if (sigCache.has(a.id)) return sigCache.get(a.id);
+  let t = a.title.replace(/\[[^\]]*\]|【[^】]*】|\([^)]*\)/g, ' ');
+  [...newsKeywords(), ...STOPWORDS].sort((x, y) => y.length - x.length).forEach(w => { t = t.split(w).join(' '); });
+  t = t.replace(/[^가-힣a-zA-Z0-9]+/g, '');
+  const s = new Set();
+  for (let i = 0; i < t.length - 1; i++) s.add(t.slice(i, i + 2));
+  sigCache.set(a.id, s);
+  return s;
+}
+function similar(a, b) {
+  const x = titleSig(a), y = titleSig(b);
+  if (x.size < 3 || y.size < 3) return 0;
+  let n = 0; x.forEach(g => { if (y.has(g)) n++; });
+  return 2 * n / (x.size + y.size);
+}
+function groupArticles(list) {
+  const groups = [], active = [];
+  const WINDOW = 3 * 864e5;
+  list.forEach(a => {
+    const t = new Date(a.published).getTime();
+    for (let i = active.length - 1; i >= 0; i--) if (active[i].oldest - t > WINDOW) active.splice(i, 1);
+    const g = grouping && active.find(g => g.items.slice(0, 8).some(b => similar(a, b) >= GROUP_THRESHOLD));
+    if (g) { g.items.push(a); g.oldest = t; }
+    else { const ng = { items: [a], oldest: t }; groups.push(ng); active.push(ng); }
+  });
+  return groups;
+}
+
+function renderNews() {
+  const q = newsQuery.trim().toLowerCase();
+  const list = NEWS_ITEMS
+    .filter(inPeriod)
+    .filter(a => newsKw === 'all' || (a.keywords || []).includes(newsKw))
+    .filter(a => !q || (a.title + ' ' + a.source).toLowerCase().includes(q))
+    .sort((a, b) => b.published.localeCompare(a.published));
+  const box = document.getElementById('newsList');
+  if (!list.length) {
+    box.innerHTML = `<div class="msg">조건에 맞는 기사가 없습니다. 기간을 늘리거나 다른 키워드를 눌러 보세요.</div>`;
+    return;
+  }
+  const groups = groupArticles(list);
+  const byDay = {};
+  groups.forEach(g => { (byDay[kstDate(g.items[0].published)] ||= []).push(g); });
+  const today = todayKST();
+  let h = '';
+  Object.keys(byDay).sort().reverse().forEach(d => {
+    const [, mm, dd] = d.split('-').map(Number);
+    const n = byDay[d].reduce((s, g) => s + g.items.length, 0);
+    h += `<div class="news-day"><h3>${mm}.${dd} (${dow(d)})${d === today ? ' 오늘' : ''}<small>기사 ${n}건${grouping && byDay[d].length !== n ? `, ${byDay[d].length}개 이슈` : ''}</small></h3>`;
+    byDay[d].forEach(g => {
+      const a = g.items[0], rest = g.items.slice(1);
+      const on = picks.has(a.id);
+      const kws = [...new Set(g.items.flatMap(x => x.keywords || []))];
+      h += `<div class="article${on ? ' picked' : ''}">
+        <input type="checkbox" data-id="${esc(a.id)}" ${on ? 'checked' : ''} aria-label="보고에 넣기: ${esc(a.title)}">
+        <a class="t" href="${esc(a.link)}" target="_blank" rel="noopener">${esc(a.title)}</a>
+        <time datetime="${esc(a.published)}">${kstTime(a.published)}</time>
+        <div class="meta"><b>${esc(a.source || '언론사 미상')}</b>${kws.map(k => `<span class="kw">${esc(k)}</span>`).join('')}${rest.length ? `<button class="more" type="button" aria-expanded="false">관련 기사 ${rest.length}건</button>` : ''}</div>
+        ${rest.length ? `<div class="related" hidden>${rest.map(r => `<div class="rel">
+            <input type="checkbox" data-id="${esc(r.id)}" ${picks.has(r.id) ? 'checked' : ''} aria-label="보고에 넣기: ${esc(r.title)}">
+            <b>${esc(r.source || '언론사 미상')}</b>
+            <a href="${esc(r.link)}" target="_blank" rel="noopener" title="${esc(r.title)}">${esc(r.title)}</a>
+            <time datetime="${esc(r.published)}">${kstDate(r.published) === d ? '' : (([, m2, d2]) => `${+m2}.${+d2} `)(kstDate(r.published).split('-'))}${kstTime(r.published)}</time>
+          </div>`).join('')}</div>` : ''}
+      </div>`;
+    });
+    h += `</div>`;
+  });
+  box.innerHTML = h;
+  box.querySelectorAll('.more').forEach(b => b.addEventListener('click', () => {
+    const rel = b.closest('.article').querySelector('.related');
+    const open = b.getAttribute('aria-expanded') !== 'true';
+    b.setAttribute('aria-expanded', String(open));
+    rel.hidden = !open;
+  }));
+  box.querySelectorAll('input[type=checkbox]').forEach(cb => cb.addEventListener('change', () => {
+    const a = NEWS_ITEMS.find(x => x.id === cb.dataset.id);
+    if (cb.checked) picks.set(a.id, a); else picks.delete(a.id);
+    if (cb.parentElement.classList.contains('article')) cb.parentElement.classList.toggle('picked', cb.checked);
+    updateSelbar();
+  }));
+}
+function updateSelbar() {
+  document.getElementById('selCount').textContent = `${picks.size}건 선택`;
+  document.getElementById('selbar').classList.toggle('show', picks.size > 0 && !document.getElementById('view-news').hidden);
+}
+function clearPicks() { picks.clear(); renderNews(); updateSelbar(); }
+function copyNews() {
+  const arts = [...picks.values()].sort((a, b) => b.published.localeCompare(a.published));
+  const text = arts.map(a => `※ ${a.title}\n* ${a.link}`).join('\n\n');
+  navigator.clipboard.writeText(text)
+    .then(() => toast(`기사 ${arts.length}건을 보고 형식으로 복사했습니다`))
+    .catch(() => toast('복사하지 못했습니다. 브라우저의 클립보드 권한을 확인하세요.'));
+}
+document.querySelectorAll('#periodSeg button').forEach(b => b.addEventListener('click', async () => {
+  newsDays = Number(b.dataset.days);
+  document.querySelectorAll('#periodSeg button').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+  await ensureMonths();
+  renderChips(); renderNews();
+}));
+let sq; document.getElementById('newsSearch').addEventListener('input', e => {
+  clearTimeout(sq); sq = setTimeout(() => { newsQuery = e.target.value; renderNews(); }, 120);
+});
+document.getElementById('groupToggle').addEventListener('change', e => { grouping = e.target.checked; renderNews(); });
+
+/* ════════ 기타 ════════ */
+function repoUrl() {
+  const m = location.hostname.match(/^([^.]+)\.github\.io$/);
+  const repo = location.pathname.split('/').filter(Boolean)[0];
+  return m ? `https://github.com/${m[1]}/${repo || ''}` : null;
+}
+function renderLinks() {
+  let h = UNIONS.map(u => `<a class="link-card" href="${u.url}" target="_blank" rel="noopener">
+      <b><i style="background:${u.color}"></i>${u.label} 홈페이지</b><span>${u.url.replace('https://', '')}</span></a>`).join('');
+  const r = repoUrl();
+  if (r) h += `<a class="link-card" href="${r}/actions" target="_blank" rel="noopener"><b>자동 수집 기록</b><span>GitHub Actions 실행 내역</span></a>`;
+  document.getElementById('links').innerHTML = h;
+}
+function renderStatus() {
+  const now = Date.now();
+  const row = (name, when, detail, staleHours) => {
+    const t = when ? new Date(when) : null;
+    const stale = !t || isNaN(t) || (now - t) / 36e5 > staleHours;
+    return `<tr><td>${name}</td><td><span class="${stale ? 'warn-dot' : 'ok-dot'}"></span>${detail}</td></tr>`;
+  };
+  let h = '';
+  if (lastMeta) {
+    UNIONS.forEach(u => {
+      h += `<tr><td>${u.label} 조합원 수</td><td>홈페이지 표기 기준 ${esc(lastMeta[u.key] || '확인 안 됨')}</td></tr>`;
+    });
+  }
+  const total = (NEWS_INDEX.months || []).reduce((s, m) => s + (m.count || 0), 0);
+  h += row('뉴스', NEWS_INDEX.fetchedAt, NEWS_INDEX.fetchedAt
+    ? `${fmtStamp(NEWS_INDEX.fetchedAt)} 수집, 지금까지 쌓인 기사 ${comma(total)}건`
+    : '아직 수집 기록이 없습니다', 3);
+  h += `<tr><td>뉴스 키워드</td><td>${esc((NEWS_INDEX.keywords?.length ? NEWS_INDEX.keywords : CONFIG.keywords).join(', '))}</td></tr>`;
+  document.getElementById('statusBody').innerHTML = h;
+}
+
+(async () => {
+  await loadConfig();
+  if (role === 'admin' || role === 'guest') enter(); else showLock();
+  renderLinks();
+  load();
+  loadNews();
+})();
+setInterval(() => { load(); loadNews(); }, 30 * 60 * 1000);
+</script>
+</body>
+</html>
