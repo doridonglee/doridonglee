@@ -64,6 +64,7 @@
   .panel-head { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.25rem; }
   .panel-head h2 { font-size: 1.05rem; font-weight: 650; letter-spacing: -0.01em; }
   .panel-head .note { font-size: .8rem; color: var(--muted); }
+  .panel-head .actions { align-items: center; gap: .9rem; }
 
   /* ── hero: 과반까지의 거리 ── */
   .race { display: grid; gap: 0; }
@@ -284,6 +285,53 @@
   .rel a:hover { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
   .rel time { font-size: .75rem; color: var(--muted); }
 
+  /* ── issue (묶인 기사) ── */
+  .article .cnt {
+    display: inline-block; margin-left: .45rem; padding: .05rem .5rem; border-radius: 99px;
+    background: var(--ink); color: #fff; font-size: .72rem; font-weight: 650; vertical-align: 2px; white-space: nowrap;
+  }
+  .rel-list { grid-column: 2 / -1; margin-top: .55rem; display: grid; gap: .15rem; list-style: none; }
+  .rel-list li { display: grid; grid-template-columns: 6rem 1fr auto; gap: .6rem; align-items: baseline; font-size: .8rem; line-height: 1.5; }
+  .rel-list li b { color: var(--muted); font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .rel-list li a { color: var(--ink-2); text-decoration: none; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .rel-list li a:hover { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+  .rel-list li time { font-size: .72rem; color: #A3ACBB; }
+  .rel-list li.hide { display: none; }
+  .rel-list.open li.hide { display: grid; }
+  .rel-more { border: 0; background: none; padding: .2rem 0 0; font-size: .78rem; font-weight: 600; color: var(--focus); justify-self: start; }
+
+  /* ── 보고 양식 dialog ── */
+  dialog.wide { width: min(980px, calc(100% - 2rem)); padding: 0; }
+  .rp { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 360px); max-height: min(86vh, 820px); }
+  .rp-left { padding: 1.5rem 1.5rem 1.25rem; overflow: auto; border-right: 1px solid var(--rule); }
+  .rp-right { padding: 1.5rem; display: flex; flex-direction: column; gap: .75rem; background: #F7F9FB; border-radius: 0 18px 18px 0; }
+  .rp h3 { margin-bottom: .2rem; }
+  .rp .scope { font-size: .8rem; color: var(--ink-2); margin-bottom: 1rem; }
+  .rp-issue { display: grid; grid-template-columns: 1.25rem 1fr; gap: .2rem .7rem; padding: .85rem 0; border-top: 1px solid var(--rule-soft); }
+  .rp-issue input[type=checkbox] { width: 16px; height: 16px; margin-top: .2rem; accent-color: var(--ink); }
+  .rp-issue .h { font-size: .88rem; font-weight: 600; line-height: 1.45; }
+  .rp-issue .h small { font-weight: 500; color: var(--muted); margin-left: .35rem; }
+  .rp-issue textarea {
+    grid-column: 2; width: 100%; min-height: 2.6rem; resize: vertical; border: 1px solid var(--rule); border-radius: 8px;
+    padding: .45rem .6rem; font: inherit; font-size: .82rem; background: #FAFBFC; line-height: 1.5;
+  }
+  .rp-issue textarea:focus { outline: none; border-color: var(--focus); background: #fff; }
+  .rp-issue:not(.on) textarea { display: none; }
+  .rp-issue .lab { grid-column: 2; font-size: .72rem; color: var(--muted); }
+  .rp-issue:not(.on) .lab { display: none; }
+  #rpPreview {
+    flex: 1; min-height: 320px; width: 100%; resize: none; border: 1px solid var(--rule); border-radius: 10px; background: #fff;
+    padding: .9rem; font: 13px/1.6 var(--font); white-space: pre; overflow: auto;
+  }
+  .rp-right .dlg-btns { margin-top: 0; }
+  @media (max-width: 760px) {
+    .rp { grid-template-columns: 1fr; max-height: none; }
+    .rp-left { border-right: 0; border-bottom: 1px solid var(--rule); }
+    .rp-right { border-radius: 0 0 18px 18px; }
+    .rel-list li { grid-template-columns: 1fr auto; }
+    .rel-list li b { display: none; }
+  }
+
   /* ── admin ── */
   .admin-head { margin: 2.25rem 0 1rem; font-size: 1.05rem; font-weight: 700; letter-spacing: -0.01em; }
   .kw-list { display: flex; flex-wrap: wrap; gap: .45rem; margin-bottom: 1rem; }
@@ -462,7 +510,13 @@
     <section class="panel" aria-labelledby="newsTitle">
       <div class="panel-head">
         <h2 id="newsTitle">관련 기사</h2>
-        <span class="note" id="newsNote">Google 뉴스에서 키워드별로 1시간마다 모아 계속 쌓습니다</span>
+        <div class="actions">
+          <span class="note" id="newsNote">Google 뉴스에서 키워드별로 1시간마다 모아 계속 쌓습니다</span>
+          <button class="btn primary" type="button" onclick="openReport()">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            보고 양식 복사
+          </button>
+        </div>
       </div>
       <div class="news-controls">
         <div class="chips" id="chips" role="group" aria-label="키워드"></div>
@@ -555,8 +609,26 @@
 <div class="selbar" id="selbar" role="region" aria-label="선택한 기사">
   <b id="selCount">0건 선택</b>
   <button class="btn" type="button" onclick="clearPicks()">선택 해제</button>
-  <button class="btn light" type="button" onclick="copyNews()">보고 형식으로 복사</button>
+  <button class="btn light" type="button" onclick="openReport()">보고 양식 만들기</button>
 </div>
+
+<dialog id="report" class="wide" aria-labelledby="rpTitle">
+  <div class="rp">
+    <div class="rp-left">
+      <h3 id="rpTitle">언론 보도 보고 양식</h3>
+      <div class="scope" id="rpScope"></div>
+      <div id="rpIssues"></div>
+    </div>
+    <div class="rp-right">
+      <label for="rpPreview" style="font-size:.8rem;font-weight:650">미리보기 (직접 고쳐도 됩니다)</label>
+      <textarea id="rpPreview" spellcheck="false"></textarea>
+      <div class="dlg-btns">
+        <button class="btn" type="button" onclick="document.getElementById('report').close()">닫기</button>
+        <button class="btn primary" type="button" onclick="copyReportText()">복사</button>
+      </div>
+    </div>
+  </div>
+</dialog>
 
 <dialog id="settings" aria-labelledby="setTitle">
   <form method="dialog" onsubmit="saveSettings(event)">
@@ -593,7 +665,7 @@
 const DATA_URL = 'data.json';
 const CONFIG_URL = 'config.json';
 const DEFAULT_CONFIG = {
-  keywords: ['삼성전자', '삼성전자 노조'],
+  keywords: ['삼성전자', '삼성전자 노동조합'],
   majority: { secu: 26000, nseu: null, selu: 64000, dx: 49103, ds: 76691, total: 125794 },
   users: {   // 초기 비밀번호: 관리자 admin2026!, 게스트 guest2026! (로그인 후 바로 바꾸세요)
     admin: '7ac2d7c8cc215f5428e0504e75f2ecebb60712dbfc53682c227aef7e20d4c631',
@@ -1317,78 +1389,174 @@ function groupArticles(list) {
   list.forEach(a => {
     const t = new Date(a.published).getTime();
     for (let i = active.length - 1; i >= 0; i--) if (active[i].oldest - t > WINDOW) active.splice(i, 1);
-    const g = grouping && active.find(g => g.items.slice(0, 8).some(b => similar(a, b) >= GROUP_THRESHOLD));
-    if (g) { g.items.push(a); g.oldest = t; }
-    else { const ng = { items: [a], oldest: t }; groups.push(ng); active.push(ng); }
+    // 비슷한 묶음이 여러 개면 하나로 합침
+    const hits = grouping ? active.filter(g => g.items.some(b => similar(a, b) >= GROUP_THRESHOLD)) : [];
+    if (hits.length) {
+      const g = hits[0];
+      hits.slice(1).forEach(o => {
+        g.items.push(...o.items); g.oldest = Math.min(g.oldest, o.oldest); o.merged = true;
+        active.splice(active.indexOf(o), 1);
+      });
+      g.items.push(a); g.oldest = Math.min(g.oldest, t);
+      g.items.sort((x, y) => y.published.localeCompare(x.published));
+    } else { const ng = { items: [a], oldest: t }; groups.push(ng); active.push(ng); }
   });
-  return groups;
+  return groups.filter(g => !g.merged);
 }
 
-function renderNews() {
+const WIRES = ['연합뉴스', '뉴스1', '뉴시스'];
+function pickLead(items) {
+  // 연합뉴스 > 뉴스1 > 뉴시스 순으로 대표 기사, 없으면 가장 먼저 나온 기사
+  const byTime = [...items].sort((a, b) => a.published.localeCompare(b.published));
+  for (const w of WIRES) { const hit = byTime.find(a => a.source === w); if (hit) return hit; }
+  return byTime[0];
+}
+let currentIssues = [];   // 지금 화면에 보이는 이슈(묶음) 목록
+let currentCount = 0;     // 지금 화면의 기사 수
+
+function currentList() {
   const q = newsQuery.trim().toLowerCase();
-  const list = NEWS_ITEMS
+  return NEWS_ITEMS
     .filter(inPeriod)
     .filter(a => newsKw === 'all' || (a.keywords || []).includes(newsKw))
     .filter(a => !q || (a.title + ' ' + a.source).toLowerCase().includes(q))
     .sort((a, b) => b.published.localeCompare(a.published));
+}
+function buildIssues(list) {
+  return groupArticles(list).map(g => {
+    const lead = pickLead(g.items);
+    return { id: lead.id, lead, items: g.items, rest: g.items.filter(a => a !== lead), latest: g.items[0].published };
+  });
+}
+
+function renderNews() {
+  const list = currentList();
+  currentCount = list.length;
   const box = document.getElementById('newsList');
   if (!list.length) {
+    currentIssues = [];
     box.innerHTML = `<div class="msg">조건에 맞는 기사가 없습니다. 기간을 늘리거나 다른 키워드를 눌러 보세요.</div>`;
     return;
   }
-  const groups = groupArticles(list);
+  currentIssues = buildIssues(list);
   const byDay = {};
-  groups.forEach(g => { (byDay[kstDate(g.items[0].published)] ||= []).push(g); });
+  currentIssues.forEach(g => { (byDay[kstDate(g.latest)] ||= []).push(g); });
   const today = todayKST();
+  const SHOW = 5;
   let h = '';
   Object.keys(byDay).sort().reverse().forEach(d => {
     const [, mm, dd] = d.split('-').map(Number);
     const n = byDay[d].reduce((s, g) => s + g.items.length, 0);
     h += `<div class="news-day"><h3>${mm}.${dd} (${dow(d)})${d === today ? ' 오늘' : ''}<small>기사 ${n}건${grouping && byDay[d].length !== n ? `, ${byDay[d].length}개 이슈` : ''}</small></h3>`;
     byDay[d].forEach(g => {
-      const a = g.items[0], rest = g.items.slice(1);
-      const on = picks.has(a.id);
+      const a = g.lead, on = picks.has(g.id);
       const kws = [...new Set(g.items.flatMap(x => x.keywords || []))];
+      const ldate = kstDate(a.published);
       h += `<div class="article${on ? ' picked' : ''}">
-        <input type="checkbox" data-id="${esc(a.id)}" ${on ? 'checked' : ''} aria-label="보고에 넣기: ${esc(a.title)}">
-        <a class="t" href="${esc(a.link)}" target="_blank" rel="noopener">${esc(a.title)}</a>
-        <time datetime="${esc(a.published)}">${kstTime(a.published)}</time>
-        <div class="meta"><b>${esc(a.source || '언론사 미상')}</b>${kws.map(k => `<span class="kw">${esc(k)}</span>`).join('')}${rest.length ? `<button class="more" type="button" aria-expanded="false">관련 기사 ${rest.length}건</button>` : ''}</div>
-        ${rest.length ? `<div class="related" hidden>${rest.map(r => `<div class="rel">
-            <input type="checkbox" data-id="${esc(r.id)}" ${picks.has(r.id) ? 'checked' : ''} aria-label="보고에 넣기: ${esc(r.title)}">
+        <input type="checkbox" data-id="${esc(g.id)}" ${on ? 'checked' : ''} aria-label="보고에 넣기: ${esc(a.title)}">
+        <div><a class="t" href="${esc(a.link)}" target="_blank" rel="noopener">${esc(a.title)}</a>${g.rest.length ? `<span class="cnt">외 ${g.rest.length}건</span>` : ''}</div>
+        <time datetime="${esc(a.published)}">${ldate === d ? '' : `${+ldate.slice(5, 7)}.${+ldate.slice(8)} `}${kstTime(a.published)}</time>
+        <div class="meta"><b>${esc(a.source || '언론사 미상')}</b>${kws.map(k => `<span class="kw">${esc(k)}</span>`).join('')}</div>
+        ${g.rest.length ? `<ul class="rel-list">${g.rest.map((r, i) => `<li class="${i >= SHOW ? 'hide' : ''}">
             <b>${esc(r.source || '언론사 미상')}</b>
             <a href="${esc(r.link)}" target="_blank" rel="noopener" title="${esc(r.title)}">${esc(r.title)}</a>
-            <time datetime="${esc(r.published)}">${kstDate(r.published) === d ? '' : (([, m2, d2]) => `${+m2}.${+d2} `)(kstDate(r.published).split('-'))}${kstTime(r.published)}</time>
-          </div>`).join('')}</div>` : ''}
+            <time datetime="${esc(r.published)}">${kstTime(r.published)}</time></li>`).join('')}
+          ${g.rest.length > SHOW ? `<button class="rel-more" type="button">${g.rest.length - SHOW}건 더 보기</button>` : ''}</ul>` : ''}
       </div>`;
     });
     h += `</div>`;
   });
   box.innerHTML = h;
-  box.querySelectorAll('.more').forEach(b => b.addEventListener('click', () => {
-    const rel = b.closest('.article').querySelector('.related');
-    const open = b.getAttribute('aria-expanded') !== 'true';
-    b.setAttribute('aria-expanded', String(open));
-    rel.hidden = !open;
+  box.querySelectorAll('.rel-more').forEach(b => b.addEventListener('click', () => {
+    const ul = b.closest('.rel-list'); const open = ul.classList.toggle('open');
+    b.textContent = open ? '접기' : `${ul.querySelectorAll('li.hide').length}건 더 보기`;
   }));
-  box.querySelectorAll('input[type=checkbox]').forEach(cb => cb.addEventListener('change', () => {
-    const a = NEWS_ITEMS.find(x => x.id === cb.dataset.id);
-    if (cb.checked) picks.set(a.id, a); else picks.delete(a.id);
-    if (cb.parentElement.classList.contains('article')) cb.parentElement.classList.toggle('picked', cb.checked);
+  box.querySelectorAll('.article > input[type=checkbox]').forEach(cb => cb.addEventListener('change', () => {
+    const g = currentIssues.find(x => x.id === cb.dataset.id);
+    if (cb.checked) picks.set(g.id, g); else picks.delete(g.id);
+    cb.parentElement.classList.toggle('picked', cb.checked);
     updateSelbar();
   }));
 }
 function updateSelbar() {
-  document.getElementById('selCount').textContent = `${picks.size}건 선택`;
+  document.getElementById('selCount').textContent = `${picks.size}개 선택`;
   document.getElementById('selbar').classList.toggle('show', picks.size > 0 && !document.getElementById('view-news').hidden);
 }
 function clearPicks() { picks.clear(); renderNews(); updateSelbar(); }
-function copyNews() {
-  const arts = [...picks.values()].sort((a, b) => b.published.localeCompare(a.published));
-  const text = arts.map(a => `※ ${a.title}\n* ${a.link}`).join('\n\n');
+
+/* ── 언론 보도 보고 양식 ── */
+const WRAP = 16;   // 한 줄 글자 수
+function wrapText(text, width = WRAP) {
+  const words = String(text).replace(/\s+/g, ' ').trim().split(' ');
+  const lines = []; let line = '';
+  words.forEach(w => {
+    if (!line) line = w;
+    else if ((line + ' ' + w).length <= width) line += ' ' + w;
+    else { lines.push(line); line = w; }
+  });
+  if (line) lines.push(line);
+  return lines;
+}
+let rpState = [];   // [{ issue, on, summary }]
+function scopeLabel() {
+  const period = { 1: '오늘', 3: '최근 3일', 7: '최근 7일', 30: '최근 30일', 0: '전체 기간' }[newsDays];
+  return `${period}, ${newsKw === 'all' ? '전체 키워드' : `키워드 "${newsKw}"`}${newsQuery.trim() ? `, 검색어 "${newsQuery.trim()}"` : ''}`;
+}
+function openReport() {
+  const issues = [...currentIssues].sort((a, b) => b.items.length - a.items.length || b.latest.localeCompare(a.latest));
+  // 선택한 이슈가 있으면 그것만, 없으면 기사가 많은 순으로 3개를 미리 체크
+  const pickedIds = new Set(picks.keys());
+  const pickedOut = [...picks.values()].filter(g => !issues.some(i => i.id === g.id));
+  const all = [...pickedOut, ...issues];
+  rpState = all.map((g, i) => ({
+    issue: g,
+    on: pickedIds.size ? pickedIds.has(g.id) : i < 3,
+    summary: `${g.lead.title.replace(/\s*[…·]+\s*/g, ', ').replace(/\s+/g, ' ')} 관련 보도`,
+  }));
+  // 선택한 것을 위로
+  rpState.sort((a, b) => b.on - a.on);
+  document.getElementById('rpScope').textContent = `${scopeLabel()} 기준 기사 ${currentCount}건. 넣을 이슈를 고르고, 요약 문장을 고쳐 쓰세요.`;
+  renderReportIssues();
+  updatePreview();
+  document.getElementById('selbar').classList.remove('show');
+  document.getElementById('report').showModal();
+}
+document.getElementById('report').addEventListener('close', updateSelbar);
+function renderReportIssues() {
+  document.getElementById('rpIssues').innerHTML = rpState.map((s, i) => `
+    <div class="rp-issue${s.on ? ' on' : ''}" data-i="${i}">
+      <input type="checkbox" ${s.on ? 'checked' : ''} aria-label="보고에 넣기">
+      <div class="h">${esc(s.issue.lead.title)}<small>${esc(s.issue.lead.source)}${s.issue.rest.length ? ` 외 ${s.issue.rest.length}건` : ''}</small></div>
+      <span class="lab">요약 문장</span>
+      <textarea rows="3">${esc(s.summary)}</textarea>
+    </div>`).join('') || '<div class="msg">보고할 기사가 없습니다.</div>';
+  document.querySelectorAll('#rpIssues .rp-issue').forEach(el => {
+    const s = rpState[+el.dataset.i];
+    el.querySelector('input').addEventListener('change', e => { s.on = e.target.checked; el.classList.toggle('on', s.on); updatePreview(); });
+    el.querySelector('textarea').addEventListener('input', e => { s.summary = e.target.value; updatePreview(); });
+  });
+}
+function buildReport() {
+  const out = [`□ 언론 보도 : 총 ${currentCount}건`];
+  rpState.filter(s => s.on).forEach(s => {
+    const g = s.issue, a = g.lead;
+    const sum = wrapText(s.summary);
+    out.push('');
+    out.push('- ' + sum[0]);
+    sum.slice(1).forEach(l => out.push('   ' + l));
+    out.push('');
+    out.push(`   * ${a.source || '언론사 미상'}${g.rest.length ? ` 外 ${g.rest.length}건` : ''},`);
+    wrapText(a.title).forEach(l => out.push('     ' + l));
+    out.push('     ' + a.link);
+  });
+  return out.join('\n');
+}
+function updatePreview() { document.getElementById('rpPreview').value = buildReport(); }
+function copyReportText() {
+  const text = document.getElementById('rpPreview').value;
   navigator.clipboard.writeText(text)
-    .then(() => toast(`기사 ${arts.length}건을 보고 형식으로 복사했습니다`))
-    .catch(() => toast('복사하지 못했습니다. 브라우저의 클립보드 권한을 확인하세요.'));
+    .then(() => { toast('보고 양식을 복사했습니다'); document.getElementById('report').close(); })
+    .catch(() => toast('복사하지 못했습니다. 미리보기 칸을 직접 선택해서 복사하세요.'));
 }
 document.querySelectorAll('#periodSeg button').forEach(b => b.addEventListener('click', async () => {
   newsDays = Number(b.dataset.days);

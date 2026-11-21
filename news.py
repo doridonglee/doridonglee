@@ -12,7 +12,7 @@ import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 
-DEFAULT_KEYWORDS = ["삼성전자", "삼성전자 노조"]
+DEFAULT_KEYWORDS = ["삼성전자", "삼성전자 노동조합"]
 NEWS_DIR = "news"
 KST = timezone(timedelta(hours=9))
 
