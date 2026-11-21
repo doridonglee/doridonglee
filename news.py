@@ -29,7 +29,8 @@ NEWS_DIR = "news"
 KST = timezone(timedelta(hours=9))
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
 
-MAX_SUMMARIES_PER_RUN = 60      # 한 번 실행할 때 요약할 최대 기사 수
+MAX_SUMMARIES_PER_RUN = 40      # 한 번 실행할 때 요약할 최대 기사 수
+SUMMARY_TIME_BUDGET = 6 * 60     # 요약에 쓰는 최대 시간(초). 넘으면 남은 건 다음 실행으로 미룸
 SUMMARY_LOOKBACK_DAYS = 3       # 이 기간 안의 기사만 요약 (오래된 기사는 건너뜀)
 AI_MODEL = "claude-haiku-5-5"
 
@@ -56,7 +57,7 @@ PRESS = {
 
 
 # ─────────────────────────── 공통 ───────────────────────────
-def http_get(url, headers=None, timeout=20):
+def http_get(url, headers=None, timeout=12):
     req = urllib.request.Request(url, headers={"User-Agent": UA, **(headers or {})})
     with urllib.request.urlopen(req, timeout=timeout) as r:
         raw = r.read()
@@ -71,7 +72,7 @@ def http_get(url, headers=None, timeout=20):
         return raw.decode("utf-8", errors="replace"), final
 
 
-def http_post(url, data, headers, timeout=60):
+def http_post(url, data, headers, timeout=45):
     req = urllib.request.Request(url, data=data, headers={"User-Agent": UA, **headers}, method="POST")
     with urllib.request.urlopen(req, timeout=timeout) as r:
         return r.read().decode("utf-8", errors="replace")
@@ -390,13 +391,20 @@ def main():
             if not a.get("summary") and a.get("summaryTries", 0) < 2
             and datetime.fromisoformat(a["published"].replace("Z", "+00:00")) >= cutoff]
     todo.sort(key=lambda a: a["published"], reverse=True)
-    done = 0
+    done, failed, started = 0, 0, time.time()
     for a in todo[:MAX_SUMMARIES_PER_RUN]:
+        if time.time() - started > SUMMARY_TIME_BUDGET:
+            print("  요약 시간 상한에 도달해서 나머지는 다음 실행으로 미룹니다")
+            break
         try:
             summarize(a)
             done += 1
         except Exception as e:
             a["summaryTries"] = a.get("summaryTries", 0) + 1
+            failed += 1
+            if failed >= 8 and done == 0:
+                print("  연속으로 본문을 읽지 못해 이번 실행의 요약을 멈춥니다 (네이버 키를 넣으면 대부분 해결됩니다)")
+                break
             print(f"  요약 건너뜀 ({a.get('source') or '?'}) {a['title'][:30]}: {e}", file=sys.stderr)
         time.sleep(0.3)
 
