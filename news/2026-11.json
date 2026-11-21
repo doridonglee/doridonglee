@@ -2,15 +2,44 @@
  "month": "2026-11",
  "items": [
   {
+   "title": "‘독자노선’ 정체성 부정한 삼성바이오 노조… ‘6.2% 임금 인상’ 선제안에도 한노총 가입",
+   "link": "https://www.segye.com/newsView/20261120506487",
+   "source": "세계일보",
+   "published": "2026-11-21T10:21:43Z",
+   "keywords": [
+    "삼성전자 노동조합"
+   ],
+   "id": "6410dfa042e1",
+   "summary": "삼성바이오로직스 상생노동조합이 한국노동조합총연맹(한국노총)에 가입했다. 사측의 임금 6.2% 선적용 제안에도 불구하고, 노조가 상급노조에 가입해 협상은 한국노총 측에 맡기고 파업에 집중하겠다는 입장을 밝히면서 노조가 당초 출범 당시 내세웠던 ‘탈정치·독립 노조’라는 핵심 정체성을 스스로 부정한 행보로 비판받고 있다.",
+   "brief": "삼성바이오로직스 상생노동조합이 한국노동조합총연맹(한국노총)에 가입했다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "“엔비디아 14% 폭락” 서학개미 8천억 사들였는데…삼전닉스도 ‘초긴장’",
+   "link": "https://www.daily25news.com/news/articleView.html?idxno=9240",
+   "source": "데일리25",
+   "published": "2026-11-21T09:58:29Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "4fcb0fed7412",
+   "summary": "국내외 반도체 주식이 동반 급락하면서 개인투자자들의 불안이 커지고 있다.",
+   "brief": "국내외 반도체 주식이 동반 급락하면서 개인투자자들의 불안이 커지고 있다는 기사",
+   "summaryBy": "lead"
+  },
+  {
    "title": "갤럭시 Z 폴드8, 11월 보안 업데이트로 취약점 179개 개선",
-   "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBHcWNldFJEMHotU0Z2SHB3cVh4ZDh0VFREREUwYmxJbHdmbW12Y0F4cHNjMHJIaW50NjJSb3dnbGpwQWlkR1FweG1WckM?oc=5",
+   "link": "https://www.koreaiin.com/news/978216",
    "source": "한국IT산업뉴스",
    "published": "2026-11-21T08:52:26Z",
    "keywords": [
     "삼성전자"
    ],
    "id": "f418f833315a",
-   "summaryTries": 1
+   "summaryTries": 1,
+   "summary": "삼성공식파트너 쇼마젠시가 자사몰 삼성모바일전문몰에서 갤럭시 Z 폴드8 시리즈의 11월 보안 업데이트 배포 소식과 함께 프로모션을 진행한다. 삼성전자는 최근 갤럭시 Z 폴드8 라인업을 대상으로 2026년 11월 보안 업데이트 배포를 국내에서 시작했다.",
+   "brief": "삼성공식파트너 쇼마젠시가 자사몰 삼성모바일전문몰에서 갤럭시 Z 폴드8 시리즈의 11월 보안 업데이트 배포 소식과 함께 프로모션을 진행한다는 기사",
+   "summaryBy": "lead"
   },
   {
    "title": "삼성-오우라 특허분쟁, 1차 결론 발표 미뤄졌다",
@@ -247,14 +276,17 @@
   },
   {
    "title": "삼성, 기술 중심 세대교체…HBM·갤럭시 주역 사장 ‘승진’",
-   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9KNHBva3RGdEVrbWxwLXppRkN0b0pPRS1XaUFZcWh1dWtoVzVMSHVpeWxYSmJoWVlFS0lmUDlvOS1ldlpsZEVOWC1CNGNNNjl4MWfSAVNBVV95cUxNMFpMZU1kbGVvVG9YSTlJNkFPVGhoaWt3MGtZMkYydGpBWmd6bVNzZEQyUjZYeDdyT0x5Tmw0X3dzcVp5RUc5cnZFVzluZ3ByM2hmSQ?oc=5",
+   "link": "https://www.sedaily.com/article/20117197",
    "source": "서울경제",
    "published": "2026-11-21T01:33:47Z",
    "keywords": [
     "삼성전자"
    ],
    "id": "357727edc903",
-   "summaryTries": 1
+   "summaryTries": 1,
+   "summary": "■ 삼성전자, 기술 인재 발탁으로 반도체·모바일 경쟁력 재점화: HBM4 양산 주역 황상준 사장과 갤럭시 개발 전문가 최원준 사장을 각각 메모리·MX사업부장으로 선임하며 기술 초격차 전략에 박차를 가했다. 로봇·자율주행·AI 반도체 분야로 사업 영역을 넓히는 가운데, 반도체·모바일·AI 직무 취준생에게 채용 기회가 한층 넓어질 전망이다.",
+   "brief": "■ 삼성전자, 기술 인재 발탁으로 반도체·모바일 경쟁력 재점화: HBM4 양산 주역 황상준 사장과 갤럭시 개발 전문가 최원준 사장을 각각 메모리·MX사업부장으로 선임하며 기술 초격차 전략에 박차를 가했다는 기사",
+   "summaryBy": "lead"
   },
   {
    "title": "삼성 폰 사업 6000억 영업손실…최원준 사장이 맡았다",
@@ -389,14 +421,17 @@
   },
   {
    "title": "삼성전자, 메타 독주 'AI 안경' 시장에 도전…다음 달 첫 제품 출시",
-   "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1ZQTlndXJvX3JfNkJNX2RFb2JUeFQwSWJHaG5BR2g1aTA5YU1WQmdWUWZoN1J3WC1yWURQbjFuTk1UN1l1OU54LUVjcw?oc=5",
+   "link": "http://www.inews24.com/view/2028766",
    "source": "아이뉴스24",
    "published": "2026-11-21T00:00:00Z",
    "keywords": [
     "삼성전자"
    ],
    "id": "dd6b583ad6fe",
-   "summaryTries": 1
+   "summaryTries": 1,
+   "summary": "삼성전자가 미국 기술기업 메타가 주도하는 인공지능(AI) 안경 시장에 다음 달 첫 제품을 선보인다. 기존 제품에서 시험 부정행위와 무단 촬영 등 보안 문제가 제기된 만큼 신제품의 개인정보 보호 기능에도 관심이 쏠린다.",
+   "brief": "삼성전자가 미국 기술기업 메타가 주도하는 인공지능(AI) 안경 시장에 다음 달 첫 제품을 선보인다는 기사",
+   "summaryBy": "lead"
   },
   {
    "id": "a7690834fafa",
@@ -426,14 +461,17 @@
   },
   {
    "title": "삼성전자 제7노조 광주노조 출범…교섭 참여 추진 : 기업",
-   "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5MVjdLX3VkbVhhdXVkNENHcWRGWlplU2tra3hHUEV6RDJyVV9iX1k1YzRvV2dKNkZuWlM5ZHR4dWdzSE5nTzZ2ZTUyNA?oc=5",
+   "link": "https://news.jkn.co.kr/post/1111482",
    "source": "재경일보",
    "published": "2026-11-20T22:58:00Z",
    "keywords": [
     "삼성전자 노동조합"
    ],
    "id": "b48ca3b7e4dc",
-   "summaryTries": 1
+   "summaryTries": 1,
+   "summary": "삼성전자의 일곱 번째 노동조합인 ‘삼성전자 광주노동조합’이 18일 공식 출범해 조합원 모집을 시작했다. 광주노조는 지난 13일 광주지방고용노동청에 설립 신고서를 제출한 뒤 17일 노조 설립신고증을 교부받았다.",
+   "brief": "삼성전자의 일곱 번째 노동조합인 ‘삼성전자 광주노동조합’이 18일 공식 출범해 조합원 모집을 시작했다는 기사",
+   "summaryBy": "lead"
   },
   {
    "title": "포스코, 일시금 최대 80만원 늘려 재합의…고로 보수 앞둔 현장 안정 시험대",
@@ -869,14 +907,17 @@
   },
   {
    "title": "전남광주노동포럼 워킹그룹 출발 “산업전환·반도체 건설, 체계적 준비해야”",
-   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5mVFRTLWJHeTV2M0pjeFhORENUNU5uVm5Gb1d5aXdYdzVIbGk4MEhoWXVfSDVOQmFiN1JRa3FTWmo4Q0JUX2ZDYVo5OVZIRGFobUFSVHBVMGI4ei1RaGxiSGZJLVhqRl9aOTNfalVn?oc=5",
+   "link": "https://www.laborplus.co.kr/news/articleView.html?idxno=41874",
    "source": "참여와혁신",
    "published": "2026-11-20T07:52:05Z",
    "keywords": [
     "삼성전자 노동조합"
    ],
    "id": "a00962f09a62",
-   "summaryTries": 1
+   "summaryTries": 1,
+   "summary": "",
+   "brief": "",
+   "summaryBy": "lead"
   },
   {
    "id": "686b2283334c",
@@ -1650,7 +1691,7 @@
     "삼성전자"
    ],
    "id": "640131aa958b",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "id": "9fa48c46f060",
@@ -1661,40 +1702,49 @@
    "keywords": [
     "삼성전자"
    ],
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "삼성전자 노태문, 로봇에 집중…갤럭시 새 리더 최원준, 수익성 회복할까",
-   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE14VUxzSEhCTHJBdzhSQ0ZMd3NiNUNnMzBTOFVUMi1GNG96b0FaTzZ3dHJvbkdYaEFOYktncF9lVWMtUVpWSFpUQ0tIemM2R0JXNnJBX0M5d2tvS3dNSlE2M0YwNFhveGdxcllHLWhHWHc?oc=5",
+   "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4445719",
    "source": "연합인포맥스",
    "published": "2026-11-20T01:41:13Z",
    "keywords": [
     "삼성전자 노동조합"
    ],
    "id": "849ea0963806",
-   "summaryTries": 1
+   "summaryTries": 1,
+   "summary": "삼성전자가 노태문 DX(완제품) 부문장(대표이사 사장)의 MX(모바일경험)사업부장 겸직을 해제하면서 로봇 사업에 집중하도록 배치했다.",
+   "brief": "삼성전자가 노태문 DX(완제품) 부문장(대표이사 사장)의 MX(모바일경험)사업부장 겸직을 해제하면서 로봇 사업에 집중하도록 배치했다는 기사",
+   "summaryBy": "lead"
   },
   {
    "id": "27248162add0",
    "title": "삼성전자 사장 승진 모두 반도체…기존 투톱에 성과·기술 방점",
-   "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9BMkpHV2RFZDc3bHZCbUdtZXQxWl8xcUk0enRFRkRwQWFyOGFUS0RRNGtzYjc3Qk5NTmoyeHVSZWtsWnZ5X2xVSGhXT0wtQVBxU2h4QkhOeXlCM29RQWdPd9IBYEFVX3lxTE9BMkpHV2RFZDc3bHZCbUdtZXQxWl8xcUk0enRFRkRwQWFyOGFUS0RRNGtzYjc3Qk5NTmoyeHVSZWtsWnZ5X2xVSGhXT0wtQVBxU2h4QkhOeXlCM29RQWdPdw?oc=5",
+   "link": "https://www.yna.co.kr/amp/view/AKR20261120060900003",
    "source": "연합뉴스",
    "published": "2026-11-20T01:40:55Z",
    "keywords": [
     "삼성전자"
    ],
-   "summaryTries": 1
+   "summaryTries": 1,
+   "summary": "20일 삼성전자가 발표한 정기 사장단 인사는 전영현·노태문 대표이사 투톱 체제를 유지하되 초호황기를 주도하는 ...",
+   "brief": "",
+   "summaryBy": "lead"
   },
   {
    "title": "iM뱅크, 대구 쪽방촌 취약계층에 연탄 나눔...21년째 봉사",
-   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE82b19vVGx5QjYwSlhmWlNYX0d0ZFdRdzZkc0dQUzh2STJUdzcyMUpUYUlUb2RQSDhXa3EtYTJFSjJ0cUNFNXBRc1RlS1M0YnhnaUh3TUFPY0RTM1NXeUk2bW1HQl84ZG5URGNDYWN3?oc=5",
+   "link": "https://www.gukjenews.com/news/articleView.html?idxno=3757980",
    "source": "국제뉴스",
    "published": "2026-11-20T01:38:07Z",
    "keywords": [
     "삼성전자 노동조합"
    ],
    "id": "c7273ae8c440",
-   "summaryTries": 1
+   "summaryTries": 1,
+   "summary": "",
+   "brief": "",
+   "summaryBy": "lead"
   },
   {
    "title": "\"최대 실적 주도\"…삼성전자 '반도체 3인방' 사장 승진",
@@ -1705,37 +1755,46 @@
     "삼성전자"
    ],
    "id": "c76d25cd69fd",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "[연합뉴스 이 시각 헤드라인] - 10:30",
-   "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9lMFlUdVdmNG5lb1hwN0VlZUxnOE90UmVNTk9sQ0QwbUp2aEJaRGc5RGlrV1d0VmdiNjMtenlhWTJLeGc4SllUR2dIY18tTl94N0FyOHFEc19wQUt3bTBJNtIBYEFVX3lxTE9lMFlUdVdmNG5lb1hwN0VlZUxnOE90UmVNTk9sQ0QwbUp2aEJaRGc5RGlrV1d0VmdiNjMtenlhWTJLeGc4SllUR2dIY18tTl94N0FyOHFEc19wQUt3bTBJNg?oc=5",
+   "link": "https://www.yna.co.kr/amp/view/AKR20261120054700011",
    "source": "연합뉴스",
    "published": "2026-11-20T01:30:01Z",
    "keywords": [
     "삼성전자 노동조합"
    ],
-   "id": "a6c099b1cbff"
+   "id": "a6c099b1cbff",
+   "summary": "■ 앤트로픽 성공적 상장에도 투심 불안…4%대 급락, 또 '5천피' 밑으로  20일 코스피가 급락하며 다시 5,000선 밑으로 밀리고 있다. 이날 오전 9시 29분 현재 코스피는 전장보다 190.06포인트(3.70%) 내린 4,947.83을 나타내고 있다.",
+   "brief": "■ 앤트로픽 성공적 상장에도 투심 불안…4%대 급락, 또 '5천피' 밑으로  20일 코스피가 급락하며 다시 5,000선 밑으로 밀리고 있다는 기사",
+   "summaryBy": "lead"
   },
   {
    "id": "d202596320f7",
    "title": "메모리는 HBM 개발통, 갤럭시는 퀄컴 출신…삼성전자 투톱 겸직 해제",
-   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1ndnF1YTM3VzBvUzdkQnBNX0UzT0t4M2xrdWJMS2lHcjUxSVIxTGpCZXE5VWRaNkNEcGY4UFc0ZE9zOGtZN0pUZnEwT2NVZXpuQ0x6dEZnZ1ZRTW5hTTJKUWp4bklEdw?oc=5",
+   "link": "https://www.thelec.kr/news/articleView.html?idxno=65701",
    "source": "디일렉",
    "published": "2026-11-20T01:27:42Z",
    "keywords": [
     "삼성전자"
-   ]
+   ],
+   "summary": "삼성전자가 전영현 부회장과 노태문 사장의 2인 대표이사 체제는 유지하고 두 사람이 겸직해 온 사업부장직은 떼어냈다.",
+   "brief": "삼성전자가 전영현 부회장과 노태문 사장의 2인 대표이사 체제는 유지하고 두 사람이 겸직해 온 사업부장직은 떼어냈다는 기사",
+   "summaryBy": "lead"
   },
   {
    "id": "16900ec15ea1",
    "title": "삼성전자, 안정 속 성과보상...최대 실적 낸 반도체서만 사장 승진 - 머니투데이",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBoSXhiUjZxbUZTTE5xdW1TWlF0b0piMkN1ZHAybXdSTHhzVTB6UEJLOFI2WkNNV0VEVHFvZU5nOHRMN3QxdDRXaW1DOUF6T29CM0cxbDRWYWtKSjY3Z3huR0JDYmRCWEV6WEphVNIBckFVX3lxTE5KQzlNVkNrS25uNjZfVWxXN0ZxYmJmT0RLTzl1UC13eW12MHoyaEN5VHJhNjhXVGs4d1JfaElYS0EwRUFGT0V2UHZQRkhEZzZycjRkM0Z2U2R6TVVWeWRZMlc5eElla3VVdWFzODVkWkN6Zw?oc=5",
+   "link": "https://www.mt.co.kr/industry/2026/11/20/2026112010020517102",
    "source": "머니투데이",
    "published": "2026-11-20T01:26:13Z",
    "keywords": [
     "삼성전자"
-   ]
+   ],
+   "summary": "삼성전자(183,100원 ▼13,800 -7.01%)가 반도체(DS)부문은 전영현 부회장, 모바일·가전(DX)부문은 노태문 사장이 이끄는 '2인 CEO(최고경영자) 체제'를 유지하며 경영 안정을 택했다. 대신 두 부문장의 메모리·MX(모바일경험)사업부장 겸직을 해제해 미래사업에 집중하도록 했다.",
+   "brief": "삼성전자(183,100원 ▼13,800 -7.01%)가 반도체(DS)부문은 전영현 부회장, 모바일·가전(DX)부문은 노태문 사장이 이끄는 '2인 CEO(최고경영자) 체제'를 유지하며 경영 안정을 택했다는 기사",
+   "summaryBy": "lead"
   },
   {
    "id": "6f1870b3bf53",
@@ -2108,6 +2167,16 @@
    "keywords": [
     "삼성전자"
    ]
+  },
+  {
+   "title": "[속보] 삼성전자 사업부장에 반도체 메모리 황상준·모바일경험 최원준…사업부장 분리",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9BZU9TMVkzdmIzQUxaWWxoSndpcC1IcWRzc1dqZEw0UzJOMDRfN2JfTE1DcGhaREtRZTdaMWlYWUw5Nlg1eUpDNFlMVFloemc4ZE83dXJpWGY2U1VMd1pRZXNVU05WZkE?oc=5",
+   "source": "연합뉴스TV",
+   "published": "2026-11-20T00:07:00Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "b62f04b7350c"
   },
   {
    "id": "1d4b6adc46f9",
