@@ -555,7 +555,7 @@
 
       <section class="panel" aria-labelledby="kwTitle">
         <div class="panel-head">
-          <h2 id="kwTitle">뉴스 키워드</h2>
+          <h2 id="kwTitle">뉴스 키워드, 제외 단어</h2>
           <span class="note">저장하면 다음 수집부터 새 키워드로 모읍니다</span>
         </div>
         <div class="kw-list" id="kwList"></div>
@@ -563,8 +563,20 @@
           <input class="field" id="kwInput" placeholder="추가할 키워드 (예: 전삼노)" aria-label="추가할 키워드">
           <button class="btn" type="submit">추가</button>
         </form>
+        <div class="help" style="margin:1.5rem 0 .6rem">
+          <b style="color:var(--ink)">키워드가 걸리는 기준</b><br>
+          제목에 키워드 단어가 모두 들어간 기사만 모읍니다. 노동조합은 노조, 전삼노, 초기업노조, 동행노조도 같은 말로 봅니다.
+          두 단어 이상 키워드에서는 "삼성 노조"처럼 줄여 쓴 제목도 인정하되, 삼성바이오, 삼성SDS 같은 계열사는 뺍니다.
+        </div>
+        <h3 style="font-size:.95rem;font-weight:650;margin:1.25rem 0 .6rem">제외 단어</h3>
+        <div class="help" style="margin-bottom:.6rem">제목에 이 단어가 들어간 기사는 빼고 모읍니다. 예: 주가, 특징주, 삼성SDS</div>
+        <div class="kw-list" id="exList"></div>
+        <form class="inline-form" onsubmit="event.preventDefault(); addExclude();">
+          <input class="field" id="exInput" placeholder="제외할 단어" aria-label="제외할 단어">
+          <button class="btn" type="submit">추가</button>
+        </form>
         <div class="btn-row" style="margin-top:1.25rem">
-          <button class="btn primary" type="button" onclick="saveKeywords()">키워드 저장</button>
+          <button class="btn primary" type="button" onclick="saveKeywords()">키워드, 제외 단어 저장</button>
           <button class="btn" type="button" onclick="runCollect()">지금 수집 실행</button>
         </div>
       </section>
@@ -669,6 +681,7 @@ const DATA_URL = 'data.json';
 const CONFIG_URL = 'config.json';
 const DEFAULT_CONFIG = {
   keywords: ['삼성전자', '삼성전자 노동조합'],
+  exclude: [],
   majority: { secu: 26000, nseu: null, selu: 64000, dx: 49103, ds: 76691, total: 125794 },
   users: {   // 초기 비밀번호: 관리자 admin2026!, 게스트 guest2026! (로그인 후 바로 바꾸세요)
     admin: '7ac2d7c8cc215f5428e0504e75f2ecebb60712dbfc53682c227aef7e20d4c631',
@@ -695,6 +708,7 @@ async function loadConfig() {
       const c = await res.json();
       CONFIG = {
         keywords: Array.isArray(c.keywords) && c.keywords.length ? c.keywords : DEFAULT_CONFIG.keywords,
+        exclude: Array.isArray(c.exclude) ? c.exclude : [],
         majority: { ...DEFAULT_CONFIG.majority, ...(c.majority || {}) },
         users: { ...DEFAULT_CONFIG.users, ...(c.users || {}) },
       };
@@ -834,10 +848,12 @@ function forgetToken() {
 }
 
 /* ── 관리자: 키워드, 비밀번호 ── */
-let draftKeywords = [];
+let draftKeywords = [], draftExclude = [];
 function renderAdmin() {
   draftKeywords = [...CONFIG.keywords];
+  draftExclude = [...(CONFIG.exclude || [])];
   renderKwList();
+  renderExList();
   document.getElementById('ghRepo').value = ghRepo();
   document.getElementById('ghState').innerHTML = ghTokenValue()
     ? '<span class="ok-dot"></span>이 브라우저에 토큰이 저장돼 있습니다.'
@@ -855,10 +871,24 @@ function addKeyword() {
   el.value = ''; renderKwList();
 }
 function removeKeyword(i) { draftKeywords.splice(i, 1); renderKwList(); }
+function renderExList() {
+  document.getElementById('exList').innerHTML = draftExclude.length
+    ? draftExclude.map((k, i) => `<span class="kw-item">${esc(k)}<button type="button" aria-label="${esc(k)} 삭제" onclick="removeExclude(${i})">×</button></span>`).join('')
+    : '<span class="note">제외 단어가 없습니다.</span>';
+}
+function addExclude() {
+  const el = document.getElementById('exInput');
+  const v = el.value.trim().replace(/\s+/g, ' ');
+  if (v && !draftExclude.includes(v)) draftExclude.push(v);
+  el.value = ''; renderExList();
+}
+function removeExclude(i) { draftExclude.splice(i, 1); renderExList(); }
 async function saveKeywords() {
   if (!draftKeywords.length) { toast('키워드를 하나 이상 넣으세요'); return; }
   CONFIG.keywords = [...draftKeywords];
-  await commitConfig('뉴스 키워드 변경: ' + CONFIG.keywords.join(', '), '키워드를 저장했습니다');
+  CONFIG.exclude = [...draftExclude];
+  await commitConfig('뉴스 키워드 변경: ' + CONFIG.keywords.join(', ') + (CONFIG.exclude.length ? ' / 제외: ' + CONFIG.exclude.join(', ') : ''),
+    '키워드와 제외 단어를 저장했습니다');
 }
 async function savePasswords() {
   let changed = 0;
@@ -976,6 +1006,8 @@ async function load() {
   currentRows = rows;
   lastMeta = [...rows].reverse().find(r => r._meta)?._meta || null;
 
+  const now = new Date().toLocaleString('ko-KR', { timeZone: 'Asia/Seoul', hour12: false, month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' });
+  document.getElementById('refreshed').textContent = `마지막 조회 ${now}`;
   renderAll();
   renderStatus();
 }

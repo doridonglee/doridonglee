@@ -20,6 +20,7 @@ import os
 import re
 import sys
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta, timezone
@@ -37,6 +38,75 @@ AI_MODEL = "claude-haiku-5-5"
 NAVER_ID = os.environ.get("NAVER_CLIENT_ID", "").strip()
 NAVER_SECRET = os.environ.get("NAVER_CLIENT_SECRET", "").strip()
 ANTHROPIC_KEY = os.environ.get("ANTHROPIC_API_KEY", "").strip()
+
+# 같은 뜻으로 인정할 단어 (키워드에 왼쪽 단어가 있으면 오른쪽 단어가 들어간 기사도 인정)
+SYNONYMS = {
+    "노동조합": ["노동조합", "노조", "전삼노", "초기업노조", "동행노조"],
+    "노조": ["노조", "노동조합", "전삼노", "초기업노조", "동행노조"],
+}
+# 두 단어 이상 키워드에서만 넓혀 인정하는 말 (예: '삼성전자 노동조합'이면 '삼성 노조' 제목도 인정)
+#  '삼성전자' 한 단어 키워드는 제목에 '삼성전자'가 그대로 있어야 함
+LOOSE_SYNONYMS = {
+    "삼성전자": ["삼성전자", "삼성", "전삼노", "초기업노조", "동행노조"],
+}
+
+# 키워드와 상관없이 늘 빼는 기사 (일정표, 스포츠, 사진 설명, 광고성 글)
+ALWAYS_EXCLUDE = [
+    r"^\[(오늘의|주간|이번주)\s*\S*\s*일정\]", r"\[(프로배구|프로축구|프로야구|프로농구|AI상보|포토|사진|영상|인사|부고|게시판|알림)\]",
+    r"[〈<]\s*사진", r"^\s*사진\s*=", r"오늘의 운세", r"이벤트 당첨", r"\[광고\]",
+]
+
+
+def keyword_terms(keyword):
+    """'삼성전자 노동조합' → [['삼성전자', '삼성', ...], ['노동조합', '노조', ...]]"""
+    words = keyword.split()
+    table = {**SYNONYMS, **(LOOSE_SYNONYMS if len(words) > 1 else {})}
+    return [table.get(w, [w]) for w in words]
+
+
+# '삼성' 뒤에 이런 말이 붙으면 삼성전자가 아닌 계열사로 보고 인정하지 않음
+AFFILIATES = ("바이오", "SDS", "SDI", "에스디에스", "에스디아이", "전기", "디스플레이", "생명", "화재", "물산", "중공업",
+              "증권", "카드", "웰스토리", "라이온즈", "썬더스", "블루윙즈", "E&A", "엔지니어링", "서울병원", "병원",
+              "자산운용", "액티브", "벤처", "글로벌리서치", "에버랜드", "호텔", "신라", "문화재단", "복지재단", "선물", "메디슨")
+
+
+def _has(hay, word):
+    if word != "삼성":
+        return word in hay
+    return any(not hay[m.end():].startswith(AFFILIATES) for m in re.finditer("삼성", hay))
+
+
+def matches_keyword(keyword, *texts):
+    """키워드의 모든 단어(또는 같은 뜻 단어)가 제목에 들어 있는지"""
+    hay = re.sub(r"\s+", "", " ".join(t or "" for t in texts))
+    return all(any(_has(hay, alt) for alt in alts) for alts in keyword_terms(keyword))
+
+
+def load_excludes():
+    try:
+        with open("config.json", encoding="utf-8") as f:
+            return [w.strip() for w in json.load(f).get("exclude", []) if w.strip()]
+    except (OSError, ValueError):
+        return []
+
+
+EXCLUDES = []
+
+
+def is_excluded(title):
+    if any(re.search(p, title) for p in ALWAYS_EXCLUDE):
+        return True
+    t = re.sub(r"\s+", "", title)
+    return any(re.sub(r"\s+", "", w) in t for w in EXCLUDES)
+
+
+def clean_title(title, source=""):
+    """제목 끝에 붙은 '- 언론사', '> 뉴스' 같은 꼬리표 제거"""
+    title = re.sub(r"\s*>\s*(뉴스|기사|경제|산업|사회)\s*$", "", title)
+    if source:
+        title = re.sub(rf"\s*[-|]\s*{re.escape(source)}\s*$", "", title)
+    return title.strip()
+
 
 # 언론사 주소 → 이름 (네이버 API는 언론사 이름을 주지 않아서 주소로 찾음)
 PRESS = {
@@ -57,6 +127,22 @@ PRESS = {
 
 
 # ─────────────────────────── 공통 ───────────────────────────
+def fetch_with_retry(fn, *args, tries=3, wait=20):
+    """서버가 잠깐 거절(429, 5xx)하거나 연결이 끊기면 기다렸다가 다시 시도합니다."""
+    for i in range(tries):
+        try:
+            return fn(*args)
+        except urllib.error.HTTPError as e:
+            if e.code not in (429, 500, 502, 503, 504) or i == tries - 1:
+                raise
+            print(f"  서버가 잠시 거절함({e.code}), {wait * (i + 1)}초 뒤 다시 시도")
+        except (urllib.error.URLError, TimeoutError, ConnectionError) as e:
+            if i == tries - 1:
+                raise
+            print(f"  연결 문제({e}), {wait * (i + 1)}초 뒤 다시 시도")
+        time.sleep(wait * (i + 1))
+
+
 def http_get(url, headers=None, timeout=12):
     req = urllib.request.Request(url, headers={"User-Agent": UA, **(headers or {})})
     with urllib.request.urlopen(req, timeout=timeout) as r:
@@ -142,6 +228,9 @@ def collect_naver(keyword):
         if not title or not link:
             continue
         source = press_from_url(original) or press_from_url(link)
+        title = clean_title(title, source)
+        if not matches_keyword(keyword, title) or is_excluded(title):
+            continue
         items.append({
             "title": title, "link": link, "original": original, "source": source,
             "published": iso(parse_date(it.get("pubDate"))), "keywords": [keyword],
@@ -152,7 +241,9 @@ def collect_naver(keyword):
 
 def collect_google(keyword):
     import xml.etree.ElementTree as ET
-    q = urllib.parse.urlencode({"q": f"{keyword} when:2d", "hl": "ko", "gl": "KR", "ceid": "KR:ko"})
+    terms = " ".join(f'"{a[0]}"' if len(a) == 1 else "(" + " OR ".join(f'"{x}"' for x in a) + ")"
+                     for a in keyword_terms(keyword))
+    q = urllib.parse.urlencode({"q": f"{terms} when:2d", "hl": "ko", "gl": "KR", "ceid": "KR:ko"})
     text, _ = http_get("https://news.google.com/rss/search?" + q)
     items = []
     for it in ET.fromstring(text.encode()).iter("item"):
@@ -162,7 +253,8 @@ def collect_google(keyword):
         source = (src.text or "").strip() if src is not None else ""
         if source and title.endswith(" - " + source):
             title = title[: -(len(source) + 3)].strip()
-        if not title or not link:
+        title = clean_title(title, source)
+        if not title or not link or not matches_keyword(keyword, title) or is_excluded(title):
             continue
         items.append({
             "title": title, "link": link, "source": source,
@@ -239,15 +331,48 @@ def clean_body(text):
     return re.sub(r"[ \t]+", " ", text).strip()
 
 
+JUNK_MARKS = ("▲", "▶", "■", "◆", "편집자", "사진제공", "사진=", "제공=", "Copyright", "ⓒ", "©", "|", "기사원문",
+              "구독", "바로가기", "AI 프리즘", "관련기사", "많이 본", "클릭", "앱 다운")
+
+
+def good_sentences(text):
+    """본문에서 '~다.'로 끝나는 제대로 된 문장만 골라냅니다."""
+    text = html.unescape(text)
+    text = re.sub(r"<[^>]{0,60}>", " ", text)                      # <사진제공=삼성전자> 같은 꺾쇠 설명
+    text = re.sub(r"[ⓒ©]\s?[^\s.]+(\s?(제공|DB))?", "  ", text)             # ⓒ뉴시스 같은 사진 출처 표시
+    text = re.sub(r"[ \t]*\n[ \t]*", "  ", text)          # 줄바꿈(다른 칸)은 두 칸 공백으로 표시
+    text = re.sub(r"[ \t]{3,}", "  ", text)
+    text = re.sub(r"\b\d{4}[.\-/]\s?\d{1,2}[.\-/]\s?\d{1,2}\.?(\s?\d{1,2}:\d{2})?", " ", text)  # 날짜 표기 제거
+    text = re.sub(r"(\d)\.(\d)", "\\1\u2024\\2", text)                          # 3.5% 같은 소수점 보호
+    out = []
+    for s in re.findall(r"[^.!?]+?(?:니다|다|함|음)\.(?=\s|$|[\"'”’])", text):
+        s = re.split(r"\s{2,}", s)[-1]                    # 메뉴·날짜 같은 앞 칸 글자는 버리고 문장만
+        s = s.strip(" \"'”’").replace("\u2024", ".")
+        if not (12 <= len(s) <= 240):
+            continue
+        if any(m in s for m in JUNK_MARKS):
+            continue
+        if re.search(r"(모습|전경|장면|포즈를 취하고 있다|기념촬영을 하고 있다)\.$", s):  # 사진 설명
+            continue
+        if re.match(r"^\d{1,2}일\s*(\(현지시간\))?\s*\S+에서", s) and s.endswith("있다."):  # 사진 설명 흔한 형태
+            continue
+        out.append(s)
+    return out
+
+
 def first_sentences(text, n=2, limit=200):
-    sents = re.findall(r".+?(?:다|요|음|함)\.(?=\s|$)|.+?[.!?](?=\s|$)", text.replace("\n", " "))
     out = ""
-    for s in sents[:n]:
-        s = s.strip()
+    for s in good_sentences(text)[:n]:
         if len(out) + len(s) > limit and out:
             break
         out = (out + " " + s).strip()
     return out[:limit].strip()
+
+
+def looks_bad(summary):
+    """예전에 잘못 뽑힌 요약인지 판단합니다."""
+    return (not re.search(r"(다|함|음)\.", summary or "")) or any(m in (summary or "") for m in JUNK_MARKS) \
+        or "&lt;" in (summary or "") or (summary or "").endswith("...")
 
 
 def brief_from_sentence(sentence):
@@ -269,9 +394,11 @@ def fetch_article(a):
         url = real
     page, final = http_get(url)
     body = clean_body(extract_body(page, final))
-    if len(body) < 60:
-        desc = meta(page, "og:description", "description")
-        body = clean_body(desc) if len(desc) > len(body) else body
+    desc = clean_body(meta(page, "og:description", "description"))
+    if not good_sentences(body) and good_sentences(desc):
+        body = desc                              # 본문에서 문장을 못 찾으면 기사 소개글을 씀
+    elif len(body) < 60 and len(desc) > len(body):
+        body = desc
     source = a.get("source") or meta(page, "og:article:author", "article:publisher", "og:site_name")
     if not source or "네이버" in source:   # 네이버 뉴스: 상단 언론사 로고의 이름
         m = re.search(r'media_end_head_top_logo[^>]*>\s*<img[^>]+alt="([^"]+)"', page) or \
@@ -322,8 +449,8 @@ def summarize(a):
         a["link"] = final                       # 보고서에 실제 기사 주소가 들어가도록
     if source and not a.get("source"):
         a["source"] = source
-    if len(body) < 40:
-        body = a.get("snippet", "")
+    if not good_sentences(body) and a.get("snippet"):
+        body = a["snippet"]
     if len(body) < 40:
         raise RuntimeError("본문을 찾지 못함")
     if ANTHROPIC_KEY:
@@ -334,6 +461,8 @@ def summarize(a):
         except Exception as e:
             print(f"  AI 요약 실패, 첫머리로 대신함: {e}", file=sys.stderr)
     lead = first_sentences(body)
+    if not lead:
+        raise RuntimeError("요약할 만한 문장을 찾지 못함")
     a["summary"] = lead
     a["brief"] = brief_from_sentence(first_sentences(body, n=1, limit=140))
     a["summaryBy"] = "lead"
@@ -346,6 +475,7 @@ def month_of(iso_str):
 
 def main():
     keywords = load_keywords()
+    EXCLUDES[:] = load_excludes()
     use_naver = bool(NAVER_ID and NAVER_SECRET)
     collector = collect_naver if use_naver else collect_google
     print(f"수집 방식: {'네이버 뉴스 API' if use_naver else 'Google 뉴스 RSS'}, 요약: {'AI' if ANTHROPIC_KEY else '기사 첫머리'}")
@@ -353,15 +483,16 @@ def main():
     fresh, ok = [], 0
     for kw in keywords:
         try:
-            got = collector(kw)
+            got = fetch_with_retry(collector, kw)
             fresh += got
             ok += 1
             print(f"[{kw}] {len(got)}건")
         except Exception as e:
             print(f"[{kw}] 수집 실패: {e}", file=sys.stderr)
     if ok == 0:
-        print("모든 키워드 수집에 실패해서 기사 파일을 바꾸지 않습니다.", file=sys.stderr)
-        sys.exit(1)
+        # 수집처가 잠깐 막힌 경우: 기존 기사는 그대로 두고, 빨간 에러 대신 경고만 남김
+        print("::warning::모든 키워드 수집에 실패했습니다. 기존 기사는 그대로 두고 다음 실행에서 다시 시도합니다.")
+        return
 
     os.makedirs(NEWS_DIR, exist_ok=True)
     stores = {}
@@ -371,6 +502,25 @@ def main():
             path = os.path.join(NEWS_DIR, f"{month}.json")
             stores[month] = {a["id"]: a for a in read_json(path, {"items": []}).get("items", [])}
         return stores[month]
+
+    # 이미 저장된 기사도 키워드 조건에 안 맞으면 정리 (예전의 엉뚱한 검색 결과 제거)
+    for name in os.listdir(NEWS_DIR):
+        m = re.fullmatch(r"(\d{4}-\d{2})\.json", name)
+        if m:
+            store_for(m.group(1))
+    removed = 0
+    for store in stores.values():
+        for aid in list(store):
+            a = store[aid]
+            a["title"] = clean_title(a.get("title", ""), a.get("source", ""))
+            kept = [k for k in a.get("keywords", []) if k in keywords and matches_keyword(k, a["title"])]
+            if not kept or is_excluded(a["title"]):
+                del store[aid]
+                removed += 1
+            else:
+                a["keywords"] = kept
+    if removed:
+        print(f"키워드와 맞지 않는 기존 기사 {removed}건 정리")
 
     # 언론사 이름이 비어 있는 네이버 기사는 본문을 읽을 때 채움 → id는 제목 기준으로 먼저 정함
     added = 0
@@ -387,6 +537,11 @@ def main():
 
     # 요약: 최근 기사 중 아직 요약이 없는 것부터
     cutoff = datetime.now(timezone.utc) - timedelta(days=SUMMARY_LOOKBACK_DAYS)
+    for st in stores.values():
+        for a in st.values():
+            if a.get("summaryBy") == "lead" and looks_bad(a.get("summary")) and not a.get("redone"):
+                a.pop("summary", None); a.pop("brief", None); a.pop("summaryBy", None)
+                a["redone"] = True                # 잘못 뽑힌 요약은 한 번만 다시 시도
     todo = [a for st in stores.values() for a in st.values()
             if not a.get("summary") and a.get("summaryTries", 0) < 2
             and datetime.fromisoformat(a["published"].replace("Z", "+00:00")) >= cutoff]
