@@ -2,6 +2,71 @@
  "month": "2026-11",
  "items": [
   {
+   "title": "[데이터&뉴스] SK하이닉스 영업이익률 76.7% 1000대 기업 중 '톱'…삼성전자 영업이익 254조 '1위'",
+   "link": "https://www.consumernews.co.kr/news/articleView.html?idxno=768879",
+   "source": "소비자가 만드는 신문",
+   "published": "2026-11-23T21:11:00Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "631ff7ec4d8a",
+   "summary": "지난해 같은 기간 43.6%에서 33.1%포인트 상승했다.",
+   "brief": "지난해 같은 기간 43.6%에서 33.1%포인트 상승했다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "삼성전자 모바일 메모리 매입가 263%↑…완제품 부문 3분기 8000억 적자",
+   "link": "https://www.wolyo.co.kr/news/articleView.html?idxno=320949",
+   "source": "월요신문",
+   "published": "2026-11-23T21:05:59Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "bf7591fc9923",
+   "summary": "삼성전자 완제품(DX)부문의 올해 1~9월 모바일용 메모리 평균 매입가격이 지난해 연평균보다 약 263% 상승한 것으로 나타났다.",
+   "brief": "삼성전자 완제품(DX)부문의 올해 1~9월 모바일용 메모리 평균 매입가격이 지난해 연평균보다 약 263% 상승한 것으로 나타났다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "\"삼성전자 30만원에 물렸다면 3년 각오\"…40년 슈퍼개미의 경고",
+   "link": "https://www.fnnews.com/news/202611232217569961",
+   "source": "파이낸셜뉴스",
+   "published": "2026-11-23T20:30:00Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "79644c6e668e",
+   "summary": "[파이낸셜뉴스] 인공지능(AI) 거품 논란으로 국내 증시가 급락한 가운데 삼성전자를 30만원 이상, SK하이닉스를 200만원 이상에 매수한 투자자들은 장기간 주가 회복을 기다려야 할 수 있다는 증시 전문가의 전망이 나왔다. 당장 손절매에 나서기보다 내년 1월까지 시장 상황을 살펴보고 투자 위험을 관리해야 한다는 조언이다.",
+   "brief": "",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "삼성전자 후속 임원인사 '초읽기'…\"반도체 호황, 승진 규모에도 반영될까\"",
+   "link": "https://www.newsis.com/view/NISX20261123_0003879841",
+   "source": "뉴시스",
+   "published": "2026-11-23T20:30:00Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "d9a7f6448e80",
+   "summary": "[서울=뉴시스]박나리 기자 = 삼성전자의 부사장 이하 후속 임원인사가 임박하면서 반도체(DS)부문과 완제품(DX)부문의 인사 방향에 관심이 쏠리고 있다. 24일 업계에 따르면 삼성전자는 지난 20일 사장단 인사에 이어 이르면 이날 부사장·상무급 임원인사와 조직개편을 순차적으로 발표할 전망이다.",
+   "brief": "[서울=뉴시스]박나리 기자 = 삼성전자의 부사장 이하 후속 임원인사가 임박하면서 반도체(DS)부문과 완제품(DX)부문의 인사 방향에 관심이 쏠리고 있다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "삼성전자 반도체 증설 투자, 아산 지역 건설업계 일감·일자리로 잇는다",
+   "link": "https://www.asanfocus.co.kr/news/articleView.html?idxno=54673",
+   "source": "아산포커스",
+   "published": "2026-11-23T20:21:28Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "6cc8d9c5cc22",
+   "summary": "아산시(시장 오세현)가 삼성전자㈜ 온양사업장 반도체 공장 증설에 따른 지역 건설업체의 일감과 시민의 일자리로 이어질 수 있도록 지원에 나서고 있다. 시는 시공사와 꾸준히 협의하며 관련 정보를 지역 건설업계와 공유하고 있다.",
+   "brief": "아산시(시장 오세현)가 삼성전자㈜ 온양사업장 반도체 공장 증설에 따른 지역 건설업체의 일감과 시민의 일자리로 이어질 수 있도록 지원에 나서고 있다는 기사",
+   "summaryBy": "lead"
+  },
+  {
    "title": "삼성전자, 오늘 임원인사·조직개편…반도체 승진 폭 주목",
    "link": "http://www.inews24.com/view/2029500",
    "source": "아이뉴스24",
@@ -62,6 +127,30 @@
    "id": "6724bef8d9fb",
    "summary": "삼성전자의 2027년부터 2029년까지 메모리 반도체 생산능력 대부분이 주요 고객사와의 계약으로 확보됐다.",
    "brief": "삼성전자의 2027년부터 2029년까지 메모리 반도체 생산능력 대부분이 주요 고객사와의 계약으로 확보됐다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "삼성전자 마이크로 RGB TV",
+   "link": "https://www.etnews.com/tools/image_popup.html?v=bjQ5VkNYY2dLZTZMZFBUbmNzandvWmpGcjBTK1pHYm1CUVRXR0pTMldlYVZkdE5JeGJVUFVVNURJN04rbmhKTXR3bThUNHFiVkdUUTR0WjBHSmFBalhrSVpSVWF2SnJmeENSOVNiMStOUVRSUXNWRmxHemxtTGVDaC9GWFlzK1E2MzNXNGVyQ3ZTOGI4N0F0SForMFlNMzJwaTNtV3JZWDdaWW44Z1NHa3dPVkxyN1FWQnBPUGNDeXJ2VjdmN21WNlZTWDFkWWZVbFc4M3ZqaDFsMThnYzlhTGxWeVd4T1pnUE5SWmRHa0hMbnNaOWJIaDJRMWpJV3pDa2M5ZGcxRHZJSzBoeko3NlpabWtDVnQwQnJLQnc9PQ",
+   "source": "전자신문",
+   "published": "2026-11-23T14:38:21Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "0390ba2c78b2",
+   "summaryTries": 1
+  },
+  {
+   "title": "글로벌 IB 잇단 반도체 경고…삼성전자·하이닉스 목표가 줄하향",
+   "link": "https://www.hansbiz.co.kr/news/articleView.html?idxno=886382",
+   "source": "한스경제",
+   "published": "2026-11-23T12:22:58Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "69497a613999",
+   "summary": "23일 금융투자업계를 인용한 연합뉴스 보도에 따르면 골드만삭스는 전일(현지시각) 발표한 보고서에서 삼성전자의 목표주가를 기존 50만원에서 35만원으로 30% 하향 조정했다. SK하이닉스의 목표주가도 350만원에서 200만원으로 약 43% 낮췄다.",
+   "brief": "23일 금융투자업계를 인용한 연합뉴스 보도에 따르면 골드만삭스는 전일(현지시각) 발표한 보고서에서 삼성전자의 목표주가를 기존 50만원에서 35만원으로 30% 하향 조정했다는 기사",
    "summaryBy": "lead"
   },
   {
@@ -130,6 +219,19 @@
    "summaryBy": "lead"
   },
   {
+   "title": "상위 1% 순매수 1위는 ‘삼성전자’…인버스는 대거 차익 실현 [주식고수]",
+   "link": "https://m.segye.com/view/20261123515926",
+   "source": "세계일보",
+   "published": "2026-11-23T08:52:23Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "1c829668772d",
+   "summary": "주식 투자자라면 한 번쯤 가져봤을 궁금증입니다. ‘주식고수’는 이 직관적인 질문에서 출발합니다.",
+   "brief": "주식 투자자라면 한 번쯤 가져봤을 궁금증입니다는 기사",
+   "summaryBy": "lead"
+  },
+  {
    "title": "삼성전자 中 가전 사업 ‘체질 개선’ 속도…판매법인 매출·광고 관련비 ↓",
    "link": "https://www.asiatoday.co.kr/kn/view.php?key=20261123010008836",
    "source": "아시아투데이",
@@ -166,6 +268,19 @@
    "id": "ab8014de0b72",
    "summary": "현재 로봇 칩 시장은 엔비디아의 '젯슨 토르'가 장악하고 있다 해도 과언이 아닙니다.",
    "brief": "현재 로봇 칩 시장은 엔비디아의 '젯슨 토르'가 장악하고 있다 해도 과언이 아닙니다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "삼성전자, 반도체 사장 3명 승진···실적 보상 넘어 '기술·고객' 재편",
+   "link": "https://www.finomy.com/news/articleView.html?idxno=267600",
+   "source": "현대경제신문",
+   "published": "2026-11-23T08:28:52Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "eaf18a4fd0c2",
+   "summary": "메모리 개발과 미주 사업, 반도체 공정을 이끌어온 인물들을 핵심 보직에 배치했다. 전영현 부회장은 DS부문장 자리를 유지하되 겸직하던 메모리사업부장은 내려놓았다.",
+   "brief": "메모리 개발과 미주 사업, 반도체 공정을 이끌어온 인물들을 핵심 보직에 배치했다는 기사",
    "summaryBy": "lead"
   },
   {
@@ -659,6 +774,17 @@
    "summaryTries": 2
   },
   {
+   "title": "매도 압력이 계속 주도하는 가운데 삼성전자 주가 하락",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPTG1wRjhZUEpSYmdjQ2k1dEVsNU5aUFJObmhzNHY2dzY1U1N4aUQydGtadndUdi1UOERDSWNJSGplanp4cDljdl9Ra2tXUlNhMExmeV9JMHJ2QWlWZjZfY3BzRVdMXzJKYzBNZkhOOFRkV2d1UWtnckFEQ18wV0VmdENYcXlVTWZxR25IYzYtWG8xOV9MdUtPTERKbUEtOGM?oc=5",
+   "source": "Traders Union",
+   "published": "2026-11-23T02:07:20Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "464b81757f3e",
+   "summaryTries": 1
+  },
+  {
    "title": "[산업계 동향] 삼성전자ㆍLG전자(11.23)",
    "link": "https://www.weeklytoday.com/news/articleView.html?idxno=802955",
    "source": "위클리오늘",
@@ -692,6 +818,17 @@
    "summary": "23일 미국 국제무역위원회(ITC·United States International Trade Commission)의 공식 결정문에 따르면 ITC는 지난달 삼성전자 등이 포함된 특허침해 조사의 일부 종결 결정에 대한 재심사 여부 판단 기한을 11월 23일로 연장했다.",
    "brief": "",
    "summaryBy": "lead"
+  },
+  {
+   "title": "AI 악용 해커 'n0n' 표적 된 북미 삼성전자… 시청 이벤트 15만 건 다크웹 노출",
+   "link": "https://www.dailysisa.com/news/articleView.html?idxno=52831",
+   "source": "데일리시사닷컴",
+   "published": "2026-11-23T01:43:21Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "19feb47949f8",
+   "summaryTries": 1
   },
   {
    "title": "삼성전자, 다이나믹 듀오 콘서트 '삼성 TV 플러스' 무료 독점 생중계",
