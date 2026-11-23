@@ -2,6 +2,19 @@
  "month": "2026-11",
  "items": [
   {
+   "title": "삼성전자 2029년 메모리 사실상 완판…2031년 장기계약 추진",
+   "link": "https://www.creditnews.kr/news/articleView.html?idxno=32829",
+   "source": "한국신용신문",
+   "published": "2026-11-23T15:15:00Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "6724bef8d9fb",
+   "summary": "삼성전자의 2027년부터 2029년까지 메모리 반도체 생산능력 대부분이 주요 고객사와의 계약으로 확보됐다.",
+   "brief": "삼성전자의 2027년부터 2029년까지 메모리 반도체 생산능력 대부분이 주요 고객사와의 계약으로 확보됐다는 기사",
+   "summaryBy": "lead"
+  },
+  {
    "title": "\"삼성전자 7만원, SK하이닉스 20만원\" 주장 … 팩트체크 해봤습니다",
    "link": "https://contents.premium.naver.com/yokakman/reports/contents/261123211928166hb",
    "source": "네이버 프리미엄콘텐츠",
@@ -125,7 +138,7 @@
     "삼성전자"
    ],
    "id": "d2999843e140",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "[채널Who] 삼성전자와 TSMC까지 중국 출하 중단, 미국 반도체 수출 통제 강화",
@@ -147,7 +160,7 @@
     "삼성전자"
    ],
    "id": "68613138b65e",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "‘갤럭시 7년’ 노태문 삼성전자 사장… 다음 승부처는 ‘로봇’",
@@ -197,7 +210,7 @@
     "삼성전자"
    ],
    "id": "46ab1766b2a3",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "노태문 삼성전자 사장 \"부품값 급등에도 해법 찾아온 MX…더 높은 미래 열 것\"",
