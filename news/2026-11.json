@@ -2,6 +2,30 @@
  "month": "2026-11",
  "items": [
   {
+   "title": "코스피·삼성전자, 'AI 불신 도미노'에 급락...연초 수준 붕괴",
+   "link": "https://www.cwn.kr/news/articleView.html?idxno=62380",
+   "source": "www.cwn.kr",
+   "published": "2026-11-23T03:55:00Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "0dc8aaceb01e",
+   "summaryTries": 1
+  },
+  {
+   "title": "삼성전자, AI '인물 생성' 차단 특허 미국서 출원",
+   "link": "https://www.ngetnews.com/news/articleView.html?idxno=556193",
+   "source": "뉴스저널리즘",
+   "published": "2026-11-23T03:01:52Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "a0159fa4ee1b",
+   "summary": "삼성전자가 생성형 인공지능(AI)의 사진 편집에서 원치 않는 인물이 새로 만들어지는 현상을 막는 기술을 특허 출원했다. 사진 속 사람을 지우거나 화면을 확장할 때 AI가 존재하지 않던 얼굴과 신체를 생성하는 문제를 해결하기 위해서다.",
+   "brief": "삼성전자가 생성형 인공지능(AI)의 사진 편집에서 원치 않는 인물이 새로 만들어지는 현상을 막는 기술을 특허 출원했다는 기사",
+   "summaryBy": "lead"
+  },
+  {
    "title": "삼성전자 ‘재무통’ 최진원, 삼성글로벌리서치 사장으로…계열사 경영진단 맡는다",
    "link": "https://biz.chosun.com/it-science/ict/2026/11/23/Q274TM6ANZDZJBFII3YMDWNW4Y/",
    "source": "Chosunbiz",
@@ -23,7 +47,7 @@
     "삼성전자"
    ],
    "id": "9a95edbb66a7",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "삼성전자, 다이나믹 듀오 연말 콘서트 무료 생중계",
@@ -34,7 +58,7 @@
     "삼성전자"
    ],
    "id": "8f07b2ee5f3b",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "[산업계 동향] 삼성전자ㆍLG전자(11.23)",
@@ -45,6 +69,17 @@
     "삼성전자"
    ],
    "id": "b09d8092cb0a",
+   "summaryTries": 2
+  },
+  {
+   "title": "삼성전자서비스 충청지사, 지적장애인 거주시설 행복마을에 김장김치 나눔봉사로 사회공헌활동 펼쳐",
+   "link": "https://www.kplus.kr/news/articleView.html?idxno=585952",
+   "source": "코리아플러스",
+   "published": "2026-11-23T02:00:54Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "8236c18014dd",
    "summaryTries": 1
   },
   {
@@ -82,7 +117,7 @@
     "삼성전자"
    ],
    "id": "fae61e0dbfab",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "삼성전자, ‘다이나믹 듀오’ 연말 콘서트 삼성 TV 플러스서 무료 생중계",
@@ -93,7 +128,7 @@
     "삼성전자"
    ],
    "id": "2e5687e9a139",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "삼성전자, 다이나믹 듀오 연말 콘서트 무료 독점 생중계",
@@ -104,7 +139,7 @@
     "삼성전자"
    ],
    "id": "ed8a017e11d0",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "코스피 4700선 붕괴 위기…미국 반도체 쇼크에 삼성전자·SK하이닉스 동반 하락",
@@ -141,7 +176,7 @@
     "삼성전자"
    ],
    "id": "30ec646a34a1",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "[특징주] 삼성전자·SK하이닉스, 美 반도체주 폭락 여파.. '급락'",
@@ -244,7 +279,7 @@
     "삼성전자"
    ],
    "id": "c77b24b16fcd",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "삼성전자·하이닉스, 11월 1~20일 반도체 수출 385억 달러… 제 기준선 355억 넘었는데 코스피는 왜 빠지나",
