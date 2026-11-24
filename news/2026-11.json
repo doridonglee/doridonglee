@@ -2,6 +2,67 @@
  "month": "2026-11",
  "items": [
   {
+   "title": "[단독] 삼성전자 HBM4E, 핀당 17Gbps 구현…6개월 만에 최고속도 경신",
+   "link": "https://www.inews24.com/view/2030030",
+   "source": "아이뉴스24",
+   "published": "2026-11-24T22:00:00Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "645927b7dd67",
+   "summary": "삼성전자가 차세대 고대역폭메모리(HBM)인 7세대 HBM4E의 동작 속도를 핀당 17Gbps(초당 기가비트)까지 높였다. 지난 5월 최대 16Gbps를 공개한 지 약 6개월 만에 성능을 6.25% 향상된 수치다.",
+   "brief": "삼성전자가 차세대 고대역폭메모리(HBM)인 7세대 HBM4E의 동작 속도를 핀당 17Gbps(초당 기가비트)까지 높였다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "삼성전자·SK하이닉스 이잉여금 686조원⋯2년 새 391조원 늘어",
+   "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFA1N2wxbHk3cnRVTEFJSHh6c3hZc0UxeE9USGJXVlNGXzJpRGxXcTVmUFpJUmZkaW55YkR1bmhIZVFxVko4aGVWWkxWMzZUdVdvRWhuVQ?oc=5",
+   "source": "이투데이",
+   "published": "2026-11-24T21:26:00Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "2960b464b5ee",
+   "summaryTries": 1
+  },
+  {
+   "title": "삼성전자·메타 'AI 안경', 불법촬영 차단 기능 속속 도입...부정행위 줄어들까?",
+   "link": "https://www.consumernews.co.kr/news/articleView.html?idxno=769003",
+   "source": "소비자가 만드는 신문",
+   "published": "2026-11-24T21:10:00Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "a2b07522aff7",
+   "summary": "AI 안경 불법촬영이 뜨거운 이슈로 대두된 가운데 삼성전자(대표 전영현·노태문)와 메타 제품에 불법촬영 방지 기술이 적용돼 앞으로 AI 안경을 이용한 부정행위가 줄어들지 관심을 모으고 있다. 삼성전자는 오는 12월 10일 한국과 미국에 출시를 앞둔 AI 안경에 촬영 여부를 알리는 외부 LED 표시등을 탑재했다.",
+   "brief": "AI 안경 불법촬영이 뜨거운 이슈로 대두된 가운데 삼성전자(대표 전영현·노태문)와 메타 제품에 불법촬영 방지 기술이 적용돼 앞으로 AI 안경을 이용한 부정행위가 줄어들지 관심을 모으고 있다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "삼성전자 '별 달기' 10년 만에 최소…여성 임원 승진 역대 최다",
+   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5yNDFLS2ZNeXFpT2hFWlJDc3V2dk1LZU1nNUM4U3VZV3VOTnBNZGNzdFlzN29Rd0JCZXY0LVZ6MFlHeTZhV3hHSEQ2QTMxWEI2dWt4eFlwMmdVaDZ5NlFsX2kyRzU?oc=5",
+   "source": "뉴스1",
+   "published": "2026-11-24T21:00:00Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "c7821d345b30",
+   "summaryTries": 1
+  },
+  {
+   "title": "AMD까지 무너졌다…미국 반도체주 급락에 삼성전자·SK하이닉스 '초긴장'",
+   "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=507713",
+   "source": "핀포인트뉴스",
+   "published": "2026-11-24T20:23:46Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "d3c435b1c080",
+   "summary": "24일(현지시간) 뉴욕증시에서 반도체 대표 종목들이 일제히 급락하며 투자자들의 불안감을 키웠다. 엔비디아와 마이크론테크놀로지, AMD가 두 자릿수에 가까운 낙폭을 기록한 가운데 반도체 업종 전반에 매도 물량이 집중됐다.",
+   "brief": "24일(현지시간) 뉴욕증시에서 반도체 대표 종목들이 일제히 급락하며 투자자들의 불안감을 키웠다는 기사",
+   "summaryBy": "lead"
+  },
+  {
    "title": "퍼포먼스플러스, 삼성전자 기술나눔 선정… 특허 활용한 교육서비스 사업화 추진",
    "link": "https://www.kmkj.kr/news/articleView.html?idxno=145291",
    "source": "국민기자뉴스",
@@ -66,6 +127,17 @@
    "summary": "삼성전자가 올해 임원 승진자를 20%가량 줄였음에도 역대급 실적을 이끈 반도체 분야 인재를 대거 승진시켰다. 삼성전자는 24일 부사장 39명, 상무 78명, 펠로 2명, 마스터 12명 등 총 131명의 승진을 발표했다.",
    "brief": "삼성전자가 올해 임원 승진자를 20%가량 줄였음에도 역대급 실적을 이끈 반도체 분야 인재를 대거 승진시켰다는 기사",
    "summaryBy": "lead"
+  },
+  {
+   "title": "삼성전자, 임원 승진 131명…9년 만에 최소에도 반도체 인재 중용",
+   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE00ZU9qLXNJMUktMktjZWpIUVo5ajJQXzdmYk1CYzJSU3kzWXNya0x0ek5mSndQRXRIOWplcFk0T3VIZ2VrRmd6VXJEMlh3WGxZMnlmbERtbFpuNjJucERBZzI0Rnlfa0Q3?oc=5",
+   "source": "CBC뉴스",
+   "published": "2026-11-24T15:20:00Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "3ea311a986a1",
+   "summaryTries": 1
   },
   {
    "title": "삼성전자, '역대급 호황' 반도체서만 임원 70명 발탁",
@@ -273,6 +345,17 @@
    "summaryBy": "lead"
   },
   {
+   "title": "삼성전자 직원의 부정수급과 월세 폭증의 연결고리",
+   "link": "https://biz.sbs.co.kr/article/20000348632",
+   "source": "SBS Biz",
+   "published": "2026-11-24T10:02:00Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "dd3ae1c26acb",
+   "summaryTries": 1
+  },
+  {
    "title": "삼성전자, 웨어러블·플랫폼·로봇 인재 중용…\"미래 기술 선점\"",
    "link": "https://www.newstopkorea.com/ko-kr/articles/49273",
    "source": "뉴스톱",
@@ -412,14 +495,17 @@
   },
   {
    "title": "삼성전자, 임원 승진 축소에도 반도체 인재 대거 승진… 여성 승진자 역대 최대",
-   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1QbnlMUjh1MVQ2eGpVLVI5eXJ5MHVSOXBDY0N1TGwtWDFBTnZXWTJRbElHUXBPV3gybW5XUHpXbEdXZDNJa3FIalpxbDlCWEttSkJZTTk3dDE4TXlIWnpCM2x1THZEd9IBZkFVX3lxTE1QbnlMUjh1MVQ2eGpVLVI5eXJ5MHVSOXBDY0N1TGwtWDFBTnZXWTJRbElHUXBPV3gybW5XUHpXbEdXZDNJa3FIalpxbDlCWEttSkJZTTk3dDE4TXlIWnpCM2x1THZEdw?oc=5",
+   "link": "https://www.donga.com/news/amp/all/20261124/135080655/1",
    "source": "동아일보",
    "published": "2026-11-24T08:22:41Z",
    "keywords": [
     "삼성전자"
    ],
    "id": "9edec54b3a7f",
-   "summaryTries": 1
+   "summaryTries": 1,
+   "summary": "삼성전자가 올해 임원 승진자를 20%가량 줄였음에도 역대급 실적을 이끈 반도체 분야 인재를 대거 승진시켰다. 삼성전자는 24일 부사장 39명, 상무 78명, 펠로 2명, 마스터 12명 등 총 131명의 승진을 발표했다.",
+   "brief": "삼성전자가 올해 임원 승진자를 20%가량 줄였음에도 역대급 실적을 이끈 반도체 분야 인재를 대거 승진시켰다는 기사",
+   "summaryBy": "lead"
   },
   {
    "title": "삼성전자 임원 131명 승진 인사…반도체 부문이 53% 차지",
@@ -591,6 +677,17 @@
    "summary": "삼성전자가 24일 2027년 정기 임원 인사에서 131명을 승진시킨 가운데 여성은 역대 최다인 11명(8.4%)을 기록했다. 전체 임원 승진 규모는 지난해 161명에서 올해 131명으로 18.6% 감소했지만, 여성 승진자는 9명에서 11명으로 늘었다.",
    "brief": "삼성전자가 24일 2027년 정기 임원 인사에서 131명을 승진시킨 가운데 여성은 역대 최다인 11명(8.4%)을 기록했다는 기사",
    "summaryBy": "lead"
+  },
+  {
+   "title": "삼성 초기업노조, 30일까지 DX부문 성과급 통합 의견 수렴",
+   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE0xTHh5RHhLUHduRmYxVTlZZ2o1RG1zZVhDTnFqYlpsT1dYZ25ucU8yMW5LRno0MW9mSG5KbUhaRWR5ZFFRMndDSTI5WjF5Vi0xaWtj0gFYQVVfeXFMTWxudnYwVTB5aHFkR21DaDV2a0o1WmZVOXhhTno0amRIWjFHbV85dVZqSUxaM2tKb0VvWDBENEN6R3lqbkZObDgzRl9mejZqaWl0MGtNWUhwVw?oc=5",
+   "source": "SBS Biz",
+   "published": "2026-11-24T07:28:00Z",
+   "keywords": [
+    "삼성전자 노동조합"
+   ],
+   "id": "c40ed7c94ac3",
+   "summaryTries": 1
   },
   {
    "title": "삼성전자 부사장 39명 승진…반도체 우대, 여성 발탁 '최대'",
