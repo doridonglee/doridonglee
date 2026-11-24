@@ -2,6 +2,898 @@
  "month": "2026-11",
  "items": [
   {
+   "title": "삼성전자, '2027년 정기 임원 인사' 단행…성과주의 원칙 반영",
+   "link": "https://tfmedia.co.kr/mobile/article.html?no=209168",
+   "source": "조세금융신문",
+   "published": "2026-11-24T01:11:36Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "357492a0687e",
+   "summary": "(조세금융신문=김필주 기자) 삼성전자가 24일 부사장, 상무 승진 등 총 131명에 대한 ‘2027년 정기 임원 인사’를 단행했다. 앞서 지난 20일 삼성전자는 사장 승진 3명, 위촉업무 변경 3명 등 총 6명 규모의 ‘2027년 정기 사장단 인사’를 실시한 바 있다.",
+   "brief": "(조세금융신문=김필주 기자) 삼성전자가 24일 부사장, 상무 승진 등 총 131명에 대한 ‘2027년 정기 임원 인사’를 단행했다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "삼성전자, 임원 131명 승진…HBM·로봇·AI 핵심 인재 전진배치",
+   "link": "http://www.ftoday.co.kr/news/articleView.html?idxno=370412",
+   "source": "파이낸셜투데이",
+   "published": "2026-11-24T01:04:27Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "ddf621380b45",
+   "summary": "삼성전자가 역대 최대 실적을 이끈 반도체 핵심 인력을 대거 중용하며 총 131명 규모의 2027년도 정기 임원 인사를 단행했다.",
+   "brief": "삼성전자가 역대 최대 실적을 이끈 반도체 핵심 인력을 대거 중용하며 총 131명 규모의 2027년도 정기 임원 인사를 단행했다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "삼성전자, 2027년 정기 임원 인사 단행",
+   "link": "https://www.kihoilbo.co.kr/news/articleView.html?idxno=3041893",
+   "source": "기호일보",
+   "published": "2026-11-24T01:00:26Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "dc360832b588",
+   "summary": "삼성전자가 24일 부사장·상무·펠로우·마스터에 대한 2027년 정기 임원 인사를 단행했다.",
+   "brief": "삼성전자가 24일 부사장·상무·펠로우·마스터에 대한 2027년 정기 임원 인사를 단행했다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "나이·성별 장벽 허문 삼성전자…30대 상무에 여성 승진 역대 최다",
+   "link": "https://www.mt.co.kr/index.php/industry/2026/11/24/2026112409150428358",
+   "source": "머니투데이",
+   "published": "2026-11-24T01:00:19Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "aa4d7dcbc0b4",
+   "summary": "연령과 성별, 국적에 관계없이 미래 기술 경쟁력을 이끌 핵심 인재를 발탁하는 데 초점을 맞췄다. 이번 인사에서는 40대 부사장 7명과 30대 상무를 배출하는 등 젊은 인재의 약진이 두드러졌다.",
+   "brief": "연령과 성별, 국적에 관계없이 미래 기술 경쟁력을 이끌 핵심 인재를 발탁하는 데 초점을 맞췄다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "삼성전자 2027년 임원 인사...\"승진 문은 좁히고 반도체엔 집중\"",
+   "link": "https://www.m-economynews.com/news/article.html?no=73502",
+   "source": "M이코노미뉴스",
+   "published": "2026-11-24T00:58:40Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "6e607a7e90ff",
+   "summary": "삼성전자는 부사장 39명, 상무 78명, 펠로우 12명, 마스터 1명 등 총 131명을 승진시키는 '2027년 정기 임원 인사'를 실시했다고 24일 밝혔다. 승진 규모는 작년보다 20% 가까이 줄었지만 역대 최대 실적을 이끈 반도체 부문 인재는 대거 승진시켰다.",
+   "brief": "삼성전자는 부사장 39명, 상무 78명, 펠로우 12명, 마스터 1명 등 총 131명을 승진시키는 '2027년 정기 임원 인사'를 실시했다고 24일 밝혔다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "삼성전자, 임원 131명 승진 인사…반도체 중용·여성 승진자 역대 최다",
+   "link": "https://www.newsworks.co.kr/news/articleView.html?idxno=904143",
+   "source": "뉴스웍스",
+   "published": "2026-11-24T00:57:39Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "544e4654c153",
+   "summaryTries": 1
+  },
+  {
+   "title": "삼성전자, '최대 실적' 반도체 성과 보상…AI·로봇 인재 전진배치",
+   "link": "https://www.mt.co.kr/industry/2026/11/24/2026112409285769976",
+   "source": "머니투데이",
+   "published": "2026-11-24T00:57:21Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "c2bbd73e0295",
+   "summary": "전체 승진 규모는 지난해보다 30명 줄었지만 역대 최대 실적을 이끈 반도체 분야 핵심 인재들을 중용했다. 로봇과 AI(인공지능), 파운드리(반도체 위탁생산) 등 미래 기술 인재를 발탁하고 역대 가장 많은 여성 임원 승진자를 배출했다.",
+   "brief": "전체 승진 규모는 지난해보다 30명 줄었지만 역대 최대 실적을 이끈 반도체 분야 핵심 인재들을 중용했다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "삼성전자, HBM4 주역 등 임원 131명 승진…분기 100조 영업익에도 30명 줄어",
+   "link": "https://www.donga.com/news/Economy/article/all/20261124/135078922/1",
+   "source": "동아일보",
+   "published": "2026-11-24T00:56:58Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "40f793bf7100",
+   "summary": "삼성전자가 2027년 정기 임원 인사를 단행했다. 삼성전자는 24일 부사장 39명, 상무 78명, 펠로우 2명, 마스터 12명 등 131명을 승진시키는 내용의 2027년 정기 임원 인사를 실시했다고 밝혔다.",
+   "brief": "삼성전자가 2027년 정기 임원 인사를 단행했다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "삼성전자, HBM4 주도 인재 승진…AI 메모리·파운드리 경쟁력 강화",
+   "link": "https://www.topdaily.kr/articles/113070",
+   "source": "톱데일리",
+   "published": "2026-11-24T00:55:00Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "e880dc567a09",
+   "summary": "삼성전자가 고대역폭메모리(HBM)4 개발과 양산을 주도한 반도체 인재를 부사장으로 승진시키고 로봇·인공지능(AI)·파운드리 등 미래 성장동력 분야의 기술 리더를 발탁하며 사업 경쟁력 강화에 나섰다. AI 메모리 시장에서 성과를 낸 인재를 중용하는 한편 차세대 기술 확보를 이끌 인력을 경영진 후보군에 배치해 기술 리더십을 강화하는 데 초점을 맞췄다.",
+   "brief": "삼성전자가 고대역폭메모리(HBM)4 개발과 양산을 주도한 반도체 인재를 부사장으로 승진시키고 로봇·인공지능(AI)·파운드리 등 미래 성장동력 분야의 기술 리더를 발탁하며 사업 경쟁력 강화에 나섰다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "삼성전자, 獨 도이치텔레콤과 6G·AI 네트워크 기술 협력 논의…기술 시연",
+   "link": "https://www.theguru.co.kr/news/article.html?no=110105",
+   "source": "더구루",
+   "published": "2026-11-24T00:54:14Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "f1dd5cfe3084",
+   "summary": "[더구루=김예지 기자] 삼성전자가 독일 최대 통신사 도이치텔레콤과 차세대 이동통신(6G) 및 인공지능(AI) 기반 네트워크 기술 협력 방안을 협의하고 글로벌 통신 시장 주도권 확보에 속도를 낸다.",
+   "brief": "[더구루=김예지 기자] 삼성전자가 독일 최대 통신사 도이치텔레콤과 차세대 이동통신(6G) 및 인공지능(AI) 기반 네트워크 기술 협력 방안을 협의하고 글로벌 통신 시장 주도권 확보에 속도를 낸다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "삼성전자 DX부문 임원 승진 규모 34% 줄어…AI·로봇 전문가 발탁",
+   "link": "https://zdnet.co.kr/view/?no=20261124093201",
+   "source": "지디넷코리아",
+   "published": "2026-11-24T00:53:49Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "afd0deb09ad9",
+   "summary": "삼성전자가 24일 디바이스경험(DX)부문에서 부사장 20명, 상무 38명, 펠로우 1명, 마스터 2명 등 총 61명을 승진시키는 임원 인사를 단행했다. 이는 지난해 보다 31명 줄어든 규모다.",
+   "brief": "삼성전자가 24일 디바이스경험(DX)부문에서 부사장 20명, 상무 38명, 펠로우 1명, 마스터 2명 등 총 61명을 승진시키는 임원 인사를 단행했다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "삼성전자, 임원 131명 승진..HBM 성과 보상·파운드리·로봇 인재 발탁",
+   "link": "https://www.fnnews.com/news/202611240948198810",
+   "source": "파이낸셜뉴스",
+   "published": "2026-11-24T00:50:37Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "102944200f68",
+   "summary": "[파이낸셜뉴스] 삼성전자가 2027년 정기 임원인사에서 131명을 승진시켰다. 전년보다 승진 규모를 30명 줄인 가운데 고대역폭메모리(HBM)와 차세대 D램 등 인공지능(AI) 메모리 실적을 이끈 인재를 중용했다.",
+   "brief": "[파이낸셜뉴스] 삼성전자가 2027년 정기 임원인사에서 131명을 승진시켰다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "삼성전자, 임원 131명 승진·반도체 부문 53.4% 차지…“성과주의 인사 원칙 재확인”",
+   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE83UjNrZUhvakxSSW44NzktdnBsU3NVc0gtUEJGYjhiZGRSMjd1UG9iSWkyNDIzLVBZM1BJRm8zdWhVbkR3UEVzanNJNnUtM1h3SDZYMzR0c3Y0UXZDc2gtXzF0cw?oc=5",
+   "source": "쿠키뉴스",
+   "published": "2026-11-24T00:50:34Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "ad3b62f848dd",
+   "summaryTries": 1
+  },
+  {
+   "title": "삼성전자, 부사장 39명 등 131명 승진 인사(종합)",
+   "link": "https://kbthink.com/news-list/view.html?newsId=20261124094901148",
+   "source": "KB Think",
+   "published": "2026-11-24T00:49:00Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "fbe97b324569",
+   "summary": "삼성전자[005930]가 부사장 39명 등 총 131명에 대한 승진 인사를 단행했다. 삼성전자는 부사장 39명, 상무 78명, 펠로우 2명, 마스터 12명 등 131명이 승진한 2027년 정기 임원 인사를 시행했다고 24일 밝혔다.",
+   "brief": "삼성전자[005930]가 부사장 39명 등 총 131명에 대한 승진 인사를 단행했다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "삼성전자, 131명 임원 승진인사 단행…AI 반도체·미래기술 인재 전진 배치",
+   "link": "https://news.ifm.kr/news/articleView.html?idxno=485293",
+   "source": "경인방송 뉴스",
+   "published": "2026-11-24T00:46:55Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "efc70d790cae",
+   "summaryTries": 1
+  },
+  {
+   "title": "[삼성 사단] 삼성전자, 임원 131명 승진…30명 감소불구, AI·반도체 주역 중용",
+   "link": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5086921",
+   "source": "신아일보",
+   "published": "2026-11-24T00:46:37Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "314781abe1ee",
+   "summaryTries": 1
+  },
+  {
+   "title": "‘131人 승진’ 삼성전자, ‘AI 반도체·로봇’ 전진배치…‘미래 기술 리더십’ 방점",
+   "link": "https://www.newsian.co.kr/news/articleView.html?idxno=101893",
+   "source": "뉴시안",
+   "published": "2026-11-24T00:46:34Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "b705ed414999",
+   "summary": "삼성전자가 인공지능(AI) 수요 확대에 힘입어 역대 최대 실적을 이끈 반도체 핵심 인재들을 대거 중용하는 2027년 정기 임원인사를 단행했다.",
+   "brief": "삼성전자가 인공지능(AI) 수요 확대에 힘입어 역대 최대 실적을 이끈 반도체 핵심 인재들을 대거 중용하는 2027년 정기 임원인사를 단행했다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "삼성전자, 로봇·AI·파운드리 미래리더 중용…기술리더십 강화 포석",
+   "link": "https://www.newsis.com/view/NISX20261124_0003880486",
+   "source": "뉴시스",
+   "published": "2026-11-24T00:46:17Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "1032ccd2b24b",
+   "summary": "[서울=뉴시스] 홍세희 기자 = 삼성전자가 24일 2027년 정기 임원인사를 단행하고 로봇과 인공지능(AI), 파운드리(반도체 위탁생산) 등 미래 사업 경쟁력을 높이기 위한 기술 리더를 등용했다. 신규 임원들은 미래 신사업 분야에서 핵심 기술 확보를 주도하며 기술 지배력을 강화하는 역할을 하게된다.",
+   "brief": "[서울=뉴시스] 홍세희 기자 = 삼성전자가 24일 2027년 정기 임원인사를 단행하고 로봇과 인공지능(AI), 파운드리(반도체 위탁생산) 등 미래 사업 경쟁력을 높이기 위한 기술 리더를 등용했다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "삼성전자, 부사장 39명 등 131명 승진...여성 승진 역대 최대",
+   "link": "http://www.newslock.co.kr/news/articleView.html?idxno=140755",
+   "source": "뉴스락",
+   "published": "2026-11-24T00:46:16Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "6569c1f8d916",
+   "summary": "삼성전자가 2027년 정기 임원인사에서 131명을 승진시켰다. 전체 승진 인원은 지난해 11월 인사 때보다 30명 줄었다.",
+   "brief": "삼성전자가 2027년 정기 임원인사에서 131명을 승진시켰다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "삼성전자, 임원 승진 19% 축소…반도체·AI 핵심 인재 중용",
+   "link": "https://www.sankyungtoday.com/news/articleView.html?idxno=64411",
+   "source": "산경투데이",
+   "published": "2026-11-24T00:45:50Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "15d3b504cf88",
+   "summaryTries": 1
+  },
+  {
+   "title": "삼성전자, 승진 폭 좁혀도 AI 인재 챙겼다…HBM 부활 주역 발탁",
+   "link": "https://www.bloter.net/news/articleView.html?idxno=679483",
+   "source": "블로터",
+   "published": "2026-11-24T00:44:42Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "b23e73bf0296",
+   "summary": "삼성전자가 정기 임원 인사에서 전체 승진 규모를 줄이면서도 AI(인공지능) 메모리 경쟁력 회복을 이끈 핵심 인재를 중용했다. HBM(고대역폭메모리) 개발과 양산에 기여한 기술 전문가들이 부사장으로 발탁됐다.",
+   "brief": "삼성전자가 정기 임원 인사에서 전체 승진 규모를 줄이면서도 AI(인공지능) 메모리 경쟁력 회복을 이끈 핵심 인재를 중용했다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "삼성전자, ‘AI 메모리 주역’ 전면에…임원 승진 131명",
+   "link": "https://m.ekn.kr/view.php?key=20261124020173747",
+   "source": "에너지경제신문",
+   "published": "2026-11-24T00:43:50Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "d394c2e18cc8",
+   "summary": "삼성전자가 6세대 고대역폭메모리(HBM4) 개발과 양산을 이끈 반도체 인재들을 부사장으로 끌어올리며 '성과 있는 곳에 보상 있다'는 성과주의 인사 원칙을 재확인했다. 로봇·인공지능(AI)·파운드리(반도체 위탁생산) 등 미래 사업 분야의 기술 리더도 함께 발탁해 차세대 경영진 후보군을 넓혔다.",
+   "brief": "삼성전자가 6세대 고대역폭메모리(HBM4) 개발과 양산을 이끈 반도체 인재들을 부사장으로 끌어올리며 '성과 있는 곳에 보상 있다'는 성과주의 인사 원칙을 재확인했다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "삼성전자, 부사장 39명 등 131명 임원 승진…성과주의 원칙 '인재 중용'",
+   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBHVXRSaGVNYl9jVnVVSmUxdUlKZ2pkbHhkSFBZT2s4RWRKRUJVSTJKdFc2N0dlVGVuMkY0MWdLZ1hnQkNVWWJLRXFsdkFzaTQtVHdOdmFXV1BnUVJSWVlUd0k0eEs?oc=5",
+   "source": "뉴스1",
+   "published": "2026-11-24T00:42:57Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "e52b2bffe55d",
+   "summaryTries": 1
+  },
+  {
+   "title": "젠슨 황 돌아왔다…삼성전자·SK하이닉스, AI 반도체 훈풍 부나",
+   "link": "https://www.the-tech.co.kr/news/article.html?no=42201",
+   "source": "더테크",
+   "published": "2026-11-24T00:41:00Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "5b10cdbc5857",
+   "summary": "[더테크 서명수 기자] 젠슨 황 엔비디아 최고경영자(CEO)가 사임 11일 만에 전격 복귀하면서 글로벌 인공지능(AI) 반도체 시장에 다시 훈풍이 불고 있다. 엔비디아의 경영 불확실성이 완화되면서 고대역폭메모리(HBM)를 공급하는 삼성전자와 SK하이닉스의 중장기 성장 기대감도 높아지고 있다.",
+   "brief": "[더테크 서명수 기자] 젠슨 황 엔비디아 최고경영자(CEO)가 사임 11일 만에 전격 복귀하면서 글로벌 인공지능(AI) 반도체 시장에 다시 훈풍이 불고 있다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "삼성전자, 임원 131명 승진…AI 메모리·파운드리 핵심인재 중용",
+   "link": "http://www.businessplus.kr/news/articleView.html?idxno=120355",
+   "source": "비즈니스플러스",
+   "published": "2026-11-24T00:40:46Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "30b2e222773f",
+   "summary": "삼성전자가 인공지능(AI) 메모리 시장에서 성과를 낸 반도체 핵심 인재를 중용하고 로봇과 AI, 파운드리(반도체 위탁생산) 등 미래 성장동력 확보를 위한 기술 인재를 대거 발탁했다. 전체 승진 규모는 지난해 161명보다 18.6% 감소했다.",
+   "brief": "삼성전자가 인공지능(AI) 메모리 시장에서 성과를 낸 반도체 핵심 인재를 중용하고 로봇과 AI, 파운드리(반도체 위탁생산) 등 미래 성장동력 확보를 위한 기술 인재를 대거 발탁했다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "[특징주] 삼성전자·SK하이닉스, \"젠슨 황 복귀 환영\".. '급등'",
+   "link": "https://www.g-enews.com/article/Securities/2026/11/20261124092854175244093b5d4e_1",
+   "source": "글로벌이코노믹",
+   "published": "2026-11-24T00:40:21Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "1a5ae8e4a3e9",
+   "summary": "삼성전자와 SK하이닉스가 동반 급등하고 있다.",
+   "brief": "삼성전자와 SK하이닉스가 동반 급등하고 있다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "삼성전자, 부사장 39명·상무 78명 등 임원 131명 승진 … HBM·AI 반도체 핵심인재 전진 배치",
+   "link": "http://www.worktoday.co.kr/news/articleView.html?idxno=92551",
+   "source": "워크투데이",
+   "published": "2026-11-24T00:38:18Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "f3c2b7b6ecd8",
+   "summary": "삼성전자가 인공지능(AI) 반도체 시장에서 성과를 거둔 핵심 인력을 대거 승진시키고 로봇과 피지컬 AI, 파운드리 등 미래 성장 분야의 기술 인재를 전진 배치했다. 반도체 사업의 실적 기여도를 인사에 반영하는 동시에 차세대 성장동력을 이끌 기술 리더십 확보에 무게를 둔 것으로 풀이된다.",
+   "brief": "삼성전자가 인공지능(AI) 반도체 시장에서 성과를 거둔 핵심 인력을 대거 승진시키고 로봇과 피지컬 AI, 파운드리 등 미래 성장 분야의 기술 인재를 전진 배치했다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "삼성전자, 임원 131명 승진…HBM·로봇·AI 인재 발탁",
+   "link": "https://www.fetv.co.kr/news/articleView.html?idxno=314180",
+   "source": "www.fetv.co.kr",
+   "published": "2026-11-24T00:37:59Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "ba5cbe5325a7",
+   "summary": "삼성전자가 2027년 정기 임원인사에서 총 131명을 승진시켰다. AI 메모리 사업 성과를 낸 인재와 로봇·AI·파운드리 분야 기술인재를 발탁했으며 여성 신임 승진자는 역대 최다인 11명을 배출했다는 설명이다.",
+   "brief": "삼성전자가 2027년 정기 임원인사에서 총 131명을 승진시켰다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "삼성전자, 2027년 임원 인사 131명 승진…AI 메모리·피지컬 AI·파운드리 기술 인재 전진 배치",
+   "link": "https://www.aitimes.kr/news/articleView.html?idxno=42864",
+   "source": "인공지능신문",
+   "published": "2026-11-24T00:36:33Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "ecaa65be6b5b",
+   "summaryTries": 1
+  },
+  {
+   "title": "삼성전자, 2027년 임원 인사...로봇 리더 발탁·여성 임원 최다",
+   "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=717619",
+   "source": "디지털투데이",
+   "published": "2026-11-24T00:35:59Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "9f9e5e40625e",
+   "summary": "삼성전자가 2027년 정기 임원인사에서 반도체 핵심인재를 중용하고 로봇·AI 기술리더와 여성 임원을 발탁했다. AI 메모리 수요에 대응해 역대 최대 실적을 낸 반도체 분야에 보상을 집중하면서 미래 성장동력 분야의 기술리더십도 함께 강화하겠다는 판단이다.",
+   "brief": "삼성전자가 2027년 정기 임원인사에서 반도체 핵심인재를 중용하고 로봇·AI 기술리더와 여성 임원을 발탁했다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "삼성전자, 임원 승진 19% 줄였지만 반도체선 70명 대거 발탁",
+   "link": "https://www.yna.co.kr/view/AKR20261124044600003",
+   "source": "연합뉴스",
+   "published": "2026-11-24T00:35:43Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "9346c7d87cfb",
+   "summaryTries": 1
+  },
+  {
+   "title": "DX 사장 승진 ‘0명’에도 임원 61명 승진… 삼성전자, AI·로봇으로 돌파구 모색",
+   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNTXV6TERIcnhPQ0JqdVZyVWVZWDU1OF9EWUZLR1o2SWgtc2JkMXUxQUlSSXRyYzVDTTBuOEh4TnNxbWlzcUZDbDRXNUhNSGdHa0pkOWp4dm1UWm12NHNhZ25ubHRqTHFYSkVSQUw1RkZPMDZDZm5SVDZmNjVVb2gxbC1B?oc=5",
+   "source": "Chosunbiz",
+   "published": "2026-11-24T00:34:00Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "627362a04172",
+   "summaryTries": 1
+  },
+  {
+   "title": "삼성전자, 임원 131명 승진 인사…HBM·파운드리 핵심인재 전진 배치",
+   "link": "https://www.greened.kr/news/articleView.html?idxno=355373",
+   "source": "녹색경제신문",
+   "published": "2026-11-24T00:32:58Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "0e5d69f86b7f",
+   "summary": "삼성전자가 HBM과 차세대 D램 등 AI 메모리 사업 성과를 이끈 핵심 인재를 전진 배치하고 로봇·AI·파운드리 등 미래 성장 분야의 기술 리더십 강화에 나섰다. 전체 승진 규모는 지난해보다 줄었지만, 주요 사업 경쟁력 확보에 기여한 인재를 중심으로 성과주의 인사 기조를 이어갔다.",
+   "brief": "삼성전자가 HBM과 차세대 D램 등 AI 메모리 사업 성과를 이끈 핵심 인재를 전진 배치하고 로봇·AI·파운드리 등 미래 성장 분야의 기술 리더십 강화에 나섰다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "삼성전자, 131명 임원 승진…AI 메모리 인재 전진 배치",
+   "link": "https://www.g-enews.com/article/Industry/2026/11/202611240925242421139bf6e4b2_1",
+   "source": "글로벌이코노믹",
+   "published": "2026-11-24T00:32:43Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "eec19c433b03",
+   "summary": "삼성전자는 부사장 39명, 상무 78명, 펠로우 2명, 마스터 12명 등 총 131명을 승진시키는 2027년 정기 임원 인사를 실시했다고 24일 밝혔다.",
+   "brief": "삼성전자는 부사장 39명, 상무 78명, 펠로우 2명, 마스터 12명 등 총 131명을 승진시키는 2027년 정기 임원 인사를 실시했다고 24일 밝혔다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "삼성전자 임원 131명 승진…HBM 주역 중용, 로봇·AI 인재 전진 배치",
+   "link": "https://www.joongang.co.kr/article/25481391",
+   "source": "중앙일보",
+   "published": "2026-11-24T00:32:17Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "ba0c59cf1e73",
+   "summary": "삼성전자가 반도체(DS) 부문의 역대 최대 실적을 이끈 핵심 인재를 대거 승진시켰다. 로봇과 인공지능(AI), 파운드리(반도체 위탁생산) 등 미래 성장동력 분야에서도 기술 전문가를 발탁했다.",
+   "brief": "삼성전자가 반도체(DS) 부문의 역대 최대 실적을 이끈 핵심 인재를 대거 승진시켰다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "삼성전자 임원 131명 승진…HBM 주역 중용, 로봇·AI 인재 전진 배치",
+   "link": "https://www.koreadaily.com/article/20261123163249881",
+   "source": "미주중앙일보",
+   "published": "2026-11-24T00:32:00Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "36097c192c2b",
+   "summary": "삼성전자가 반도체(DS) 부문의 역대 최대 실적을 이끈 핵심 인재를 대거 승진시켰다. 로봇과 인공지능(AI), 파운드리(반도체 위탁생산) 등 미래 성장동력 분야에서도 기술 전문가를 발탁했다.",
+   "brief": "삼성전자가 반도체(DS) 부문의 역대 최대 실적을 이끈 핵심 인재를 대거 승진시켰다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "삼성전자, 임원 131명 승진 인사 단행...로봇∙AI 등 기술리더 발탁",
+   "link": "https://www.wolyo.co.kr/news/articleView.html?idxno=320955",
+   "source": "월요신문",
+   "published": "2026-11-24T00:30:14Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "7ffb8871428c",
+   "summary": "삼성전자가 24일 부사장, 상무, 펠로우(Fellow), 마스터(Master)에 대한 2027년 정기 임원인사를 단행했다.",
+   "brief": "삼성전자가 24일 부사장, 상무, 펠로우(Fellow), 마스터(Master)에 대한 2027년 정기 임원인사를 단행했다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "'역대급 실적' 삼성전자, 임원 승진 줄였다···작년보다 30명 적은 131명",
+   "link": "https://www.seoulfn.com/news/articleView.html?idxno=643719",
+   "source": "서울파이낸스",
+   "published": "2026-11-24T00:29:41Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "0a40c0e71013",
+   "summary": "삼성전자는 24일 부사장 39명과 상무 78명, 펠로우 2명, 마스터 12명 등 총 131명의 승진을 담은 정기 임원인사를 단행했다.",
+   "brief": "삼성전자는 24일 부사장 39명과 상무 78명, 펠로우 2명, 마스터 12명 등 총 131명의 승진을 담은 정기 임원인사를 단행했다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "‘승진 19% 줄인’ 삼성전자, HBM·로봇 핵심 인재는 발탁",
+   "link": "https://www.ezyeconomy.com/news/articleView.html?idxno=242124",
+   "source": "이지경제",
+   "published": "2026-11-24T00:28:45Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "f2209cefa448",
+   "summary": "삼성전자가 올해 정기 임원인사에서 승진 규모를 전년보다 약 19% 줄이면서도 고대역폭메모리(HBM)와 로봇·인공지능 등 미래 성장 분야 핵심 인재를 중용했다.",
+   "brief": "삼성전자가 올해 정기 임원인사에서 승진 규모를 전년보다 약 19% 줄이면서도 고대역폭메모리(HBM)와 로봇·인공지능 등 미래 성장 분야 핵심 인재를 중용했다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "삼성전자, 부사장 39명 등 임원 131명 승진 … HBM·차세대 D램 핵심인재 중용",
+   "link": "https://biz.newdaily.co.kr/site/data/html/2026/11/24/2026112450051.html",
+   "source": "뉴데일리 경제",
+   "published": "2026-11-24T00:28:00Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "b603de82f6f0",
+   "summary": "삼성전자가 인공지능(AI) 메모리 시장 주도권 확보에 기여한 반도체 핵심 인재를 대거 승진 시키며 성과 주의 인사 기조를 강화했다. 삼성전자는 24일 부사장과 상무, 펠로우(Fellow), 마스터(Master)에 대한 2027년 정기 임원 인사를 실시했다고 밝혔다.",
+   "brief": "삼성전자가 인공지능(AI) 메모리 시장 주도권 확보에 기여한 반도체 핵심 인재를 대거 승진 시키며 성과 주의 인사 기조를 강화했다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "삼성전자, 2027년 정기 임원 인사 단행···\"반도체 분야 핵심인재 중용\"",
+   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5vM0xSYkZEWFNZQ3UxVHRyRXNyVEhnSVJSRV9ZZWVWM3VWX19rYW1kQUdxbnMxXzZ6dmNoRVdVaWFLVy1MbWNOaWdTdmdGZjlLM1kxdWI3dHU2aG9KUjFpR20zOXZsYmtH?oc=5",
+   "source": "한국NGO신문",
+   "published": "2026-11-24T00:27:45Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "9056da600e29"
+  },
+  {
+   "title": "삼성전자, 여성 임원 11명 승진…역대 최다 기록",
+   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE16SU9jLTVmOUZhYm9oMkdiT0E4N1hvNUFDWUI1aEJyeXNERWhoVHlES3lSLUlfcElpQ3VZOXFmWGV2NTY3MnJ6UTlRNTZrdW42V1FoM2VORmh4OU1UbHZ6MV9jUWJzbWxi?oc=5",
+   "source": "www.ebn.co.kr",
+   "published": "2026-11-24T00:27:10Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "676d9ecf8d63"
+  },
+  {
+   "title": "삼성전자 임원 승진 19% 감소…HBM·로봇·AI 인재 전진 배치",
+   "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE42UHhvNGI3Uk9jNWphRFlsUWlaR3Y0eHpYV3hHaDYxRy1wTklibkhhRF9DSXRwSk02U214Qk55SS1CMWRDQXdJ?oc=5",
+   "source": "아이뉴스24",
+   "published": "2026-11-24T00:26:14Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "b165191b110b"
+  },
+  {
+   "title": "삼성전자, 반도체 핵심 인재 승진·여성 임원 역대 최다",
+   "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE4xNWhvMjNTYlZNU0R1OXExalNFbjRsd2FPc0ZjdmVsbjJLWXBLcm52RDZPRUVleWNIXy1VUjlmZXE5NzRGR0kyOWo3MG5OOGpZc2lDenpoMW9TUTR1NE5Z?oc=5",
+   "source": "데이터뉴스",
+   "published": "2026-11-24T00:23:21Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "0a64451b54f0"
+  },
+  {
+   "title": "삼성전자, 131명 임원 승진…작년보다 30명 줄어, 여성은 '역대 최다'",
+   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBKbmpNVVMtOEN6OW1jeTAyZnQzdHNxLWk2bUR1aUd3c0VySTlzN0pscy0wRkhvZWNHMGdiREcwQmZZd2hSRmpHaExmSlBOYUhUenF3eDhDbWJoT3ltN3RjY2NkelB2cTk5NFpzNDNNRkpIczRRWkQtYjJn0gF_QVVfeXFMTWxxZllITTIwZ3JDWnZ1VjhIbzlkS0xUSXNPTHNXZkd1ZlUwVzNxQkhVYlkxTWh0XzBZRTBfb1BmSmVIb2pYQU1VVXZMRno4bEM5T3plVENRSGltdktEWjJJVWlWb1NNNzd0R3hVZWwyWDZ2VXhrVWVEQ2FCMTN2NA?oc=5",
+   "source": "머니투데이",
+   "published": "2026-11-24T00:21:50Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "2e9faa689989"
+  },
+  {
+   "title": "삼성전자, 부사장 등 131명 승진…\"AI 메모리 핵심인재 적극 발탁\"",
+   "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE93RVhSSVpJaHlIYjlmNG1vU2gycmswVkJnaU15aE5IS01aMkJCaHFSemZGNTY0ek0wTWwyaTZKQVRBWUhsY1FIQVVVUjJ2YkJBNGxBcnJR?oc=5",
+   "source": "지디넷코리아",
+   "published": "2026-11-24T00:21:28Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "24044b910bd4"
+  },
+  {
+   "title": "삼성전자 정기 임원 인사…기술 리더 등용·여성 최다 배출",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1pR19BTnNqbS1mNlBuTVlCQmNjNnl2eWJVSldHVFptdnJzaVZvUEJPQjhfUlp0cXdaRTVBdjIyaE5nZkZST0J4b3laYXZUU2ltMEc2M01ORkZTTU50VWVjbUFzS0hVNWM?oc=5",
+   "source": "연합뉴스TV",
+   "published": "2026-11-24T00:21:00Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "b6c738ab615f"
+  },
+  {
+   "title": "삼성전자 2027년 임원인사 부사장 39명 승진, HBM·파운드리·AI 인재 중용",
+   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE95WDRMNEIzbjBOTE1PUmEwbE9KaW5ORjRfaHdMQW8ySFdRV2Z0MWpzTVJuQVgzZDJNMzNqRFJMUnZZWDF4WV9aZHFEVmo3cFlGemRla3RtUmgzOW5tMDFGMHdxek5FWEs0RDZ0OVVNTmZ2SUU?oc=5",
+   "source": "비즈니스포스트",
+   "published": "2026-11-24T00:20:21Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "c9c54ceeee7d"
+  },
+  {
+   "title": "삼성전자, AI 메모리·반도체 인재 중용 인사… DS·DX 골고루 승진",
+   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1mX1gtQXFGbTVOZGZVZXlLcnppRUhSMUo1OVpyTlpwSFY2V2U2UDZsWG5TZVVWN3k4dWQxaXdlYl9JdzBZdk5DN3BwbTJRajR1NDZJZ1J3M3BJZXVwMTdKZXBSQzVLM0xFdEFJ?oc=5",
+   "source": "라이센스뉴스",
+   "published": "2026-11-24T00:19:19Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "b40133442ceb"
+  },
+  {
+   "title": "삼성전자, 반도체 성과 인사…HBM4 핵심 인재 부사장 승진",
+   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9OMnQ2QWJHUC16aWs2V1FnMS1LVENMY2l4X1JiMnQyMnNtQTdrNnRzODcwd0xYOVByUHBrTERNa1YxeUlVWGF5c0dHUlQ0bXgxUThfVmFTRGJ5Z3BCdHpyNVNpalJUQ3Az?oc=5",
+   "source": "www.ebn.co.kr",
+   "published": "2026-11-24T00:18:35Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "cb85832ddd1a"
+  },
+  {
+   "title": "삼성전자 인사의 답은 'HBM'…역대 최대 실적 주역 대거 승진",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE83NVM0d2tfNFg1N2lpM2xHRExSU0tCMkJXNlA1LUtsRURKbVVBeV9kX2Y1bmJoSlAwQnB3aElsbG1oQ2RQZzlTS0RSLUhJcm5Jak9sMV80T1d4aTk2Y3M5ZkJIc3JxaG1hUWUzVWVFWQ?oc=5",
+   "source": "뉴스퀘스트",
+   "published": "2026-11-24T00:17:39Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "1d39ff845fae"
+  },
+  {
+   "title": "삼성전자, 임원인사 단행…부사장 39명 등 131명 승진",
+   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBvN3FTemNzcHk1S1BDbUhsakJBWl9wY083UGRIcGdhR2habzFyc1h2OEhMV25pRU9XRVJXWFRfOGFpenRaU0Nvei1tUThOX1p5NmE4TkhNeTZndw?oc=5",
+   "source": "한국경제",
+   "published": "2026-11-24T00:16:47Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "bbb6ca4f3cdd"
+  },
+  {
+   "title": "삼성전자, 임원 131명 승진…AI 메모리·미래사업 인재 중용",
+   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE50eXQ5b1gtX2RBZm5qLV9mYnBRYWN0dFBuTjJNeEtpVWhBbThjX0xRVzJfUllBelBUTDdiOWkxNTBDRmlCa3FQakoyZGJxc2JmMGdHMWxHUDExaUxrVFFPeXNQVjg?oc=5",
+   "source": "매일일보",
+   "published": "2026-11-24T00:16:32Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "2574bc5b6590"
+  },
+  {
+   "title": "삼성전자, 임원 131명 승진...HBM·반도체 인재 전진 배치",
+   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9mQmRhLWdUUGp5emRLNW92bm1xQmJ4T3l1clpLY0ZITXNPOTFmdEt1WVQ2bXdESDBzd0ltb1FXWE5PcndFMjNjb0VVdEoyMDItZkFCWTNYbGlxb2ZSdWZlTEM2ZDk?oc=5",
+   "source": "서울경제TV",
+   "published": "2026-11-24T00:16:17Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "6123734835c5"
+  },
+  {
+   "title": "[속보]삼성전자, 역대 최대 실적에도 임원 승진 19% 줄였다",
+   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1TNWZMb1VGOUVmeVNSLXF0d0U3RTZmaU9WdmhZMkZvMUdfTEdjd0Y3R1pXSXh0dHJZeHU4UDQ3TXB0T2FnS2dhS2tQdUVidk9VUFHSAVNBVV95cUxQeWJZdmtLNHVMdVpVdkw2dHNuM3d0LW5xQmg4dUFLSDlqOFM1ZGxrdUVqVFI5cFlLd3ZqbWh1UFlVUUpEX2s0WVNTTTAxWG93ZnFrOA?oc=5",
+   "source": "서울경제",
+   "published": "2026-11-24T00:16:05Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "7b162ec1ec75"
+  },
+  {
+   "title": "삼성전자, 2027년 정기임원 인사…부사장 39명 등 총 131명 승진",
+   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBoSkRDTC1VVHRpZE1aQXVxQ1dJMHczVU05YmVNenE3MTlPSjI1UDJESHJEem9BZkw2ZnRtVEhhUXlnSmtQUW5qZEpvX3dja1R0N2lJSkN4NTA5bUVSMTFWOEtDcjIyYWtscFJJYm1nSHU?oc=5",
+   "source": "연합인포맥스",
+   "published": "2026-11-24T00:15:24Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "427bb9039096"
+  },
+  {
+   "title": "삼성전자, DS 70명·DX 61명 등 131명 승진 인사…성과주의 기조 이어가",
+   "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE00UjJtRXFlN190ZURyeExXWmxuUy1DQWZpTGoyVzBXQTZMaUlCay13RW1OZkdjT3ZXUGdXM2paeUJXaUExOWR2MTlBdkd2c3cwWEhQN2U5WHN6VDd5MEZIYtIBeEFVX3lxTE50RHhpTHBFX1lqbDlLQ1QtZlF5S05HOHFHUXg3WHdLN3BnTDNjcnk0OC1rQWJoa3NKYVRYbTFFd0JZZ3phOWh3SzdFZ0xGUlVraktMNFhtZ0t6RC00LTFVUndiaWFSYW1IVDdvU0paSFdXdnlsM1RsOA?oc=5",
+   "source": "뉴시스",
+   "published": "2026-11-24T00:15:07Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "af84c59a3126"
+  },
+  {
+   "title": "삼성전자, '성과주의' 인사 단행...HBM·AI 인재 131명 승진",
+   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5mV2pGQVFhLXBST1ZNb1dBbERRSmQxc2FJMzNQM3JHRTV0Tm00aVRtSVR0VEFIWWZvZEFjWG1WZklwQ3RFY1ZiUFozcTZ2WUlTRXJraFl1OGN0SjM1MUZKYXNEYUM5MGxG?oc=5",
+   "source": "www.ebn.co.kr",
+   "published": "2026-11-24T00:14:27Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "9d80dc6e0f79"
+  },
+  {
+   "title": "삼성전자 임원 131명 승진…역대 최대 실적에도 30명 줄이고 반도체 집중",
+   "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBiNUJqeG1hbmxzSFVSRlRVTlNjT1NMQmdyV0xrTy0zNDRoLVJhdnNsM3BRTmRhRnlXaUVOck5qX2EzV1lwN2NRaXFpN2hvZw?oc=5",
+   "source": "전자신문",
+   "published": "2026-11-24T00:13:41Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "e45ffefc0a63"
+  },
+  {
+   "title": "삼성전자, 2027년 정기 임원 인사 단행…여성 승진자 '역대 최다'",
+   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFA4d1QySjNiSVJPWXFNVjlpaURkZjJiNWdkMUF5anV2ZkM2NUJRb1FpeGFSc0l0ZXdzLWRWNS1vODdONWlIV3lJWUhKNW1EUGUxUlhVdXE3VVFyb1RaUnVhcWxKR29zMGktQzlJ?oc=5",
+   "source": "뉴스드림",
+   "published": "2026-11-24T00:13:36Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "95e878d9f58e"
+  },
+  {
+   "title": "삼성전자, 임원 131명 승진…반도체 성과주의 인사 강화",
+   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBMb05ldUtmRHhRaG9GV05LVWZTaEp6MjFpZ3MzNzdCbFlqZnFpeW9STlE3bnk5N0FONzE5bnh4clJ0U19RUEVEdTJhUklCUzFiZHhOSThjMjhKRUwyOHN5a0w5VW9wN1Mw?oc=5",
+   "source": "테크월드",
+   "published": "2026-11-24T00:13:30Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "017cdbd02db7"
+  },
+  {
+   "title": "삼성전자, 임원 승진 19% 줄였다…HBM4·로봇 인재는 전면에",
+   "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE14aW1sempJa2NNZThkZmFhaDI0Skc1TGpCcEd3UGNHWllRS0wwc3ZodDAxOTZYWng0S1hLc0ZQdXN6aVlCTUpGNThQTEx4YWVKM1dET1ZBRE1sak5s?oc=5",
+   "source": "뉴스핌",
+   "published": "2026-11-24T00:13:00Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "4047f1c58d23"
+  },
+  {
+   "title": "삼성전자, 임원 131명 승진 인사…HBM·로봇 핵심 인재 중용",
+   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNQ0Zrczd0bkJKNmI2RUduT0h5Y1MxY0hJQUhzYzBLR1EtN2Y2MFg4SDVaRENzbGtUX2JFajBNZXdoTGxOdkVaQUR2RUlrY1NaSVM5N2NsdW43RXY3bUV6TzJydWZNTXoyZWRJcEYwRkc2S1BMUXF6dFBtNjVkX3RDQ1EtTQ?oc=5",
+   "source": "조선일보",
+   "published": "2026-11-24T00:12:00Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "f1e267426fd1"
+  },
+  {
+   "title": "삼성전자 임원 승진 30명 줄었는데…여성은 역대 최다",
+   "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE40WFNHb2ZtdGlpQXlTZWlQMTdiQllsa1dielNEUlYtUWdacUd4d0dfeTlZOEJ2RG9sOTVEanBXa0RGT2lMXzhqV1pXY1FjWnlGNWFHYWVmamVqTkZ0LVd3?oc=5",
+   "source": "조세일보",
+   "published": "2026-11-24T00:11:50Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "1c6153324185"
+  },
+  {
+   "title": "[특징주] 삼성전자·SK하이닉스 동반 급등…엔비디아 폭등에 반도체株 강세",
+   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBwYXY2aG93aERFVXpFMzhmUmRVQ0VkWU1TaFhjeF9kRVg5RFlIM1pZclBjclpJcjlEa0RVSTN6bEM2QmlkNWFiclRxWjNwYVVLZURZNk9FZHFIWklMdFpnS0Vxbw?oc=5",
+   "source": "에너지경제신문",
+   "published": "2026-11-24T00:09:28Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "7303029236aa"
+  },
+  {
+   "title": "삼성전자, AI 메모리 핵심 인재 발탁…정기 임원 인사서 131명 승진",
+   "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFB3VlZhTERUeHpLdVYzNWwtTUQ4SEFzVzBnWTJRLWhpRjl0OWVQNEt4N3BRLXdJbUxGdTZSNTVxSGJuSlV4R2hwLUNzTjY1a1IxTE9jeA?oc=5",
+   "source": "이투데이",
+   "published": "2026-11-24T00:09:00Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "7f4198ad001c"
+  },
+  {
+   "title": "\"'HBM4·로봇·파운드리' 인재 전진 배치\" 삼성전자, 정기임원 인사 단행… 총 131명 승진",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE43ZXBWZmpPeS03eGlwd2U2Q3J1MFc1RURBV3JDXzVlQlVLSnRObWNSMnEtLUVnWnlyQmFUZ2dmd2FzMW5VOW5PdEd0dkU2dWFGcVFpX3A1QWpTTWhJWUk0QWN0MjlZbzJ3Z0o0WDBJc0NDQQ?oc=5",
+   "source": "인더스트리뉴스",
+   "published": "2026-11-24T00:08:35Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "e6accb59135e"
+  },
+  {
+   "title": "삼성전자, 2027년 임원 131명 승진…AI 메모리·로봇 인재 발탁",
+   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE10NzA0OTJMdEFaMzExYkxpOTVkTmVGbnluTEsxZks2Tm83S2puM0dadkw4SDlaeDdNa19Da2FNSHNOX2VKN2JGYW1nY0x5c3REa0lrZUZoY2ZpemZEdkdlNGFpUDI?oc=5",
+   "source": "PRESS9",
+   "published": "2026-11-24T00:08:33Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "d39cae62bc51"
+  },
+  {
+   "title": "삼성전자, 임원 131명 승진…HBM·로봇·파운드리 기술인재 전진 배치",
+   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAzcVlNb0pXTXhNV2Q3RjlBcFV1d05yZ3pJeDB3YUN0THhDSW94X0hVc1ppS0tmN2NkZDFfYU1sQTFVSGtBaEtyc1p3ZUFKcjNSZ2dma1BiclBuQdIBWEFVX3lxTE9OY0psSkVyMGdKckNQRXN6cnNpaVJwbl9aamNrYnAtakl1a2RPaXl5bWg0ZHNmZFZ5QjJpMGRFSEpMeFBIZ3BuLVZfMml5YjFZWi1Zb1Ezam8?oc=5",
+   "source": "아주경제",
+   "published": "2026-11-24T00:08:33Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "540911474392"
+  },
+  {
+   "title": "[속보] 삼성전자, 임원 131명 승진…HBM·AI·로봇 인재 중용",
+   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9MNzRlN0hBV2ZmaGdmeENFMEVaY1p0cnBDLWR1UTg3TUoybVZicTlYXzlYUmhNdmswZTVJdHRWUkdLN0d5bzNzWG44LUhLd2xnb1Z5MVM4eUFKOXUwd1NSejFHNG9fcHc2?oc=5",
+   "source": "ebn.co.kr",
+   "published": "2026-11-24T00:07:17Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "f47d792824e7"
+  },
+  {
+   "title": "삼성전자 2027년 정기 임원 인사 명단",
+   "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA3WTYyRk1tOUdaWDNfeXR6TEVjVHEtRnhOcWpWVFdCTVVQU3VjYjg0bktUaWpHcTFCUGhtOElwVHNfdEpkRE1YX19ndV9BQ24zWVZTMkFR?oc=5",
+   "source": "지디넷코리아",
+   "published": "2026-11-24T00:07:04Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "f9127e044a62"
+  },
+  {
+   "title": "[특징주] 삼성전자·SK하이닉스 급등…젠슨 황 복귀에 반도체주 반등",
+   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4zYU5kNHptdlBSOV9seWNfZ0R1eDFfaTJjNFRiYXE0cDNSbk1JUUxraThRRHFDOF9NZ1hjRHdsdTNhVlpmdmVCa3FDdWVhcjFvOEhMNGZURXgyQQ?oc=5",
+   "source": "브릿지경제",
+   "published": "2026-11-24T00:06:00Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "7109dd2043ee"
+  },
+  {
+   "title": "[속보] 삼성전자 8%·SK하이닉스 11% 급등 출발",
+   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5mNEtvVFdBY2gxOXRfRGxCbV8zSHRZc1FQYVV6OVBNMlNkZE9SVWdZVzM3OHRMdjZtQWd4dnBYXzVadnp4aDFuWjB5T1owWW5aMklCZmRkNnZWbjDSAWBBVV95cUxQVHg5ZFpTRnV5X2ZNRkRDNGNoUHF0UnhIQmlDbXhXTm1YT1JaR3BfLTU5dEd3TTRRRy1zOXZfaEstWk41TmNkXy1qTWhRd2tETkY0N1huUE52T0lFSS1vWFU?oc=5",
+   "source": "연합뉴스",
+   "published": "2026-11-24T00:03:49Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "3896810a627d"
+  },
+  {
+   "title": "[속보] 삼성전자 8%·SK하이닉스 11% 급등 출발",
+   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1SLUs4V29GcGtPYmZUOEs5QlI5cmlnWW9ZUXh5Z2Jxc1Z3b1plN0lFVlN3MzdzTG11d1duMjFiUktpRzBTRUFsTWZpbXl5Sk5vNGc?oc=5",
+   "source": "매일경제 마켓",
+   "published": "2026-11-24T00:03:49Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "83a285b6d65e"
+  },
+  {
+   "title": "삼성전자 임원인사..부사장 39명·상무 78명 등 131명 승진",
+   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE8wS042WlFDTmQ4djVmR3o3TTdQVGFhR3NUQWItVHdkeHJNY1g5cmdqcXRFSlBYcXFBeExyc0FHWEFKM1BXOVVwaWVhUHhueDA2MHFEN1VUQVFpU2I2VEtLTjFpdHh6NkFVUWVZdmU2YTZsLU0?oc=5",
+   "source": "마켓인",
+   "published": "2026-11-24T00:03:45Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "85c08a21bfca"
+  },
+  {
+   "title": "아산시 \"삼성전자 증설, 지역 건설업계 일감·일자리로 연계\"",
+   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE05R2N5SU82NTAwUnl1MFRQWnFEVUlwN2ZqX2FzdUZpTlpyejNaVTREM3FZRV80bFlYejZrR19OOUViMkZqbXM0MmtRN29yd2ZJTXV4cU5QVVdqaFHSAWBBVV95cUxQN0JwejFuOFFReWlvZmpwQWowUnJoSW1MZXF1ejZlUGlSa2VQdFBZMVV1V0NDQXJhRW5TSFBrWUZaZTZxWnE0ZHlUalBMbXR4c1ZkVGpGNWVUMW5LZG5MZkU?oc=5",
+   "source": "연합뉴스",
+   "published": "2026-11-24T00:02:33Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "44d7b808a61f"
+  },
+  {
+   "title": "[속보] 삼성전자, 임원 131명 승진… HBM·AI·로봇 기술 인재 발탁",
+   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOVEpIczFKR0pNUndNZThsUFlUeW8tMG92bjNNQ1Q3cnk0MEttY1lYTHU5eUVSaTlFczZRZk5DcGNCMVlPbTZPOUlaRHBlNEtuNEs2OGJKblhZQ1Fpc19INndQOU9xT1RwRlpUQVNYV3ZWV2tZc25vTldhWDExblFPaUl30gGWAUFVX3lxTFBOT3cxWk5YSXVEZG5vWXk1aldxZUhhdVdYOTN5cGpPYXBnQU9sS1dJUU80aVlxd0psenF2Y0otdVhfQWJVWVhFR1N6SkJvWnVib3pLZnZsR0VJckpDQWJaQjk0VmpINS15a1dLUU9tcGVqMkNpMElDRVlvREJEMHpWdmVzTGF1OFFaajRfVnNjNmlGVHdoZw?oc=5",
+   "source": "Chosunbiz",
+   "published": "2026-11-24T00:02:00Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "14dfc3a8364d"
+  },
+  {
+   "title": "[속보] 삼성전자, 정기 임원 인사…부사장 39명 등 131명 승진",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBLOXFscTFTTW1CSUpBRmtIblJEZk9TN05zS19vNHY5X0N0SWlieWpMVFVha3huWkh0TFZDUFlWNW1ZdE1Tb2tjVHVQa2pIVkNDMlFSVkhFSHljblNrRTl5T290djdETDd1a09LZdIBckFVX3lxTFBQSWlCcVZWTzgyOHdDT2xFUW9nRmp0STh5cjhXMm1TeHU5MjN4N1dZWU1JbU1vN05ja1BaN0tNV0xfQWV5bW1KWDNEZkVLenF5VTVMci1MZl80d0Y0SnRKM1QyWjQ3czRIU3kwcEU3dG14Zw?oc=5",
+   "source": "머니투데이",
+   "published": "2026-11-24T00:01:58Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "97682ee3b5b4"
+  },
+  {
+   "title": "삼성전자, 중동 스마트폰 점유율 45%…보급형갤럭시로 中 제쳤다",
+   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBieC0zSXRnLXBVc3BrcE9Rdm1UN2F1UXpFTkozRkxCTWMzNFV2Wi16eEZUSkZyZkNVTS1hblpJZzd6T2QwSUkwRDM2Q3M1QVpfVmstNmxGbVRMQXM5dVE?oc=5",
+   "source": "뉴스톱",
+   "published": "2026-11-23T23:58:00Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "ab7d841539e2"
+  },
+  {
    "title": "코스피 프리마켓서 7% 이상 급등…삼성전자 9.97%·SK하이닉스 12.17%↑",
    "link": "https://www.newsquest.co.kr/news/articleView.html?idxno=305661",
    "source": "뉴스퀘스트",
@@ -87,6 +979,16 @@
    "summary": "젠슨 황 엔비디아 최고경영자(CEO)가 사임 11일 만에 전격 복귀한다는 소식에 국내 반도체주가 프리마켓에서 두 자릿수 상승률을 기록했다. 24일 오전 넥스트레이드 프리마켓에서 삼성전자는 전 거래일 대비 10.25% 오른 19만5700원에 거래됐다.",
    "brief": "젠슨 황 엔비디아 최고경영자(CEO)가 사임 11일 만에 전격 복귀한다는 소식에 국내 반도체주가 프리마켓에서 두 자릿수 상승률을 기록했다는 기사",
    "summaryBy": "lead"
+  },
+  {
+   "title": "‘젠슨 황’ 컴백에…삼성전자 10%·SK하이닉스 13% 급등 [마켓시그널]",
+   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1wSm5Ed2lQUFhNdUhHVFpNQ2pwR0RNRTEzRlJWemE5TkQ1UFZWdXVMSER5ZXJZNmdsb0hVbWNQN1dKZmJqbm83ZUI1MlhDVnVUbmfSAVNBVV95cUxOSUZXbXBvOHoxU2h5UFRfTENHV3NBeWo5N2VXZWpIdng2ZXBQSGZpOTlmTG01Zm1LYzFnM0xlcGQ5d2tHeGwtRmJBeER4QkYzWlliTQ?oc=5",
+   "source": "서울경제",
+   "published": "2026-11-23T23:24:34Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "c3b6bb73c847"
   },
   {
    "title": "[특징주] 젠슨 황 복귀에 반도체주 급반등…프리마켓서 삼성전자 10%·SK하이닉스 12%↑",
