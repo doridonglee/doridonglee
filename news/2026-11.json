@@ -2,6 +2,65 @@
  "month": "2026-11",
  "items": [
   {
+   "title": "'이재용 증여세' 연계 논란 일단락…준감위 \"삼성전자 주주환원 문제없다\"",
+   "link": "https://www.financialpost.co.kr/news/articleView.html?idxno=302938",
+   "source": "파이낸셜포스트",
+   "published": "2026-11-24T11:55:18Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "d7bfb3d47c91",
+   "summaryTries": 1
+  },
+  {
+   "title": "삼성전자, 반도체·AI·로봇 ‘신성장동력 인재’ 대거 임원 발탁",
+   "link": "https://www.khan.co.kr/article/202611242038005",
+   "source": "경향신문",
+   "published": "2026-11-24T11:38:00Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "7afa7227d650",
+   "summary": "삼성전자가 사상 최고 실적을 견인한 반도체 부문과 인공지능·로봇 등 미래 성장동력 분야 인재들을 임원으로 대거 발탁했다. 차세대 커스텀 HBM 개발과 AI서버용 메모리, 파운드리 사업 수주 확대에 기여한 인재들도 부사장으로 승진했다.",
+   "brief": "삼성전자가 사상 최고 실적을 견인한 반도체 부문과 인공지능·로봇 등 미래 성장동력 분야 인재들을 임원으로 대거 발탁했다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "삼성준감위 “삼성전자 주주환원 유보, 준법 위반·이해상충 아냐”",
+   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE8zYmhpc0tVTHFjQkFmek5WbkViZDh1cC1Pd3lTbFVBc1JMdmhxNXZZbEYxSFhlcklmVEEzdHFhOUtJbVhhMnAtRWNLN0Z4RzZ5eWtTMjBVLU9Ib2JzMS0yY1hFSQ?oc=5",
+   "source": "쿠키뉴스",
+   "published": "2026-11-24T11:32:20Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "d9d1b6fce9c2",
+   "summaryTries": 1
+  },
+  {
+   "title": "준감위 \"삼성전자 주주환원, 준법 위반·이해상충 아냐\"",
+   "link": "https://www.safemoney.co.kr/news/articleView.html?idxno=31501",
+   "source": "세이프머니",
+   "published": "2026-11-24T11:32:19Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "07c89805b830",
+   "summary": "준감위는 24일 서울 서초구 삼성생명 서초사옥에서 열린 정례회의에서 삼성전자의 주주환원 결정 과정을 살펴본 뒤 이같이 밝혔다.",
+   "brief": "준감위는 24일 서울 서초구 삼성생명 서초사옥에서 열린 정례회의에서 삼성전자의 주주환원 결정 과정을 살펴본 뒤 이같이 밝혔다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "준감위 “삼성전자 주주환원 결정, 준법 위반·이해상충 아냐”",
+   "link": "https://www.donga.com/news/Economy/article/all/20261124/135084016/1",
+   "source": "동아일보",
+   "published": "2026-11-24T11:21:46Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "3e6e9e1bcd98",
+   "summaryTries": 1
+  },
+  {
    "title": "삼성 준감위 “삼성전자 주주환원 유보, 이재용 증여세 이해상충 아니다”",
    "link": "https://www.hani.co.kr/arti/economy/marketing/1288926.html",
    "source": "한겨레",
@@ -13,6 +72,17 @@
    "summary": "삼성 준법감시위원회(준감위)가 삼성전자의 잔여 주주환원 결정 시점을 둘러싼 논란을 두고 준법 위반이나 이해상충에 해당하지 않는다고 판단했다.",
    "brief": "삼성 준법감시위원회(준감위)가 삼성전자의 잔여 주주환원 결정 시점을 둘러싼 논란을 두고 준법 위반이나 이해상충에 해당하지 않는다고 판단했다는 기사",
    "summaryBy": "lead"
+  },
+  {
+   "title": "준감위 “삼성전자 주주환원 결정, 이해 상충 없어”",
+   "link": "https://it.chosun.com/news/articleView.html?idxno=3000000001739",
+   "source": "IT조선",
+   "published": "2026-11-24T10:17:00Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "8f942de63034",
+   "summaryTries": 1
   },
   {
    "title": "삼성 준감위 “삼성전자 주주환원 결정, 이해상충 아냐”",
@@ -36,7 +106,7 @@
     "삼성전자"
    ],
    "id": "8186dbac1cc9",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "삼성 준감위 \"삼성전자 주주환원 결정, 준법 위반·이해상충 아니다\"",
@@ -86,7 +156,7 @@
     "삼성전자"
    ],
    "id": "fa98a7a7fff6",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "준감위 \"삼성전자 주주환원 결정 과정, 준법위반·이해상충 아니다\"",
@@ -110,7 +180,7 @@
     "삼성전자"
    ],
    "id": "2e4a64859d84",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "삼성전자 초기업노조, DX 성과급 통합 검토…4개 노조 의견 수렴",
@@ -118,7 +188,8 @@
    "source": "아이뉴스24",
    "published": "2026-11-24T09:27:21Z",
    "keywords": [
-    "삼성전자 노동조합"
+    "삼성전자 노동조합",
+    "삼성전자"
    ],
    "id": "1d3ff6c515f3",
    "summary": "삼성그룹 초기업노동조합 삼성전자지부(초기업노조)가 스마트폰과 가전 등을 맡는 디바이스경험(DX)부문의 초과이익성과급(OPI) 통합을 검토한다. 24일 업계에 따르면 초기업노조는 이날 전국삼성전자노동조합(전삼노), 동행노동조합, 구미노동조합, 광주노동조합 등 4개 노조에 DX부문 OPI 통합 여부와 내년 단체교섭 요구안에 대한 의견을 요청하는 공문을 발송했다",
@@ -209,7 +280,8 @@
    "source": "매일경제TV",
    "published": "2026-11-24T08:17:00Z",
    "keywords": [
-    "삼성전자 노동조합"
+    "삼성전자 노동조합",
+    "삼성전자"
    ],
    "id": "2c2cbb8b55d6",
    "summaryTries": 2
@@ -2673,7 +2745,7 @@
     "삼성전자"
    ],
    "id": "44d7b808a61f",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "[속보] 삼성전자, 임원 131명 승진… HBM·AI·로봇 기술 인재 발탁",
@@ -2697,7 +2769,7 @@
     "삼성전자"
    ],
    "id": "97682ee3b5b4",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "\"위대한 창업자는 대체 불가능\" \"SK하이닉스·삼성전자에도 안정 효과\"",
@@ -2814,14 +2886,17 @@
   },
   {
    "title": "‘젠슨 황’ 컴백에…삼성전자 10%·SK하이닉스 13% 급등 [마켓시그널]",
-   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1wSm5Ed2lQUFhNdUhHVFpNQ2pwR0RNRTEzRlJWemE5TkQ1UFZWdXVMSER5ZXJZNmdsb0hVbWNQN1dKZmJqbm83ZUI1MlhDVnVUbmfSAVNBVV95cUxOSUZXbXBvOHoxU2h5UFRfTENHV3NBeWo5N2VXZWpIdng2ZXBQSGZpOTlmTG01Zm1LYzFnM0xlcGQ5d2tHeGwtRmJBeER4QkYzWlliTQ?oc=5",
+   "link": "https://www.sedaily.com/article/20118032",
    "source": "서울경제",
    "published": "2026-11-23T23:24:34Z",
    "keywords": [
     "삼성전자"
    ],
    "id": "c3b6bb73c847",
-   "summaryTries": 1
+   "summaryTries": 1,
+   "summary": "삼성전자와 SK하이닉스가 프리마켓에서 10%대 상승 폭을 보이고 있다. 젠슨 황 엔비디아 최고경영자(CEO)의 복귀 소식에 엔비디아와 마이크론, 코어위브 등 미국 인공지능(AI) 관련주가 급등한 영향으로 풀이된다.",
+   "brief": "삼성전자와 SK하이닉스가 프리마켓에서 10%대 상승 폭을 보이고 있다는 기사",
+   "summaryBy": "lead"
   },
   {
    "title": "[특징주] 젠슨 황 복귀에 반도체주 급반등…프리마켓서 삼성전자 10%·SK하이닉스 12%↑",
