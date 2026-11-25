@@ -2,6 +2,19 @@
  "month": "2026-11",
  "items": [
   {
+   "title": "코스피 6.16% 급락 4,697…삼성전자·SK하이닉스·삼성전기 등 10% 안팎 하락",
+   "link": "https://www.cbci.co.kr/news/articleView.html?idxno=630725",
+   "source": "CBC뉴스",
+   "published": "2026-11-25T15:25:00Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "bedc62ada61d",
+   "summary": "국내 증시가 25일 큰 폭으로 하락하며 거래를 마쳤다. 코스피는 6% 넘게 밀리며 4,600대로 내려왔고 코스닥도 2%대 약세를 나타냈다.",
+   "brief": "국내 증시가 25일 큰 폭으로 하락하며 거래를 마쳤다는 기사",
+   "summaryBy": "lead"
+  },
+  {
    "title": "[브랜딥 인사이트] AI가 추천한 휴대폰 1위는 삼성전자…질문 초점·엔진별 노출 차이",
    "link": "https://www.madtimes.co.kr/news/articleView.html?idxno=29810",
    "source": "매드타임스",
@@ -309,7 +322,7 @@
     "삼성전자"
    ],
    "id": "4aaac103f3af",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "삼성전자 화성사업장 15·17라인서…“노동자 혈액암 사망 7번째”",
