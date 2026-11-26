@@ -2,6 +2,141 @@
  "month": "2026-11",
  "items": [
   {
+   "title": "삼성전자, 메모리 개발체제 일원화…시스템LSI 영업 강화",
+   "link": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8723664",
+   "source": "KBS 뉴스",
+   "published": "2026-11-26T10:27:00Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "ecf0ff34bd2e",
+   "summaryTries": 1
+  },
+  {
+   "title": "삼성전자, M&A 전담팀 신설 … 사업 재편 속도",
+   "link": "https://www.safemoney.co.kr/news/articleView.html?idxno=31533",
+   "source": "세이프머니",
+   "published": "2026-11-26T10:14:32Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "ce6c86acd805",
+   "summary": "삼성전자 박순철 CFO삼성전자가 인수·합병(M&A) 전담 조직을 신설하고 미래 성장동력 확보에 나선다.",
+   "brief": "삼성전자 박순철 CFO삼성전자가 인수·합병(M&A) 전담 조직을 신설하고 미래 성장동력 확보에 나선다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "반도체엔 힘 싣고 세트엔 칼…삼성전자 연말 인사가 드러낸 '한 지붕 두 회사'",
+   "link": "https://www.todayeconomic.com/news/article.html?no=33024",
+   "source": "투데이e코노믹",
+   "published": "2026-11-26T10:12:18Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "2e0c5fdac527",
+   "summary": "같은 날 국내 영업을 맡는 한국총괄에서는 임원들이 무더기로 회사를 떠난다는 소식이 나왔다. 한 회사에서 같은 주에 나온 인사인데, 두 부문이 받은 메시지는 많이 다르다.",
+   "brief": "같은 날 국내 영업을 맡는 한국총괄에서는 임원들이 무더기로 회사를 떠난다는 소식이 나왔다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "삼성전자, 후속 인사·조직개편 단행…메모리 키우고 M&A 조직 격상",
+   "link": "https://www.asiatoday.co.kr/kn/view.php?key=20261126010010601",
+   "source": "아시아투데이",
+   "published": "2026-11-26T10:07:44Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "50fc98c5258b",
+   "summary": "삼성전자가 정기 사장단 이후 후속 임원 인사·조직개편을 단행했다.",
+   "brief": "삼성전자가 정기 사장단 이후 후속 임원 인사·조직개편을 단행했다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "\"두 손 자유롭게 작업\"…딥파인, 삼성전자에 산업용 XR 기술 선봬",
+   "link": "https://www.mt.co.kr/future/2026/11/26/2026112608595244386",
+   "source": "머니투데이",
+   "published": "2026-11-26T10:00:00Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "8448c3b53456",
+   "summary": "[이 기사에 나온 스타트업에 대한 보다 다양한 기업정보는 유니콘팩토리 빅데이터 플랫폼 '데이터랩'에서 볼 수 있습니다. ] 공간지능 기반 산업 AI(인공지능) 플랫폼 기업 딥파인이 삼성전자와 산업용 XR(확장현실) 솔루션 관련 사업 협력 가능성을 모색한다.",
+   "brief": "[이 기사에 나온 스타트업에 대한 보다 다양한 기업정보는 유니콘팩토리 빅데이터 플랫폼 '데이터랩'에서 볼 수 있습니다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "삼성전자, 맞춤형 HBM 개발팀 신설…M&A 전담 조직도 격상",
+   "link": "https://www.koreadaily.com/article/20261126015432089",
+   "source": "미주중앙일보",
+   "published": "2026-11-26T09:54:00Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "7120380c624b",
+   "summary": "삼성전자가 고객 맞춤형 반도체 시장에 대응하기 위해 메모리사업부에 로직개발팀을 신설하고 개발 지휘체계를 간소화한다.",
+   "brief": "삼성전자가 고객 맞춤형 반도체 시장에 대응하기 위해 메모리사업부에 로직개발팀을 신설하고 개발 지휘체계를 간소화한다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "삼성전자, 대대적 조직 개편…\"메모리 개발체제 일원화\"",
+   "link": "https://www.hankyung.com/article/2026112630891",
+   "source": "한국경제",
+   "published": "2026-11-26T09:40:33Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "528dde67a4f5",
+   "summaryTries": 1
+  },
+  {
+   "title": "“삼성전자·SK하이닉스 믿었는데”…장기계약 수십 건, 장부엔 왜 안 보이나",
+   "link": "https://www.daily25news.com/news/articleView.html?idxno=9445",
+   "source": "데일리25",
+   "published": "2026-11-26T09:24:02Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "59180104fa5c",
+   "summaryTries": 1
+  },
+  {
+   "title": "삼성전자, M&A 조직 신설·가전사업부 분리…신사업 정조준",
+   "link": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202611260169",
+   "source": "한국경제TV",
+   "published": "2026-11-26T09:20:00Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "680b1f366c86",
+   "summary": "한경TV는 귀하의 경제 습관에 도움을 드립니다. 본 사이트에서 제공되는 모든 정보는 투자판단의 참고자료로 원금 손실이 발생할 수 있으며, 그 손실은 투자자에게 귀속됩니다.",
+   "brief": "한경TV는 귀하의 경제 습관에 도움을 드립니다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "\"메모리 개발 속도, M&A 힘 싣는다\"…삼성전자, 조직개편 단행(종합)",
+   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBsXzFMcHRrd1NJZzFKUF9tZktlTkFnY3Q5a3VHYlp1UndWbmk0cW92MlAtZUV0TEtnX09JeU04VV9WdEpicmcybFdmb0c5X3VZRlU3ZjRrUEE3cGNUWHJJVHJhNS0?oc=5",
+   "source": "뉴스1",
+   "published": "2026-11-26T09:14:30Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "384d2aef6597",
+   "summaryTries": 1
+  },
+  {
+   "title": "삼성전자, M&A 조직 격상…신사업 발굴 속도 낸다",
+   "link": "https://www.ngetnews.com/news/articleView.html?idxno=556364",
+   "source": "뉴스저널리즘",
+   "published": "2026-11-26T09:10:34Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "8f3d8f09372b",
+   "summary": "삼성전자가 신사업 발굴과 기존 사업의 수익성 개선을 위한 조직 정비에 나섰다.",
+   "brief": "삼성전자가 신사업 발굴과 기존 사업의 수익성 개선을 위한 조직 정비에 나섰다는 기사",
+   "summaryBy": "lead"
+  },
+  {
    "title": "삼성전자, 美 로봇 인재 영입 속도… 반도체 조직도 재정비",
    "link": "https://www.fnnews.com/news/202611261810374177",
    "source": "파이낸셜뉴스",
@@ -25,6 +160,32 @@
    "id": "3dc63d45787e",
    "summary": "26일 뉴스1과 업계에 따르면 삼성전자는 사업 전문성과 실행력을 높이기 위해 DX부문 조직을 재편했다.",
    "brief": "26일 뉴스1과 업계에 따르면 삼성전자는 사업 전문성과 실행력을 높이기 위해 DX부문 조직을 재편했다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "삼성전자, ‘첨단 패키징’ 조직 되살려…반도체 승부처 후공정에 힘",
+   "link": "https://www.hani.co.kr/arti/economy/marketing/1289309.html",
+   "source": "한겨레",
+   "published": "2026-11-26T09:02:00Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "8a9e8187ede1",
+   "summary": "삼성전자가 반도체 파운드리(위탁생산) 사업부에 첨단 패키징(AVP) 개발실을 새로 만들었다. 2023년 사업팀으로 출범했다가 조직이 줄고 인력이 흩어졌던 첨단 패키징 조직을 2년여 만에 사업부 산하에 다시 만든 것이다.",
+   "brief": "삼성전자가 반도체 파운드리(위탁생산) 사업부에 첨단 패키징(AVP) 개발실을 새로 만들었다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "삼성전자, M&A 전담팀 신설…AI·로봇 등 미래사업 투자 강화",
+   "link": "https://www.ajunews.com/view/20261126175603685",
+   "source": "아주경제",
+   "published": "2026-11-26T09:01:57Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "b5c8878d362e",
+   "summary": "삼성전자가 인수합병(M&A) 전담조직을 신설하고 인공지능(AI)과 로봇 등 미래 성장사업에 대한 투자 역량을 강화한다. 생활가전과 냉난방공조(HVAC) 사업을 분리하고 스마트폰 사업에는 프리미엄 제품 판매와 AI 기기 연결을 전담하는 조직을 마련하는 등 사업구조 재편에도 나섰다.",
+   "brief": "삼성전자가 인수합병(M&A) 전담조직을 신설하고 인공지능(AI)과 로봇 등 미래 성장사업에 대한 투자 역량을 강화한다는 기사",
    "summaryBy": "lead"
   },
   {
@@ -81,14 +242,17 @@
   },
   {
    "title": "“삼성전자 15% 폭락 차트 보더니 결국 눈물”…생방송 중 무너진 증시 진행자, 무슨 일이",
-   "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9raXp3aEdENXNHdlgxNHJBTnczcjVMNmpvOGtiQjhzOFZBU2ZMZl96YnRwRWJSR0pVM2ZOU3ZrdjB6MGtoejU0bG5UZU4zUQ?oc=5",
+   "link": "https://www.etnews.com/20261126000530",
    "source": "전자신문",
    "published": "2026-11-26T08:50:00Z",
    "keywords": [
     "삼성전자"
    ],
    "id": "fdeb13d8209d",
-   "summaryTries": 1
+   "summaryTries": 1,
+   "summary": "국내 증시가 급락한 가운데 한 경제방송 진행자가 생방송에서 주가 흐름을 설명하던 중 눈물을 흘리는 장면이 포착돼 화제가 되고 있다. 26일 서울경제TV에 따르면 지난 25일 방영된 증시 분석 프로그램 '김아현의 금빛 스탁'에서 김아현 전문가는 나스닥 지수 차트를 살펴보며 추가 하락 가능성을 전망했다.",
+   "brief": "국내 증시가 급락한 가운데 한 경제방송 진행자가 생방송에서 주가 흐름을 설명하던 중 눈물을 흘리는 장면이 포착돼 화제가 되고 있다는 기사",
+   "summaryBy": "lead"
   },
   {
    "title": "삼성전자, 메모리 개발체제 일원화…시스템LSI 영업 조직 확대(종합)",
@@ -143,6 +307,19 @@
    "summaryBy": "lead"
   },
   {
+   "title": "삼성전자, 메모리 개발체제 일원화…차세대 HBM 경쟁력 강화",
+   "link": "https://www.mdtoday.co.kr/news/articleView.html?idxno=627993",
+   "source": "메디컬투데이",
+   "published": "2026-11-26T08:38:16Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "d395c4625b12",
+   "summary": "삼성전자 반도체(DS) 부문의 메모리사업부가 사업부장 직속으로 개발 체제를 일원화하고 로직 설계 조직을 신설했다.",
+   "brief": "삼성전자 반도체(DS) 부문의 메모리사업부가 사업부장 직속으로 개발 체제를 일원화하고 로직 설계 조직을 신설했다는 기사",
+   "summaryBy": "lead"
+  },
+  {
    "title": "삼성전자, M&A 전담조직 신설…대형 인수합병 속도 붙나(종합)",
    "link": "https://www.yna.co.kr/view/AKR20261126159751003",
    "source": "연합뉴스",
@@ -190,7 +367,20 @@
     "삼성전자"
    ],
    "id": "273cf751cfc2",
-   "summaryTries": 1
+   "summaryTries": 2
+  },
+  {
+   "title": "삼성전자, 완제품부문 M&A 전담조직 신설…\"미래 먹거리 발굴 총력\"",
+   "link": "https://www.newsis.com/view/NISX20261126_0003885087",
+   "source": "뉴시스",
+   "published": "2026-11-26T08:32:10Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "945fa5ec7c4a",
+   "summary": "[서울=뉴시스]이지용 기자 = 삼성전자에서 완제품 사업을 하는 디바이스경험(DX)부문이 인수합병(M&A) 조직을 강화하며 미래 먹거리 발굴에 속도를 낸다. 생활가전과 냉난방공조(HVAC)는 별도의 조직으로 재편하는데 성장 잠재력이 높은 공조 사업에 한층 힘을 싣는 모습이다.",
+   "brief": "[서울=뉴시스]이지용 기자 = 삼성전자에서 완제품 사업을 하는 디바이스경험(DX)부문이 인수합병(M&A) 조직을 강화하며 미래 먹거리 발굴에 속도를 낸다는 기사",
+   "summaryBy": "lead"
   },
   {
    "title": "삼성전자, 메모리 개발 힘 싣고 M&A 조직 키웠다",
@@ -227,7 +417,7 @@
     "삼성전자"
    ],
    "id": "13a488774521",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "삼성전자 DX, M&A 조직 격상…DA사업부, 생활가전·공조 양대 축으로",
@@ -238,7 +428,7 @@
     "삼성전자"
    ],
    "id": "ef062075d87d",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "삼성전자, DX부문 M&A 조직 격상…스마트폰 수익성 개선 조직도 신설",
@@ -255,14 +445,17 @@
   },
   {
    "title": "삼성전자 DS, 메모리 개발 조직 '사업부장' 직속으로 일원화…혁신 속도 높인다",
-   "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE13NUdvZm0wNjh0NW1QbVc5dm1aam1nbVJtN1VHeG1tZ3FHTTBnYVlEbEpxVzlFVUx6WWNrbWRXSy1LcTgzQ25YbERfMDVydw?oc=5",
+   "link": "https://www.etnews.com/20261126000517",
    "source": "전자신문",
    "published": "2026-11-26T08:15:49Z",
    "keywords": [
     "삼성전자"
    ],
    "id": "9cb5a99ad263",
-   "summaryTries": 1
+   "summaryTries": 1,
+   "summary": "삼성전자가 메모리 개발 체제를 사업부장 직속으로 일원화한다. 최근 삼성전자 DS부문 메모리사업부장으로 선임된 황상준 사장이 직접 차세대 메모리 개발을 챙기려는 포석으로 풀이된다.",
+   "brief": "삼성전자가 메모리 개발 체제를 사업부장 직속으로 일원화한다는 기사",
+   "summaryBy": "lead"
   },
   {
    "title": "삼성전자, DX 후속 조직개편 단행…미래 동력·수익 방어",
@@ -273,7 +466,7 @@
     "삼성전자"
    ],
    "id": "03fc8326a5f6",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "삼성전자서비스, AI 가전 수리·현장 안전 겨룬다 ···제31회 기술경진대회 개최",
@@ -297,7 +490,7 @@
     "삼성전자"
    ],
    "id": "462f150cf3f4",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "삼성전자, M&A 조직 격상…공조사업 분리로 경쟁력 강화",
@@ -334,18 +527,34 @@
     "삼성전자"
    ],
    "id": "a102d52db2f9",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "삼성전자 DX, M&A 조직 격상·공조 독립…성장동력·수익성 '투트랙'",
-   "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE92UUEzZzFFRTVJOVJMbktYanlqVFBtekNCQlVCTXhGZ0lpZTQ5QnZVSnRpZDBXX1NwVEM4bzdlcVR1SVhJc3RJQzB4YlllZw?oc=5",
+   "link": "https://www.etnews.com/20261126000512",
    "source": "전자신문",
    "published": "2026-11-26T08:04:16Z",
    "keywords": [
     "삼성전자"
    ],
    "id": "d63c318c1c3d",
-   "summaryTries": 1
+   "summaryTries": 1,
+   "summary": "삼성전자가 인수합병(M&A) 전담 조직을 신설하고 생활가전과 냉난방공조(HVAC) 사업을 분리한다. 스마트폰 사업에는 기기 연결과 프리미엄 판매를 맡을 조직을 새로 만든다.",
+   "brief": "삼성전자가 인수합병(M&A) 전담 조직을 신설하고 생활가전과 냉난방공조(HVAC) 사업을 분리한다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "삼성전자 DX, M&A 전담 신설·공조 독립…성장동력·수익성 '투트랙'",
+   "link": "https://www.etnews.com/20261126000512",
+   "source": "전자신문",
+   "published": "2026-11-26T08:04:16Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "fc812e00de93",
+   "summary": "삼성전자가 인수합병(M&A) 전담 조직을 신설하고 생활가전과 냉난방공조(HVAC) 사업을 분리한다. 스마트폰 사업에는 기기 연결과 프리미엄 판매를 맡을 조직을 새로 만든다.",
+   "brief": "삼성전자가 인수합병(M&A) 전담 조직을 신설하고 생활가전과 냉난방공조(HVAC) 사업을 분리한다는 기사",
+   "summaryBy": "lead"
   },
   {
    "title": "삼성전자, DS 조직 개편…메모리 개발 강화·해외법인장 교체",
@@ -369,7 +578,7 @@
     "삼성전자"
    ],
    "id": "80b34c4d9329",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "삼성전자, M&A 조직 '팀'으로 격상…HVAC·홈AI 사업 재편",
@@ -484,7 +693,7 @@
     "삼성전자"
    ],
    "id": "587c831c8cc6",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "삼성전자, 메모리 개발체제 일원화…시스템LSI 영업 강화(종합)",
@@ -508,17 +717,18 @@
     "삼성전자"
    ],
    "id": "11a8f982e522",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "[포토뉴스] 삼성전자서비스, 서비스 기술경진대회 연다",
-   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE0xVDRidG92TE1EUTJadmF4NXl4TWRvX3RWRkl0ODhYQVh6SlFiUVMwemFXOWNXMTFZV2hTUjZPcWV1WVJ4eHhaT0UyQ2VUU1lUTkZGcnY1UG5xOGd0X3NlUDV2a0RybHpBaU1r?oc=5",
+   "link": "https://www.cnbnews.com/news/articleView.html?idxno=1025506",
    "source": "CNB뉴스",
    "published": "2026-11-26T07:19:13Z",
    "keywords": [
     "삼성전자"
    ],
-   "id": "39009dd471e1"
+   "id": "39009dd471e1",
+   "summaryTries": 1
   },
   {
    "title": "삼성전자, 메모리개발조직 사업부장 직속 재편… 미주법인장 윤하룡",
@@ -555,7 +765,7 @@
     "삼성전자"
    ],
    "id": "3814262307a5",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "[단독]삼성전자, DS부문에 로보틱스팀 신설...반도체 수작업 '로봇'으로 대체",
@@ -592,7 +802,7 @@
     "삼성전자"
    ],
    "id": "2ff0a82a26b7",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "전날 급락했던 삼성전자·SK하이닉스, 26일 장중 반등 마감",
@@ -616,17 +826,20 @@
     "삼성전자"
    ],
    "id": "f173fbdea6bc",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "삼성전자, DS 미주법인장에 윤하룡 부사장 내정…시스템LSI 영업 강화",
-   "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE85TTQ2dVU2dGZFMkp2RVhoYWtVWk9Oc1AtOHRKemxQVDRkeFVDRTdxZlluRjJ4TWd6X3ZDc1MzOFIxVTNkc0xyZTdtQ2gyWk1ZQjY1ZdIBVEFVX3lxTE85TTQ2dVU2dGZFMkp2RVhoYWtVWk9Oc1AtOHRKemxQVDRkeFVDRTdxZlluRjJ4TWd6X3ZDc1MzOFIxVTNkc0xyZTdtQ2gyWk1ZQjY1ZQ?oc=5",
+   "link": "https://m.tf.co.kr/amp/economy/2393883.htm",
    "source": "더팩트",
    "published": "2026-11-26T06:46:00Z",
    "keywords": [
     "삼성전자"
    ],
-   "id": "7324d6c757ae"
+   "id": "7324d6c757ae",
+   "summary": "삼성전자가 반도체 사업의 해외 영업과 기술 개발 역량을 강화하기 위해 조직을 재정비했다. 미국 현지 법인 수장을 교체하고 시스템LSI사업부의 전략마케팅실을 약 1년 만에 복원했다.",
+   "brief": "삼성전자가 반도체 사업의 해외 영업과 기술 개발 역량을 강화하기 위해 조직을 재정비했다는 기사",
+   "summaryBy": "lead"
   },
   {
    "title": "삼성전자, 中 시안 9세대 V낸드 생산 5배 늘려 AI 수요 정조준",
@@ -637,7 +850,7 @@
     "삼성전자"
    ],
    "id": "efbfef99f269",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "삼성전자, DS부문 미주법인장에 윤하룡 부사장…메모리사업부 직접 관할 체제로 전환",
@@ -687,7 +900,7 @@
     "삼성전자"
    ],
    "id": "ee14f61277d1",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "삼성전자, 메모리 개발체제 일원화…시스템LSI 전마실도 부활",
@@ -698,7 +911,7 @@
     "삼성전자"
    ],
    "id": "3fc66c64f88c",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "삼성전자 초기업노조, 내년 임단협 준비…\"전삼노 등 다른 4개 노조 의견 청취\"",
@@ -736,7 +949,7 @@
     "삼성전자"
    ],
    "id": "0d69c91bfc81",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "화웨이, 차세대 HBM 개발 추진...삼성전자·SK하이닉스에 도전장",
@@ -773,7 +986,7 @@
     "삼성전자"
    ],
    "id": "4d0bf6a9d6ef",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "딥파인, 삼성전자 C-Lab 전시체험존서 산업용 XR 솔루션 현장 활용 방안 소개",
@@ -797,7 +1010,7 @@
     "삼성전자 노동조합"
    ],
    "id": "5d9c9346cf2b",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "삼성전자 SK하이닉스 주가는 기어가고 슈퍼사이클도 2028년 하향 전망, 가격 의존도 낮출 '고부가 사업' 체질개선 시험대",
@@ -847,7 +1060,7 @@
     "삼성전자"
    ],
    "id": "1ed32ba86220",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "디앤디인베스트먼트, 삼성전자와 시니어 주거시설 운영 플랫폼 도입 협약",
