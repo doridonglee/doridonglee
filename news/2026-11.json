@@ -2,6 +2,82 @@
  "month": "2026-11",
  "items": [
   {
+   "title": "삼성전자, 메모리 개발체제 일원화…시스템LSI 영업 조직 격상",
+   "link": "http://www.inews24.com/view/2030737",
+   "source": "아이뉴스24",
+   "published": "2026-11-26T03:27:53Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "4bfc2007ffe0",
+   "summary": "삼성전자가 반도체 사업을 담당하는 디바이스솔루션(DS)부문의 기술 개발과 영업 경쟁력 강화에 초점을 맞춘 조직개편을 단행했다. 메모리사업부는 사업부장 직속 개발체제를 구축하고 로직 설계 조직을 신설했다.",
+   "brief": "삼성전자가 반도체 사업을 담당하는 디바이스솔루션(DS)부문의 기술 개발과 영업 경쟁력 강화에 초점을 맞춘 조직개편을 단행했다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "삼성전자, 반도체 핵심 미주법인장에 윤하룡 부사장 내정",
+   "link": "https://www.asiatoday.co.kr/kn/view.php?key=20261126010010331",
+   "source": "아시아투데이",
+   "published": "2026-11-26T03:26:59Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "89285606a271",
+   "summary": "삼성전자가 디바이스솔루션(DS)부문 미주법인(DSA)장에 윤하룡 부사장을 내정했다. 이에 윤 부사장은 삼성전자 반도체 사업의 핵심 해외 조직을 이끌며 엔비디아를 비롯한 글로벌 기업들에 대한 대응을 총괄하게 됐다.",
+   "brief": "삼성전자가 디바이스솔루션(DS)부문 미주법인(DSA)장에 윤하룡 부사장을 내정했다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "엑시콘, 삼성전자와 80억3740만원 규모 CLT Interface Board 공급계약",
+   "link": "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=718390",
+   "source": "디지털투데이",
+   "published": "2026-11-26T03:20:03Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "38394ac355d9",
+   "summary": "계약금액은 최근 매출액 660억2675만원 대비 12.2% 규모로 기재됐다. 전액 확정 계약금액이며 조건부 계약에는 해당하지 않는다.",
+   "brief": "계약금액은 최근 매출액 660억2675만원 대비 12.2% 규모로 기재됐다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "삼성전자·SK하이닉스, 내년 영업이익 1000조원 돌파…세계 경제적 이익 5위권 진입 전망",
+   "link": "https://www.economytribune.co.kr/news/articleView.html?idxno=3904531",
+   "source": "이코노미트리뷴",
+   "published": "2026-11-26T03:07:35Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "e4806b251382",
+   "summaryTries": 1
+  },
+  {
+   "title": "삼성전자·마이크론, 넷리스트와 특허 분쟁 종결… 최대 15억 달러 지급",
+   "link": "http://www.jemin.com/news/articleView.html?idxno=848514",
+   "source": "제민일보",
+   "published": "2026-11-26T03:00:21Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "8a6b04aa8b8b",
+   "summary": "이번 계약에는 인공지능(AI) 데이터센터의 핵심 부품으로 활용되는 고대역폭메모리(HBM)를 비롯해 서버용 메모리 모듈 관련 기술이 포함됐다.",
+   "brief": "이번 계약에는 인공지능(AI) 데이터센터의 핵심 부품으로 활용되는 고대역폭메모리(HBM)를 비롯해 서버용 메모리 모듈 관련 기술이 포함됐다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "엑시콘, 삼성전자와 80억원 규모 공급계약 체결",
+   "link": "https://marketin.edaily.co.kr/News/ReadE?newsId=02745366645649656",
+   "source": "마켓인",
+   "published": "2026-11-26T02:58:33Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "f2e48d462ea5",
+   "summary": "계약금액은 지난해 연결 매출액의 12.2%에 해당한다. 계약기간은 지난 25일부터 내년 2월28일까지다.",
+   "brief": "계약금액은 지난해 연결 매출액의 12.2%에 해당한다는 기사",
+   "summaryBy": "lead"
+  },
+  {
    "title": "삼성전자, 반도체 조직개편 단행...미주법인장에 윤하룡 부사장 내정",
    "link": "https://www.m-economynews.com/news/article.html?no=73618",
    "source": "M이코노미뉴스",
@@ -28,6 +104,17 @@
    "summaryBy": "lead"
   },
   {
+   "title": "시니어 주거에 스마트 기술 접목…디앤디·삼성전자 협력",
+   "link": "https://magazine.hankyung.com/business/article/202611261926b",
+   "source": "한경매거진",
+   "published": "2026-11-26T02:31:00Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "f52cf0baca48",
+   "summaryTries": 1
+  },
+  {
    "title": "삼성전자, 메모리사업부장 직속 개발체제로…미주법인장 윤하룡",
    "link": "https://www.yna.co.kr/view/AKR20261126084300003",
    "source": "연합뉴스",
@@ -36,7 +123,20 @@
     "삼성전자"
    ],
    "id": "2d67339ce770",
-   "summaryTries": 1
+   "summaryTries": 2
+  },
+  {
+   "title": "손이 바쁜 산업 현장에 XR 입힌다… 딥파인, 삼성전자 ‘C-Lab 전시체험존’서 솔루션 공개",
+   "link": "https://kr.aving.net/news/articleViewAmp.html?idxno=1817415",
+   "source": "에이빙",
+   "published": "2026-11-26T02:21:40Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "db74bf8be5ac",
+   "summary": "제조·물류·설비 현장에서는 작업자가 두 손을 쓰는 동시에 작업 지시와 현장 정보를 확인해야 하는 상황이 많다. 스마트글라스와 공간지능, 비전 AI를 결합한 XR 솔루션은 이런 현장 업무를 디지털화하는 방식으로 주목받고 있다.",
+   "brief": "제조·물류·설비 현장에서는 작업자가 두 손을 쓰는 동시에 작업 지시와 현장 정보를 확인해야 하는 상황이 많다는 기사",
+   "summaryBy": "lead"
   },
   {
    "title": "\"삼성전자 망할 것 같아요? 반값이면 찬스\"…존 리가 말한 폭락장 투자법",
@@ -60,7 +160,7 @@
     "삼성전자"
    ],
    "id": "cbda888ff243",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "삼성전자서비스, '서비스 기술경진 및 안전혁신대회' 개최",
@@ -97,7 +197,7 @@
     "삼성전자"
    ],
    "id": "9942a22f1ffc",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "삼성전자서비스, 제31회 서비스 기술경진·안전혁신대회…10개 종목 겨뤄",
@@ -121,7 +221,7 @@
     "삼성전자"
    ],
    "id": "3518119556fa",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "삼성전자서비스, AI 가전 시대에 멀티 수리 역량과 현장 안전까지 잡는다",
@@ -134,6 +234,32 @@
    "id": "97fd80ad1339",
    "summary": "삼성전자서비스가 AI 가전 대중화와 초연결 생태계 확산에 발맞춰 엔지니어들의 멀티 수리 전문성과 현장 안전 역량을 한 단계 끌어올리기 위한 기술·안전 경연의 장을 열었다. 26일 삼성전자에 따르면 지난 25일부터 26일까지 이틀간 경기도 수원에 위치한 '삼성전자 CS 아카데미’에서 제31회 ‘서비스 기술경진 및 안전혁신대회'를 개최했다.",
    "brief": "삼성전자서비스가 AI 가전 대중화와 초연결 생태계 확산에 발맞춰 엔지니어들의 멀티 수리 전문성과 현장 안전 역량을 한 단계 끌어올리기 위한 기술·안전 경연의 장을 열었다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "삼성전자 시총 1천조원 하회…삼전닉스 9~11% 급락",
+   "link": "https://chaovietnam.co.kr/195570/",
+   "source": "씬짜오베트남",
+   "published": "2026-11-26T02:02:04Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "51bbf24b3c45",
+   "summary": "원문보기미국 증시에서 인공지능(AI) 기술주가 하락한 영향으로 25일 국내 증시에서도 반도체주가 일제히 급락했다. 삼성전자는 시가총액이 1천조원을 하회했으며, SK하이닉스는 9~11%대 급락세를 나타냈다.",
+   "brief": "원문보기미국 증시에서 인공지능(AI) 기술주가 하락한 영향으로 25일 국내 증시에서도 반도체주가 일제히 급락했다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "디앤디인베스트먼트·삼성전자, 방배동 '초개인화' 하이엔드 시니어 레지던스 구축",
+   "link": "https://www.fnnews.com/news/202611261046254944",
+   "source": "파이낸셜뉴스",
+   "published": "2026-11-26T01:58:03Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "ffd9df7340a8",
+   "summary": "[파이낸셜뉴스] 디앤디인베스트먼트가 삼성전자와 협력해 첨단 스마트 공간 기술과 전문 케어 서비스가 융합된 차세대 시니어 주거 환경 조성에 나선다. 디앤디인베스트먼트는 지난 25일 삼성전자와 '하이엔드 시니어 리빙 솔루션 구축을 위한 업무협약'을 체결했다고 26일 밝혔다.",
+   "brief": "[파이낸셜뉴스] 디앤디인베스트먼트가 삼성전자와 협력해 첨단 스마트 공간 기술과 전문 케어 서비스가 융합된 차세대 시니어 주거 환경 조성에 나선다는 기사",
    "summaryBy": "lead"
   },
   {
@@ -151,14 +277,17 @@
   },
   {
    "title": "삼성전자서비스, '서비스 기술경진 및 안전혁신대회' 개최",
-   "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9PcnVNbzhfTkFyd1BxdjZIaTI4THVCMmgtcEpCdDQ1MjJLWjdTdUJYZkdWREp2S1dRbWFhdjU5V1M1b0NyY3VuSm1mVlg5UQ?oc=5",
+   "link": "https://www.etnews.com/20261126000204",
    "source": "전자신문",
    "published": "2026-11-26T01:47:25Z",
    "keywords": [
     "삼성전자"
    ],
    "id": "484935a072c7",
-   "summaryTries": 1
+   "summaryTries": 1,
+   "summary": "삼성전자서비스가 엔지니어 수리 기술과 인공지능(AI) 활용 역량을 평가하고, 서비스 현장 안전 혁신사례를 발굴한다. 삼성전자서비스는 경기 수원 삼성전자 CS 아카데미에서 제31회 '서비스 기술경진 및 안전혁신대회'를 개최한다고 26일 밝혔다.",
+   "brief": "삼성전자서비스가 엔지니어 수리 기술과 인공지능(AI) 활용 역량을 평가하고, 서비스 현장 안전 혁신사례를 발굴한다는 기사",
+   "summaryBy": "lead"
   },
   {
    "title": "딥파인, 삼성전자 ‘C-Lab 전시체험존’ 참가... XR 솔루션 통한 산업 지능화 방안 제시",
@@ -247,7 +376,33 @@
     "삼성전자"
    ],
    "id": "f810b172596f",
-   "summaryTries": 1
+   "summaryTries": 2
+  },
+  {
+   "title": "삼성 전자 계열사, 사장단·임원 인사에 이어 오늘 2027년 조직개편 단행",
+   "link": "https://www.ejanews.co.kr/news/articleView.html?idxno=336758",
+   "source": "중앙뉴스",
+   "published": "2026-11-26T01:26:47Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "dcc0001b5983",
+   "summary": "[중앙뉴스= 윤장섭 기자]삼성전자와 삼성전기, 삼성디스플레이 등 삼성그룹의 주요 전자 계열사가 2027년 사업을 위한 조직개편에 나선다.",
+   "brief": "[중앙뉴스= 윤장섭 기자]삼성전자와 삼성전기, 삼성디스플레이 등 삼성그룹의 주요 전자 계열사가 2027년 사업을 위한 조직개편에 나선다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "삼성전자 특별배당 효과…KODEX 200커버드콜액티브 분배금 확대",
+   "link": "https://www.fnnews.com/news/202611261024168448",
+   "source": "파이낸셜뉴스",
+   "published": "2026-11-26T01:26:10Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "7612a4b5025d",
+   "summary": "[파이낸셜뉴스] 삼성전자와 SK하이닉스의 특별배당이 상장지수펀드(ETF)의 분배금 확대로 이어지고 있다. 삼성자산운용은 월말분배 상품인 'KODEX 200커버드콜액티브' ETF가 삼성전자 특별배당을 반영한 분배금을 11월과 12월에 걸쳐 분할 지급한다고 26일 밝혔다.",
+   "brief": "[파이낸셜뉴스] 삼성전자와 SK하이닉스의 특별배당이 상장지수펀드(ETF)의 분배금 확대로 이어지고 있다는 기사",
+   "summaryBy": "lead"
   },
   {
    "title": "[장중수급포착] 삼성전자, 외국인/기관 동시 순매수… 주가 +2.61%",
@@ -271,7 +426,7 @@
     "삼성전자"
    ],
    "id": "1c8b1d98be4a",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "아프리카 스마트폰 시장 40% 줄어...삼성전자는 점유율 23%로 확대",
@@ -287,6 +442,19 @@
    "summaryBy": "lead"
   },
   {
+   "title": "아프리카 스마트폰 시장 40% 줄어...삼성전자는 점유율 23%로 확대",
+   "link": "https://busan.fnnews.com/news/202611260930262517",
+   "source": "부산파이낸셜뉴스",
+   "published": "2026-11-26T01:17:00Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "6071095ca2da",
+   "summary": "연합뉴스 [파이낸셜뉴스] 아프리카 스마트폰 시장이 부품 원가 상승과 통화 약세 여파로 급격히 위축된 가운데 삼성전자가 시장 점유율을 확대했다.",
+   "brief": "연합뉴스 [파이낸셜뉴스] 아프리카 스마트폰 시장이 부품 원가 상승과 통화 약세 여파로 급격히 위축된 가운데 삼성전자가 시장 점유율을 확대했다는 기사",
+   "summaryBy": "lead"
+  },
+  {
    "title": "디앤디인베스트먼트, 삼성전자와 하이엔드 시니어 주거 솔루션 구축",
    "link": "https://www.m-i.kr/news/articleView.html?idxno=2023679",
    "source": "매일일보",
@@ -295,18 +463,21 @@
     "삼성전자"
    ],
    "id": "462e6474e6f3",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "삼성전자서비스, 서비스 기술경진 안전혁신대회 개최",
-   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1nU2xUY0s0aHJ0b2YydGNObWFCR2VjdVlacTJXeXVPbVVEYkhreEZGWjJWdEJuMWc3dVlJMmcxbnh4VmZkQ1k3YzNVb18yN3BOVHfSAVNBVV95cUxPRWVQSUk1YU9uT0czMUl2V0xteml4UC1rbUJiQlRRb194aHV1SFQ0ejBPX0dLaXR6QzVFa21NSUNtdWtXM090QXRkemxGNjBDMHJ1Yw?oc=5",
+   "link": "https://www.sedaily.com/article/20119184",
    "source": "서울경제",
    "published": "2026-11-26T01:16:00Z",
    "keywords": [
     "삼성전자"
    ],
    "id": "5d301ecde7ac",
-   "summaryTries": 1
+   "summaryTries": 1,
+   "summary": "삼성전자(005930)서비스가 인공지능(AI) 기술을 활용한 제품 진단과 수리 역량을 높이기 위해 서비스 엔지니어들의 기술 경진대회를 개최했다. 가전제품 간 연결이 확대되는 추세에 맞춰 여러 제품을 종합적으로 점검하는 능력까지 평가한다.",
+   "brief": "삼성전자(005930)서비스가 인공지능(AI) 기술을 활용한 제품 진단과 수리 역량을 높이기 위해 서비스 엔지니어들의 기술 경진대회를 개최했다는 기사",
+   "summaryBy": "lead"
   },
   {
    "title": "“AI 시대 서비스 실력 겨룬다”… 삼성전자서비스, 기술대회 개최",
@@ -772,7 +943,7 @@
     "삼성전자"
    ],
    "id": "de167f072d25",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "삼성전자서비스, 제31회 기술경진대회 개최…AI 활용 역량도 평가",
@@ -783,17 +954,20 @@
     "삼성전자"
    ],
    "id": "f9bcc40d7f28",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "[특징주] 삼성전자·SK하이닉스, 반발 매수세 유입에 동반 상승",
-   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9ZQWV2YTZLMXB5NVB6emtTZFVMWDhJcVZVVHFzZFZpZnRPQ011WkEzN0U2X1FqZU1WYTZnOUlVWUNHVi1IR2E0UmwtRTlHUlB4UmhzUnVJNGFjQQ?oc=5",
+   "link": "https://www.viva100.com/article/20261126500234",
    "source": "브릿지경제",
    "published": "2026-11-26T00:06:00Z",
    "keywords": [
     "삼성전자"
    ],
-   "id": "73ceb81036b2"
+   "id": "73ceb81036b2",
+   "summary": "삼성전자와 SK하이닉스가 26일 장 초반 나란히 상승하고 있다. 간밤 미국 반도체주가 장중 낙폭을 대부분 만회한 가운데 전날 급락에 따른 반발 매수세가 유입된 것으로 풀이된다.",
+   "brief": "삼성전자와 SK하이닉스가 26일 장 초반 나란히 상승하고 있다는 기사",
+   "summaryBy": "lead"
   },
   {
    "title": "삼성전자서비스, 서비스 기술경진·안전혁신대회 개최",
@@ -836,73 +1010,88 @@
   },
   {
    "title": "[속보]삼성전자 1.11%↑·SK하이닉스 2.14%↑…동반 상승 개장",
-   "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBJaU1OLVBqSDFfa2tsazJnbW5JTlZrY24yVzdhdHNZa244QjllTm1qSy10T0VuQUVjMktSdWRFdWZoTEFvakpHTHA2VzRGLWR6LWtvV0VpOEZUVkFTc3h2Q9IBeEFVX3lxTE8xaVZ4dXA3T0NxQnJzRkhRcUtoWVhwYU5sUG4wcFROUUIwX3M5WG41YzFtWUp3QTVpbXJPcDIxMFRtTWNRQWliRFBkN05QN1pyQjByb0hmX2VDSXZrTWFyWXY2eGdadmx4TU9pellBWFBmQURXN1lBNw?oc=5",
+   "link": "https://www.newsis.com/view/NISX20261126_0003883864",
    "source": "뉴시스",
    "published": "2026-11-26T00:02:14Z",
    "keywords": [
     "삼성전자"
    ],
-   "id": "d70de2605942"
+   "id": "d70de2605942",
+   "summaryTries": 1
   },
   {
    "title": "SK하이닉스 잉여금 207조 불어…삼성전자 합쳐 대기업 37%",
-   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5aQUJDcnMxQnBTckJSX19xNXJVT21OTFpzZ1o2TlNMZEZLLUFINVdlUGhXcG5zeEctVmF3UGpzdWRuTUN2R0k5UkxSSm04VWFCanRnNEdWY0R4d1l4SFY4SnNWRzdKeDg?oc=5",
+   "link": "https://www.jabon.co.kr/news/articleView.html?idxno=9201",
    "source": "자본시장뉴스",
    "published": "2026-11-26T00:00:00Z",
    "keywords": [
     "삼성전자"
    ],
-   "id": "c7e3ef3f26ac"
+   "id": "c7e3ef3f26ac",
+   "summary": "국내 대기업이 사내에 쌓아 둔 이익잉여금이 두 해 만에 오백조원 넘게 불었다.",
+   "brief": "국내 대기업이 사내에 쌓아 둔 이익잉여금이 두 해 만에 오백조원 넘게 불었다는 기사",
+   "summaryBy": "lead"
   },
   {
    "title": "삼성전자, 1100Hz 게이밍 모니터 '오디세이' G6 공개…듀얼 모드 첫 적용",
-   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOSVdMS0lJeTVzTzQwNjdwLUNNSWdicUZKX1dRY1d6LTNMeUpfUHpfZVcxQTBpamVlaV83MWVjS21ERkRqWEdnTVd4SEZXQWtDTWQxM3luYlZiU0NMQUpTbngwRnU3TXVVdGdpNVNCVWZyb0c1S2pDUy12d25DS2g5UnhZcmx1eTN1?oc=5",
+   "link": "https://www.g-enews.com/article/Global-Biz/2026/11/2026112519155668568c1ed9d56c_1",
    "source": "글로벌이코노믹",
    "published": "2026-11-25T23:58:58Z",
    "keywords": [
     "삼성전자"
    ],
-   "id": "3d00a700def3"
+   "id": "3d00a700def3",
+   "summaryTries": 1
   },
   {
    "title": "삼성전자, 자카르타서 갤럭시 S26 FE 체험 공간 개막",
-   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNSzZVUVV5cFNHU1pPeU8tSjVET3dBVzBkS0laWVRhRVVxWHllZVJxQ2dOMkZPMGhSLTRRVHo1RHVrbmdXSzU1UmhJa2ZIUWl6UzJ3dmhDdkJ1VHNfQjJmZVotVXJuSkhwcTREb2xmelhHSmpUX3BFNjBzZ1htNkxBV3FJZkN3NTg3?oc=5",
+   "link": "https://www.g-enews.com/article/Global-Biz/2026/11/2026112519325072018c1ed9d56c_1",
    "source": "글로벌이코노믹",
    "published": "2026-11-25T23:54:21Z",
    "keywords": [
     "삼성전자"
    ],
-   "id": "3744a3243994"
+   "id": "3744a3243994",
+   "summary": "삼성전자 인도네시아 법인이 24일부터 29일까지 자카르타 세나얀 시티 더 스페이스에서 인터랙티브 체험 공간 스위치 스팟을 운영한다.",
+   "brief": "삼성전자 인도네시아 법인이 24일부터 29일까지 자카르타 세나얀 시티 더 스페이스에서 인터랙티브 체험 공간 스위치 스팟을 운영한다는 기사",
+   "summaryBy": "lead"
   },
   {
    "title": "삼성전자서비스, 기술경진·안전혁신대회…10개 종목서 시상",
-   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5XN0VyYV8xaEdwal9oZUJvY2FSQS1fVlJUMHZROGlQRDNNUHlxMUNjZS1Mc3lWYWRwNFdSSDNfLXV5RS1aaDRmdjZKWExUNHlJak9tTnhkZFVLQjdaSVd5X3FOX3NqQmlfM1M1SnR2eW0ySTBj?oc=5",
+   "link": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1445147",
    "source": "연합뉴스 한민족센터",
    "published": "2026-11-25T23:54:09Z",
    "keywords": [
     "삼성전자"
    ],
-   "id": "b09214ebbe8b"
+   "id": "b09214ebbe8b",
+   "summary": "연합뉴스 한민족센터는 동포 관련 뉴스와 정보를 통해 동포사회의 목소리를 반영합니다.",
+   "brief": "연합뉴스 한민족센터는 동포 관련 뉴스와 정보를 통해 동포사회의 목소리를 반영합니다는 기사",
+   "summaryBy": "lead"
   },
   {
    "title": "삼성전자서비스, 기술경진·안전혁신대회…10개 종목서 시상",
-   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBiX2VLSEg4M3NRMEdwRmJ6dU4xMzBHdXdJVHplU0hjZUFSNHRxSW1mbGNIQ0xwNkZFZlRCcmdhLXhZRWRMUXJxdDFFSEVtNzNRcnFaaDNCWE1jUjjSAWBBVV95cUxNUmtrdzM4azBLYWJMeTFCajJxbG8yRm9ZRS1keUgwMVRUOUc4bnBHVTVKWXZaZ3lBTllNLTJOZHplOFRVTE1NdVVTRG9pekJpVmk3Q1VtbFdSSlBvSkpSN0s?oc=5",
+   "link": "https://www.yna.co.kr/view/AKR20261126033100003",
    "source": "연합뉴스",
    "published": "2026-11-25T23:54:09Z",
    "keywords": [
     "삼성전자"
    ],
-   "id": "0ee1d3e64a51"
+   "id": "0ee1d3e64a51",
+   "summaryTries": 1
   },
   {
    "title": "삼성전자서비스, 기술경진대회 개최…AI 활용·안전 역량 강화",
-   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1YQ1hMLTEzNERIRzhpWFREYjZmbk9BcDNacEhoYVRSY3pjckNpOUNtZENQLVdwRVgwWm5QM08yTDlLVktfd3dIZU1Fb0sxX1RTUVlYTlpZT3UtZw?oc=5",
+   "link": "https://www.fnnews.com/news/202611260818094686",
    "source": "파이낸셜뉴스",
    "published": "2026-11-25T23:53:43Z",
    "keywords": [
     "삼성전자"
    ],
-   "id": "9ebb36a6e5b9"
+   "id": "9ebb36a6e5b9",
+   "summary": "[파이낸셜뉴스] 삼성전자서비스가 인공지능(AI) 확산에 따른 고객 서비스 환경 변화에 대응해 엔지니어의 기술 전문성과 안전 역량 강화에 나섰다. 삼성전자서비스는 지난 25일부터 이틀간 경기도 수원 삼성전자 CS 아카데미에서 제31회 '서비스 기술경진 및 안전혁신대회'를 개최했다고 26일 밝혔다.",
+   "brief": "[파이낸셜뉴스] 삼성전자서비스가 인공지능(AI) 확산에 따른 고객 서비스 환경 변화에 대응해 엔지니어의 기술 전문성과 안전 역량 강화에 나섰다는 기사",
+   "summaryBy": "lead"
   },
   {
    "title": "내일 삼성전자 '30조' 배당 잔치…외국인 몫만 15조, 외환시장 '긴장'",
@@ -939,17 +1128,20 @@
     "삼성전자"
    ],
    "id": "f39f51ca15b6",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "삼성전자서비스, 엔지니어 기술·안전 역량 겨룬다…31회 경진대회 개최",
-   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA1eEJNMVVWZ0ZWRzRtY3JHV1JKa2Y0QlgxZlVuSFFSTGRLV09uVlR2WFZxenN3X3dXa3pTbkFuMC1XZnhVNTV6V25RcWJqNlNhSEd5eVFlbGpNUQ?oc=5",
+   "link": "https://www.viva100.com/article/20261126500181",
    "source": "브릿지경제",
    "published": "2026-11-25T23:50:00Z",
    "keywords": [
     "삼성전자"
    ],
-   "id": "e2da075629f0"
+   "id": "e2da075629f0",
+   "summary": "삼성전자서비스가 엔지니어의 수리 전문성과 안전관리 역량을 높이기 위한 기술경진대회를 개최한다. 인공지능(AI)을 활용한 제품 간 연결 환경에 대응하는 기술부터 서비스 현장의 안전사고 예방 사례까지 평가해 고객 서비스 품질을 높인다는 취지다.",
+   "brief": "삼성전자서비스가 엔지니어의 수리 전문성과 안전관리 역량을 높이기 위한 기술경진대회를 개최한다는 기사",
+   "summaryBy": "lead"
   },
   {
    "title": "삼성전자서비스, '서비스 기술경진·안전혁신대회' 개최",
@@ -960,7 +1152,7 @@
     "삼성전자"
    ],
    "id": "885a581ef7f2",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "삼성전자서비스 '안전·서비스 기술경진 및 안전혁신대회'",
@@ -971,7 +1163,7 @@
     "삼성전자"
    ],
    "id": "6f7a4f99bfa2",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "삼성전자서비스, 31회 기술경진대회 개최…AI 활용 능력도 평가",
@@ -1039,6 +1231,19 @@
    "summaryBy": "lead"
   },
   {
+   "title": "삼성전자서비스, 서비스 기술경진대회 개최…AI 활용 역량 평가",
+   "link": "https://marketin.edaily.co.kr/News/ReadE?newsId=01820406645649656",
+   "source": "마켓인",
+   "published": "2026-11-25T23:31:38Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "bd631f849dc9",
+   "summary": "삼성전자서비스는 25~26일 경기도 수원 삼성전자 CS아카데미에서 제31회 ‘서비스 기술경진 및 안전혁신대회’를 개최한다고 26일 밝혔다.",
+   "brief": "삼성전자서비스는 25~26일 경기도 수원 삼성전자 CS아카데미에서 제31회 ‘서비스 기술경진 및 안전혁신대회’를 개최한다고 26일 밝혔다는 기사",
+   "summaryBy": "lead"
+  },
+  {
    "title": "삼성전자서비스, 올해도 '기술경진대회' 개최…AI 역량 강화",
    "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFAwQWpsR0dmZTBkY1dUUjl6bzFPR1R6N2tDVC1qUmE1LUNjT1BUTU11VWpnTXJmb0pyYlZ5MGpnNVU2Q0xVdy1weFN4Y1F3VzZYNHpOOHM1UjB5VFhMVG9ITlpFc1g?oc=5",
    "source": "뉴스1",
@@ -1047,7 +1252,7 @@
     "삼성전자"
    ],
    "id": "023b931802ae",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "[리포트 브리핑]삼성E&A, '삼성전자 포함 그룹사 투자 수혜 점검' 목표가 88,000원 - 키움증권",
@@ -1097,7 +1302,7 @@
     "삼성전자"
    ],
    "id": "d8b64bc5b18a",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "삼성전자서비스, '서비스 기술경진 및 안전혁신대회' 개최",
@@ -1121,7 +1326,7 @@
     "삼성전자"
    ],
    "id": "89c82fd2bd41",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "삼성전자서비스, 서비스 기술경진 및 안전혁신대회 개최",
