@@ -2,6 +2,44 @@
  "month": "2026-11",
  "items": [
   {
+   "title": "삼성전자, 메모리 개발 지휘 체계 개편…고객·신사업 강화",
+   "link": "https://www.solnews.co.kr/news/articleView.html?idxno=85259",
+   "source": "솔루션뉴스",
+   "published": "2026-11-26T21:35:00Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "1ab86a3658c9",
+   "summaryTries": 1
+  },
+  {
+   "title": "'7개 노조'로 쪼개진 삼성전자… 내년 임단협 최대 변수 ‘노노 갈등’",
+   "link": "https://www.news2day.co.kr/article/20261126500369",
+   "source": "뉴스투데이",
+   "published": "2026-11-26T21:30:31Z",
+   "keywords": [
+    "삼성전자",
+    "삼성전자 노동조합"
+   ],
+   "id": "51079744cb4c",
+   "summary": "삼성전자 노조가 사업부와 이해관계에 따라 세분화되면서 노사관계의 새로운 변수로 떠오르고 있다. 한때 공동교섭을 통해 단체협약과 임금협약을 이끌어냈던 노조들은 사업부별 성과급과 임금·복지 차이를 둘러싸고 갈등이 심화되면서 분화하는 양상이다.",
+   "brief": "삼성전자 노조가 사업부와 이해관계에 따라 세분화되면서 노사관계의 새로운 변수로 떠오르고 있다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "화웨이, 삼성전자·SK하이닉스 대비 데이터 핀 밀도 2배 HBM 설계 공개 예정",
+   "link": "https://bloomingbit.io/feed/news/125332",
+   "source": "블루밍비트",
+   "published": "2026-11-26T20:12:01Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "1ff083fa7f22",
+   "summary": "STAT AI 안내본 AI 분석은 참고용 정보 제공을 목적으로 하며, 그 정확성을 보장하지 않습니다. 또한 본 내용은 투자 권유가 아니며, 모든 투자 판단과 그에 따른 책임은 이용자 본인에게 있습니다.",
+   "brief": "STAT AI 안내본 AI 분석은 참고용 정보 제공을 목적으로 하며, 그 정확성을 보장하지 않습니다는 기사",
+   "summaryBy": "lead"
+  },
+  {
    "title": "[출근길 포인트] 삼성전자, M&A 실행조직 신설···미래 먹거리 확보 속도",
    "link": "https://www.pointdaily.co.kr/news/articleView.html?idxno=327671",
    "source": "포인트데일리",
@@ -12,6 +50,19 @@
    "id": "72c19e08dd68",
    "summary": "◇M&A 전문가 부사장 발탁 이어 전담팀 신설[포인트데일리 윤은식 기자] 삼성전자가 인수합병(M&A) 전담 조직을 신설하고 신사업 발굴에 속도를 낸다.",
    "brief": "◇M&A 전문가 부사장 발탁 이어 전담팀 신설[포인트데일리 윤은식 기자] 삼성전자가 인수합병(M&A) 전담 조직을 신설하고 신사업 발굴에 속도를 낸다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "생방송 중 울먹인 증시 전문가…삼성전자 레버리지 하루 만에 19% 폭락 [숫자 뒤의 진실]",
+   "link": "https://m.segye.com/ampView/20261127500770",
+   "source": "세계일보",
+   "published": "2026-11-26T20:00:00Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "cfd710c1b817",
+   "summary": "경제방송 생방송 도중 증시 전문가가 울먹이다 삼성전자 레버리지 상품 차트 앞에서 다시 말을 멈췄다. 25일 미래에셋 레버리지 삼성전자 단일종목 ETN은 전 거래일보다 19.32% 내린 4510원에 거래를 마쳤다.",
+   "brief": "경제방송 생방송 도중 증시 전문가가 울먹이다 삼성전자 레버리지 상품 차트 앞에서 다시 말을 멈췄다는 기사",
    "summaryBy": "lead"
   },
   {
@@ -49,7 +100,7 @@
     "삼성전자"
    ],
    "id": "65865c6013e2",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "김아현, 삼성전자 레버리지 폭락에 눈물 쏟으며 방송..투자자들 잇단 호소",
@@ -125,7 +176,7 @@
     "삼성전자"
    ],
    "id": "3491f84e66a5",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "삼성전자·SK하이닉스 특별배당, 커버드콜 ETF에 반영",
@@ -201,7 +252,7 @@
     "삼성전자"
    ],
    "id": "9425fd1d0111",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "삼성전자서비스, '서비스 기술경진 및 안전혁신대회' 개최",
@@ -316,14 +367,17 @@
   },
   {
    "title": "삼성전자, M&A 전담조직 신설…대형 인수합병 속도 붙나",
-   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE05OEZHLWZQNGJVdktPMFBIanVxUy1zUzJCUEhVaDh5bS04anpNdEZteWhtaGhUNnRqQ3RiWTdqOHBPd3RyaFpFTVJoLXc1dy13ZVdlY0NwbzFGU0k?oc=5",
+   "link": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8723662",
    "source": "KBS 뉴스",
    "published": "2026-11-26T10:27:00Z",
    "keywords": [
     "삼성전자"
    ],
    "id": "582d49ac12de",
-   "summaryTries": 1
+   "summaryTries": 1,
+   "summary": "삼성전자가 인수합병(M&A) 전담 조직을 신설하며 미래 성장동력 확보에 힘을 싣습니다.",
+   "brief": "삼성전자가 인수합병(M&A) 전담 조직을 신설하며 미래 성장동력 확보에 힘을 싣습니다는 기사",
+   "summaryBy": "lead"
   },
   {
    "title": "삼성전자, M&A 전담팀 신설 … 사업 재편 속도",
