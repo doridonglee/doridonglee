@@ -2,6 +2,45 @@
  "month": "2026-11",
  "items": [
   {
+   "title": "머스크, 삼성전자에 메모리 장기 구매·공장 자금 조달 제안…WSJ",
+   "link": "https://welaunch.kr/post/welaunch/6rtd9F771wEXs7k8Tfdp",
+   "source": "위런치",
+   "published": "2026-11-27T11:10:20Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "61d8401d0f87",
+   "summary": "월스트리트저널(WSJ) 보도에 따르면 일론 머스크(Elon Musk) 테슬라(Tesla) 최고경영자(CEO)가 이재용 삼성전자(Samsung Electronics) 회장에게 메모리 반도체 장기 구매를 제안했다. 이 일화는 칼 카와자(Carl Kawaja) 캐피털그룹(Capital Group) 포트폴리오 매니저가 지난 6월 콘퍼런스에서 소개한 전언이다.",
+   "brief": "월스트리트저널(WSJ) 보도에 따르면 일론 머스크(Elon Musk) 테슬라(Tesla) 최고경영자(CEO)가 이재용 삼성전자(Samsung Electronics) 회장에게 메모리 반도체 장기 구매를 제안했다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "삼성전자 30조 원 '역대급 배당'‥초호황에도 마냥 못 웃는 한국",
+   "link": "https://imnews.imbc.com/replay/2026/nwdesk/article/6869186_37004.html",
+   "source": "MBC 뉴스",
+   "published": "2026-11-27T10:54:29Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "4653bee27bb3",
+   "summary": "해당 기사를 북마크했습니다. 사상 최고의 실적을 올린 삼성전자가, 오늘 주주들에게 역대 최대 규모의 배당금을 지급했습니다.",
+   "brief": "해당 기사를 북마크했습니다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "직원마다 다른 AI 예산…삼성전자 최대 22배 차이",
+   "link": "https://www.mk.co.kr/news/it/12220352",
+   "source": "매일경제",
+   "published": "2026-11-27T10:20:15Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "744d8f974392",
+   "summary": "삼성전자 DX 부문이 임직원 업무용 AI사용한도를 직무별로 차등 배정하고 있습니다. 클로드 기준 한도를 4단계로 나누고 개발직 등 실무 수요에 맞춘 추가 상향 경로를 운영합니다.",
+   "brief": "삼성전자 DX 부문이 임직원 업무용 AI사용한도를 직무별로 차등 배정하고 있습니다는 기사",
+   "summaryBy": "lead"
+  },
+  {
    "title": "[더나은미래 경제브리핑] 삼성전자 30조 ‘역대 최대’ 배당, 추가 주주환원 예고...iM금융지주, 차기 회장 최종 후보군 황병우 등 3명 선정",
    "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9TYjV6TFdhVFM3eFVTWTQza2k4N0llZ3c0c0NucmYtS0Q5amF2T3ZWTnBvV2tINjdSbHQ5TTJKZ2ZhZ3Yxb3R6Tll6REh1a0U2X1E?oc=5",
    "source": "더나은미래",
@@ -10,7 +49,7 @@
     "삼성전자"
    ],
    "id": "574324210432",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "삼성전자, 30조 배당금 지급…추가 주주환원에 쏠린 눈",
@@ -21,7 +60,7 @@
     "삼성전자"
    ],
    "id": "df5a8288e99b",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "삼성전자, 연말 맞아 총 185억 원 통 큰 기부",
@@ -84,7 +123,7 @@
     "삼성전자"
    ],
    "id": "1acec57527a8",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "삼성전자, 대대적 조직개편…반도체 경쟁력 강화·미래 먹거리 확보",
@@ -121,7 +160,7 @@
     "삼성전자"
    ],
    "id": "0d6bed22b5ad",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "삼성전자, 오늘 역대 최대 30조 배당 지급...주당 4601원",
@@ -256,7 +295,7 @@
     "삼성전자"
    ],
    "id": "b68e88cc8bb1",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "삼성전자 美 테일러 2공장 착공…TSMC도 가세, 파운드리 격전지로",
@@ -292,6 +331,19 @@
    ],
    "id": "4cf25e56326c",
    "summaryTries": 2
+  },
+  {
+   "title": "미국의 중국으로 반도체 수출통제는 삼성전자·SK하이닉스에게 온전히 수혜일까 : '미국 내 생산' 압박하고 HBM 공급망 다변화할 수도",
+   "link": "https://www.huffingtonpost.kr/article/262478",
+   "source": "허프포스트코리아",
+   "published": "2026-11-27T07:28:38Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "1c861dedc5a5",
+   "summary": "미국이 대중국 반도체 수출 통제를 강화하면서 삼성전자와 SK하이닉스가 수혜를 입을 수 있다는 전망이 나왔다. 최근 미국 정부는 수출 규정을 개정해, 중국 기업들이 엔비디아 반도체에 원격으로 접속할 수 있도록 허용했던 허점을 막는 등 규제 강화에 나섰다.",
+   "brief": "미국이 대중국 반도체 수출 통제를 강화하면서 삼성전자와 SK하이닉스가 수혜를 입을 수 있다는 전망이 나왔다는 기사",
+   "summaryBy": "lead"
   },
   {
    "title": "이재용, 삼성전자 연간 배당금 1.2조원 넘어서나…3Q 4488억 수령",
@@ -506,6 +558,19 @@
    "id": "804c7853ed10",
    "summary": "[파이낸셜뉴스] 삼성전자가 국내 기업 배당 사상 최대인 30조원을 주주들에게 지급한다. 국내 개인투자자에게 돌아가는 몫만 5조원을 넘을 것으로 추산된다.",
    "brief": "[파이낸셜뉴스] 삼성전자가 국내 기업 배당 사상 최대인 30조원을 주주들에게 지급한다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "＇30조＇ 포문 연 삼성전자…수혜주·추가 환원 주목",
+   "link": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202611270098",
+   "source": "한국경제TV",
+   "published": "2026-11-27T06:15:00Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "2e322fd894b9",
+   "summary": "한경TV는 귀하의 경제 습관에 도움을 드립니다. 본 사이트에서 제공되는 모든 정보는 투자판단의 참고자료로 원금 손실이 발생할 수 있으며, 그 손실은 투자자에게 귀속됩니다.",
+   "brief": "한경TV는 귀하의 경제 습관에 도움을 드립니다는 기사",
    "summaryBy": "lead"
   },
   {
@@ -946,7 +1011,7 @@
     "삼성전자"
    ],
    "id": "c0b26cc3e6b9",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "삼성전자 '역대 최대' 30조 배당…이재용, 얼마 받았을까",
@@ -1436,7 +1501,7 @@
     "삼성전자"
    ],
    "id": "0c4a4fe1e864",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "공조 힘주는 삼성전자…기존 DA사업부 가전·HVAC 양대 축 재편",
