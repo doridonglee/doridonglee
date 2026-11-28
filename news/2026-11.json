@@ -2,6 +2,43 @@
  "month": "2026-11",
  "items": [
   {
+   "title": "“삼성전자 7만원도 위태롭다”…반도체 전문가, AI 거품 붕괴 가능성 경고",
+   "link": "http://www.jemin.com/news/articleView.html?idxno=848739",
+   "source": "제민일보",
+   "published": "2026-11-28T05:49:18Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "e7036aa47f33",
+   "summary": "인공지능(AI) 산업의 폭발적인 성장에 힘입어 상승세를 이어온 국내 반도체 기업들이 향후 메모리 시장의 공급 환경 변화와 투자 열기 위축으로 상당한 조정을 겪을 수 있다는 경고가 나왔다.",
+   "brief": "인공지능(AI) 산업의 폭발적인 성장에 힘입어 상승세를 이어온 국내 반도체 기업들이 향후 메모리 시장의 공급 환경 변화와 투자 열기 위축으로 상당한 조정을 겪을 수 있다는 경고가 나왔다는 기사",
+   "summaryBy": "lead"
+  },
+  {
+   "title": "유진투자증권 \"우주 데이터센터 100만기 시대 개막\"…삼성전자·한화솔루션에 이어 전력주까지 '불기둥' 예고?",
+   "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=509150",
+   "source": "핀포인트뉴스",
+   "published": "2026-11-28T05:37:12Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "25ac05553410",
+   "summaryTries": 1
+  },
+  {
+   "title": "전문가 “삼성전자 4만원 갈 수도” 섬뜩 경고…‘67만원’ 장밋빛 전망에 찬물?",
+   "link": "https://www.kyeonggi.com/article/20261128580078",
+   "source": "경기일보",
+   "published": "2026-11-28T05:00:05Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "2425dc87c8e1",
+   "summary": "인공지능(AI) 투자 열풍에 힘입어 급등했던 메모리 반도체 가격이 내년부터 본격적인 하락 국면에 접어들면서, 삼성전자 주가가 4만원대까지 추락할 수 있다는 비관적 전망이 제기됐다.",
+   "brief": "인공지능(AI) 투자 열풍에 힘입어 급등했던 메모리 반도체 가격이 내년부터 본격적인 하락 국면에 접어들면서, 삼성전자 주가가 4만원대까지 추락할 수 있다는 비관적 전망이 제기됐다는 기사",
+   "summaryBy": "lead"
+  },
+  {
    "title": "삼성전자 4만원까지 떨어질까…반도체주 놓고 극과 극 전망",
    "link": "https://www.jnilbo.com/news/articleView.html?idxno=90000087539",
    "source": "진일보 | 전남일보",
@@ -23,7 +60,7 @@
     "삼성전자"
    ],
    "id": "096569e14cce",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "삼성전자 스마트폰 목표 9.5% 축소…제조사 감축 확산 : 기업·산업",
@@ -87,6 +124,19 @@
    "summaryBy": "lead"
   },
   {
+   "title": "삼성전자, 냉난방공조 사업 강화…DA사업부, 가전·공조 두 사업팀 체제로 재편",
+   "link": "https://www.hvacrj.co.kr/news/articleView.html?idxno=31512",
+   "source": "냉동공조저널",
+   "published": "2026-11-28T01:49:49Z",
+   "keywords": [
+    "삼성전자"
+   ],
+   "id": "d376d936316c",
+   "summary": "삼성전자가 생활가전(DA)사업부를 가전(HA)사업팀과 냉난방공조(HVAC)사업팀 체제로 재편한다.",
+   "brief": "삼성전자가 생활가전(DA)사업부를 가전(HA)사업팀과 냉난방공조(HVAC)사업팀 체제로 재편한다는 기사",
+   "summaryBy": "lead"
+  },
+  {
    "title": "한국디자인진흥원, 삼성전자 등과 차세대 CMF 디자인 논의",
    "link": "https://view.asiae.co.kr/article/2026112810494390879",
    "source": "아시아경제",
@@ -132,7 +182,7 @@
     "삼성전자"
    ],
    "id": "2fe7e201dfe4",
-   "summaryTries": 1
+   "summaryTries": 2
   },
   {
    "title": "30조 배당금보다 무서운 '4만원 경고' … 삼성전자 덮친 AI 거품론",
